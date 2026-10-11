@@ -1,0 +1,9 @@
+{
+  "name": "lwz-pax-long-nfc",
+  "version": "1.0.0",
+  "dist": {
+    "shasum": "9023ba6be1f218e716fda207f2e6fd3ee85bbdb1",
+    "integrity": "sha512-t72l0E9UZlnn8i5b2gbZTU0UwKYeb0UjFGfRwDVqSrmdwBmFhNHVLj59AHYaqYJK/Foml7q0r9pW12XCrfDRqA==",
+    "tarball": "https://registry.npmjs.org/lwz-pax-long-nfc/-/lwz-pax-long-nfc-1.0.0.tgz"
+  }
+}

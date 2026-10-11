@@ -1,0 +1,1 @@
+Add a required linux-x64 package under engineStrict, with supportedArchitectures standing for linux-x64 glibc.

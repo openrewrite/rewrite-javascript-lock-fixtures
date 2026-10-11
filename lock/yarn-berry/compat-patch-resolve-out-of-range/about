@@ -1,0 +1,1 @@
+Adding resolve 1.8.1, below the >=1.9 range of its builtin compat patch: the patch entry hashes no effect and its archive is the unpatched copy.

@@ -1,0 +1,1 @@
+Adding fsevents 2.3.3 as an optional dependency on darwin: its builtin compat patch entry is conditional and has no checksum.

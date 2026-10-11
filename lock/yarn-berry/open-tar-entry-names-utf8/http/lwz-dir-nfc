@@ -1,0 +1,17 @@
+{
+  "name": "lwz-dir-nfc",
+  "dist-tags": {
+    "latest": "1.0.0"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "lwz-dir-nfc",
+      "version": "1.0.0",
+      "dist": {
+        "shasum": "aae0542bdb9833fac23a09fda23ef80d3aa00306",
+        "integrity": "sha512-5BdqC8OfvcZZK1S27PWSocMcps+0KLONDkXY8rWpw7xoZkxr3+wkQbBuENvanHrcGmfsHdsn2egqI4VPwazjhw==",
+        "tarball": "https://registry.npmjs.org/lwz-dir-nfc/-/lwz-dir-nfc-1.0.0.tgz"
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "only": true,
+  "packages": [
+    {
+      "name": "lwz-ascii",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-ascii\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/cafe.js",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-nfc",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-nfc\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/café.js",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-nfd",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-nfd\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/café.js",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-emoji",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-emoji\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/😀.txt",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-dir-nfc",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-dir-nfc\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/dé/x.js",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-control",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-control\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/a\u0001b.js",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-control-nfc",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-control-nfc\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "path": "package/café\u0001.js",
+          "content": "x\n"
+        }
+      ]
+    },
+    {
+      "name": "lwz-pax-long-nfc",
+      "version": "1.0.0",
+      "tar": [
+        {
+          "path": "package/package.json",
+          "content": "{\n  \"name\": \"lwz-pax-long-nfc\",\n  \"version\": \"1.0.0\"\n}\n"
+        },
+        {
+          "type": "pax",
+          "records": {
+            "path": "package/dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd/éééééééééééééééééééééééééééééé/café.js"
+          }
+        },
+        {
+          "path": "package/dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd/éééééééééééééééééééééééééééééé/café.js",
+          "headerName": "package/long.js",
+          "content": "x\n"
+        }
+      ]
+    }
+  ]
+}

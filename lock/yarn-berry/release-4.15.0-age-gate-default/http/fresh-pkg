@@ -1,0 +1,32 @@
+{
+  "name": "fresh-pkg",
+  "dist-tags": {
+    "latest": "1.1.0"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "fresh-pkg",
+      "version": "1.0.0",
+      "dist": {
+        "shasum": "6661ae4c550154a0acabd5193b20e0a22ce6aad1",
+        "integrity": "sha512-Sj7HS+2lCOaL5nWNL7fqoy5BhsBJq8tviuuwI3tqMN4kQW+jC1J4Fn5SWzgYHtpvK1QRBS4Z1UzLoTtxUui8ew==",
+        "tarball": "https://registry.npmjs.org/fresh-pkg/-/fresh-pkg-1.0.0.tgz"
+      }
+    },
+    "1.1.0": {
+      "name": "fresh-pkg",
+      "version": "1.1.0",
+      "dist": {
+        "shasum": "609228e056600f2e6f64e4a9e8d636ae93bd6785",
+        "integrity": "sha512-QFKOXmfpOaMpP+7edmjgYiUc1ZjTgQtZq8B2lEsNdQoYLxbmavrc2+yXEL/nU9MOxM4YkLFlq9RmRZWRsh9AZg==",
+        "tarball": "https://registry.npmjs.org/fresh-pkg/-/fresh-pkg-1.1.0.tgz"
+      }
+    }
+  },
+  "time": {
+    "created": "2026-09-11T17:45:07.652Z",
+    "modified": "2026-10-11T16:45:07.654Z",
+    "1.0.0": "2026-09-11T17:45:07.652Z",
+    "1.1.0": "2026-10-11T16:45:07.654Z"
+  }
+}

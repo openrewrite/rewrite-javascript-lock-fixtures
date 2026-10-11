@@ -1,0 +1,9 @@
+yarn install v1.22.22
+warning package.json: No license field
+warning ../../package.json: License should be a valid SPDX license expression
+warning p@1.0.0: No license field
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+error lru-cache@11.0.0: The engine "node" is incompatible with this module. Expected version "20 || >=22". Got "18.20.8"
+error Found incompatible module.
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.

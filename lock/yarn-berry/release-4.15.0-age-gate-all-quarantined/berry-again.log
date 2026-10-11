@@ -1,0 +1,8 @@
+➤ YN0000: · Yarn 4.15.0
+➤ YN0000: ┌ Resolution step
+➤ YN0016: │ fresh-pkg@npm:^1.1.0: All versions satisfying "^1.1.0" are quarantined
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in 0s 31ms
+over=before
+exit=1
+no lock written

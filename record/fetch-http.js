@@ -1,5 +1,6 @@
 // Fetches the registry responses a scenario refers to into <scenario>/http/, verbatim:
-//   http/<name>            abbreviated packument (Accept: application/vnd.npm.install-v1+json)
+//   http/<name>            abbreviated packument (Accept: application/vnd.npm.install-v1+json); with FULL_PACKUMENTS=1
+//                          the full one, which Yarn Berry asks for (its age gate reads the publish times)
 //   http/<name>-<version>  single-version manifest
 // Names come from the scenario's locks and manifests. Pass extra `name` or `name@version`
 // arguments for anything else a replay needs (e.g. a version the resolver examines and rejects).
@@ -72,7 +73,8 @@ const save = async (url, file, headers) => {
 const main = async () => {
   const http = path.join(dir, 'http')
   for (const name of [...names].sort()) {
-    await save(REG + encode(name), path.join(http, name), { accept: 'application/vnd.npm.install-v1+json' })
+    await save(REG + encode(name), path.join(http, name),
+      process.env.FULL_PACKUMENTS ? {} : { accept: 'application/vnd.npm.install-v1+json' })
   }
   for (const nv of [...versions].sort()) {
     const at = nv.lastIndexOf('@')

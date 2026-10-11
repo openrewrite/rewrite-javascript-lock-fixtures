@@ -1,5 +1,5 @@
 // Fetches the registry responses a yarn-berry scenario refers to into <scenario>/http/:
-//   http/<name>, http/<name>-<version>  through fetch-http.js (abbreviated packument, version manifest)
+//   http/<name>, http/<name>-<version>  through fetch-http.js (full packument, as Yarn asks for it, version manifest)
 //   http/<name>-<version>.tgz           the tarball, for every locked registry entry that records a checksum
 // Names come from the `resolution:` lines of the scenario's before/after locks (npm: and patch: of npm:),
 // plus the manifests (read by fetch-http.js) and an optional whitespace-separated `http-names` file.
@@ -34,7 +34,8 @@ if (fs.existsSync(extra)) {
   for (const s of fs.readFileSync(extra, 'utf8').split(/\s+/)) if (s) specs.add(s)
 }
 
-execFileSync('node', [path.join(__dirname, 'fetch-http.js'), dir, ...[...specs].sort()], {stdio: 'inherit'})
+execFileSync('node', [path.join(__dirname, 'fetch-http.js'), dir, ...[...specs].sort()],
+  {stdio: 'inherit', env: {...process.env, FULL_PACKUMENTS: '1'}})
 
 const main = async () => {
   let count = 0

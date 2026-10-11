@@ -1,0 +1,11 @@
+➤ YN0000: · Yarn 4.10.3
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c, typescript@npm:5.4.5
+➤ YN0000: └ Completed in 0s 616ms
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ 2 packages were added to the project (+ 61.81 MiB).
+➤ YN0000: └ Completed in 1s 649ms
+➤ YN0000: ┌ Link step
+➤ YN0073: │ Skipped due to mode=update-lockfile
+➤ YN0000: └ Completed
+➤ YN0000: · Done with warnings in 2s 275ms

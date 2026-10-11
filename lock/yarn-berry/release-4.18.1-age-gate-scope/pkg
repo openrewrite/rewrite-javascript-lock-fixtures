@@ -1,0 +1,7 @@
+{
+  "name": "r",
+  "packageManager": "yarn@4.18.1",
+  "dependencies": {
+    "@gs/fresh-pkg": "^1.0.0"
+  }
+}

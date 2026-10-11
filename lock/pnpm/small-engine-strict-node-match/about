@@ -1,0 +1,1 @@
+Add undici 8.11.2 (engines.node >=22.19.0) under engineStrict on Node 24.

@@ -1,0 +1,5 @@
+nodeLinker: node-modules
+npmMinimalAgeGate: 0
+npmScopes:
+  gs:
+    npmRegistryServer: "http://127.0.0.1:48731"

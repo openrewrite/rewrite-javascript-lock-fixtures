@@ -1,0 +1,9 @@
+{
+  "name": "@gs/fresh-pkg",
+  "version": "1.0.0",
+  "dist": {
+    "shasum": "4e1e782fc5b0a91d2cea697513044de020389715",
+    "integrity": "sha512-uU+pE2yzfZ/MBnUtTj4jeHok2E8+kSUX3vO82BilRe8FOgBu2bubCXyNkLE65ho8AqoVex+FWcg/sTTLqWBLiA==",
+    "tarball": "https://registry.npmjs.org/@gs/fresh-pkg/-/fresh-pkg-1.0.0.tgz"
+  }
+}

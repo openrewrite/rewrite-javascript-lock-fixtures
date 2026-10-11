@@ -1,0 +1,7 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "semver": "6.3.1"
+  }
+}

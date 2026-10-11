@@ -1,0 +1,1 @@
+Upgrading typescript 5.4.5 to 5.6.3 under Yarn 4.10.3: the builtin compat patch entry moves to a new hash= and checksum.

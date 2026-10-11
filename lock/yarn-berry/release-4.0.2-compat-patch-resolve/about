@@ -1,0 +1,1 @@
+Adding resolve 1.22.8 under Yarn 4.0.2: its builtin compat patch entry hashes and patches with 4.0.2's own resolve patch, which changed in 4.17.1.
