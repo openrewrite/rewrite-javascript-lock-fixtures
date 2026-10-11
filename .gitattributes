@@ -1,1 +1,4 @@
 *.tgz binary
+*.tar binary
+*.gz binary
+*.zip binary
