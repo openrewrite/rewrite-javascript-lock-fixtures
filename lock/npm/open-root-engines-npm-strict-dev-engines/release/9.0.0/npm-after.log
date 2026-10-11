@@ -1,0 +1,6 @@
+npm ERR! code EBADENGINE
+npm ERR! engine Unsupported engine
+npm ERR! engine Not compatible with your version of node/npm: p@1.0.0
+npm ERR! notsup Not compatible with your version of node/npm: p@1.0.0
+npm ERR! notsup Required: {"npm":"^10.9.0"}
+npm ERR! notsup Actual:   {"npm":"9.0.0"}

@@ -1,8 +1,0 @@
-(node:26900) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-npm ERR! code EBADENGINE
-npm ERR! engine Unsupported engine
-npm ERR! engine Not compatible with your version of node/npm: p@1.0.0
-npm ERR! notsup Not compatible with your version of node/npm: p@1.0.0
-npm ERR! notsup Required: {"npm":"^11.17.0"}
-npm ERR! notsup Actual:   {"npm":"7.1.2","node":"v24.21.0"}
