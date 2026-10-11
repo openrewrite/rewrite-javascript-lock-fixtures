@@ -1,0 +1,6 @@
+# npm 9.0.0 to 9.4.1 install file: dependencies as copies (install-links defaults to true), so the optional
+# file:./opt-child of file:./parent is read under node_modules/parent, which a lock-only install over a fresh
+# directory does not hold: npm swallows the ENOENT of the optional dependency and leaves it out. Whether that
+# directory exists is the disk the engine cannot see; the non-optional arb-allow-directory-root-transitive fails
+# with that ENOENT at the same releases.
+9.0.0 - 9.4.1	*	cannot-know the filesystem npm ran on (ENOENT, swallowed for an optional dependency)
