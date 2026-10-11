@@ -1,0 +1,3 @@
+npm error code EALLOWREMOTE
+npm error Fetching packages of type "remote" have been disabled
+npm error Refusing to fetch "kind-of@https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"

@@ -1,0 +1,2 @@
+npm ERR! code EOVERRIDE
+npm ERR! Override for num@npm:is-number@^6.0.0 conflicts with direct dependency

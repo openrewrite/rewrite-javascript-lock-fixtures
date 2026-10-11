@@ -1,0 +1,16 @@
+{
+  "name": "orphan-prune-semver",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "orphan-prune-semver",
+      "version": "1.0.0",
+      "dependencies": {
+        "semver": "7.6.0"
+      }
+    },
+    "node_modules/semver": {}
+  }
+}

@@ -1,0 +1,9 @@
+npm WARN tarball tarball data for is-number@file:vendor/is-number-6.0.0.tgz (null) seems to be corrupted. Trying again.
+npm WARN tarball tarball data for is-number@file:vendor/is-number-6.0.0.tgz (null) seems to be corrupted. Trying again.
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path <scratch>/cross/project/node_modules/is-odd/vendor/is-number-6.0.0.tgz
+npm ERR! errno -2
+npm ERR! enoent ENOENT: no such file or directory, open '<scratch>/cross/project/node_modules/is-odd/vendor/is-number-6.0.0.tgz'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent

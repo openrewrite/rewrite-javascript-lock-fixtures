@@ -1,0 +1,16 @@
+{
+  "name": "optpeer",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "optpeer",
+      "version": "1.0.0",
+      "dependencies": {
+        "fdir": "6.5.0"
+      }
+    },
+    "node_modules/fdir": {}
+  }
+}

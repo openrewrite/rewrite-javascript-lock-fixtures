@@ -1,0 +1,16 @@
+{
+  "name": "regen",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "regen",
+      "version": "1.0.0",
+      "dependencies": {
+        "p-limit": "1.1.0"
+      }
+    },
+    "node_modules/p-limit": {}
+  }
+}

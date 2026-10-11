@@ -1,0 +1,19 @@
+{
+  "name": "npm-multilevel-v2",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "npm-multilevel-v2",
+      "version": "1.0.0",
+      "dependencies": {
+        "ansi-styles": "^3.2.1"
+      }
+    },
+    "node_modules/ansi-styles": {}
+  },
+  "dependencies": {
+    "ansi-styles": {}
+  }
+}

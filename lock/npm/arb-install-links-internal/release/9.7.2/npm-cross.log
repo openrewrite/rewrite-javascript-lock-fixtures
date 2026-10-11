@@ -1,0 +1,7 @@
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path <scratch>/cross/project/node_modules/local-shared/package.json
+npm ERR! errno -2
+npm ERR! enoent ENOENT: no such file or directory, open '<scratch>/cross/project/node_modules/local-shared/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent

@@ -1,0 +1,16 @@
+{
+  "name": "npm-cascade-v3",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "npm-cascade-v3",
+      "version": "1.0.0",
+      "dependencies": {
+        "debug": "^2.6.9"
+      }
+    },
+    "node_modules/debug": {}
+  }
+}

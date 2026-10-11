@@ -1,0 +1,3 @@
+npm error code EALLOWGIT
+npm error Fetching packages of type "git" have been disabled
+npm error Refusing to fetch "is-number@github:jonschlinkert/is-number#6.0.0"
