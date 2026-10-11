@@ -1,0 +1,17 @@
+YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (10:16)
+
+  7 | 
+  8 | "ms@npm:^2.1.0:
+  9 |   version: 2.1.2
+ 10 |   resolution: "ms@npm:2.1.2"
+---------------------^
+ 11 |   checksum: 10c0/a437714e2f90dbf881b5191d35a6d ...
+ 12 |   languageName: node
+
+  7 | 
+  8 | "ms@npm:^2.1.0:
+  9 |   version: 2.1.2
+ 10 |   resolution: "ms@npm:2.1.2"
+---------------------^
+ 11 |   checksum: 10c0/a437714e2f90dbf881b5191d35a6d ...
+ 12 |   languageName: node

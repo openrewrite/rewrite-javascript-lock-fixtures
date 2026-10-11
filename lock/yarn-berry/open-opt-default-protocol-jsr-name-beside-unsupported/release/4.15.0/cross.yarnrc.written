@@ -1,0 +1,8 @@
+approvedGitRepositories:
+  - "**"
+
+defaultProtocol: "jsr:ms@"
+
+enableScripts: true
+
+npmMinimalAgeGate: 0

@@ -1,0 +1,50 @@
+➤ YN0000: · Yarn 4.15.0
+➤ YN0000: ┌ Resolution step
+
+<--- Last few GCs --->
+
+[76544:0xb5c40c000]    80501 ms: Mark-Compact 494.7 (541.9) -> 480.3 (543.9) MB, pooled: 8 MB, 136.04 / 0.00 ms  (average mu = 0.766, current mu = 0.728) allocation failure; scavenge might not succeed
+[76544:0xb5c40c000]    80629 ms: Mark-Compact (reduce) 484.0 (543.9) -> 483.2 (516.6) MB, pooled: 0 MB, 78.17 / 0.00 ms  (+ 0.2 ms in 44 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 122 ms) (average mu = 0.688, curren
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x10063bf44 node::(anonymous namespace)::DefaultAbortHandler(char const*, char const*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 2: 0x10063c1a8 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 3: 0x1008bf2d0 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 4: 0x100b1e784 v8::internal::Heap::stack() [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 5: 0x100b1c66c v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 6: 0x100a93e4c v8::internal::StackGuard::HandleInterrupts(v8::internal::StackGuard::InterruptLevel) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 7: 0x100f81aec v8::internal::Runtime_StackGuardWithGap(int, unsigned long*, v8::internal::Isolate*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 8: 0x1015ea234 Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+ 9: 0x10154d934 Builtins_BaselineOutOfLinePrologue [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+10: 0x124fce638 
+11: 0x124e93370 
+12: 0x124f921e4 
+13: 0x124e4b858 
+14: 0x101600948 Builtins_ArrayPrototypeFind [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+15: 0x124fe72c4 
+16: 0x124fe7388 
+17: 0x10154cbec Builtins_InterpreterEntryTrampoline [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+18: 0x124ebb430 
+19: 0x101660e58 Builtins_PromiseFulfillReactionJob [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+20: 0x10157abd0 Builtins_RunMicrotasks [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+21: 0x10154a7b0 Builtins_JSRunMicrotasksEntry [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+22: 0x100a62960 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+23: 0x100a631d4 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+24: 0x100a63310 v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+25: 0x100a920b4 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+26: 0x100a92a14 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+27: 0x10050f0b8 node::InternalCallbackScope::Close() [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+28: 0x10050f3b0 node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context, v8::Local<v8::Value>) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+29: 0x100527f80 node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+30: 0x100643810 node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+31: 0x100643f18 node::fs::AfterNoArgs(uv_fs_s*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+32: 0x100631b7c node::MakeLibuvRequestCallback<uv_fs_s, void (*)(uv_fs_s*)>::Wrapper(uv_fs_s*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+33: 0x101524d48 uv__work_done [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+34: 0x101528798 uv__async_io [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+35: 0x10153d090 uv__io_poll [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+36: 0x1015290ec uv_run [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+37: 0x1005106a8 node::SpinEventLoopInternal(node::Environment*) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+38: 0x100697f24 node::NodeMainInstance::Run() [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+39: 0x1005e87d8 node::Start(int, char**) [/Users/jon/.local/opt/node-v24.21.0-darwin-arm64/bin/node]
+40: 0x1884204e4 start [/usr/lib/dyld]

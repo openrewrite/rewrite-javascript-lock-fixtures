@@ -1,0 +1,9 @@
+approvedGitRepositories:
+  - "**"
+
+catalog:
+  wrappy: 1.0.2
+
+enableScripts: true
+
+npmMinimalAgeGate: 0

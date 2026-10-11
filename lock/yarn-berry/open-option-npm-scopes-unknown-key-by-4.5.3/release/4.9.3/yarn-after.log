@@ -1,0 +1,8 @@
+Usage Error: Unrecognized configuration settings found: npmScopes['foo'].npmRegistryServr - run "yarn config" to see the list of settings supported in Yarn in <tmp>/project/.yarnrc.yml (in <home>/.yarnrc.yml, <tmp>/project/.yarnrc.yml)
+
+Yarn Package Manager - 4.9.3
+
+  $ yarn <command>
+
+You can also print more details about any of these commands by calling them with 
+the `-h,--help` flag right after the command name.

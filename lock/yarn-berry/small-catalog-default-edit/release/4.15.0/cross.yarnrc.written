@@ -1,0 +1,9 @@
+approvedGitRepositories:
+  - "**"
+
+catalog:
+  path-is-absolute: 1.0.1
+
+enableScripts: true
+
+npmMinimalAgeGate: 0

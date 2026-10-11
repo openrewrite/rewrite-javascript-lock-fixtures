@@ -1,0 +1,6 @@
+approvedGitRepositories:
+  - "**"
+
+defaultProtocol: "jsr:ms@"
+
+enableScripts: true

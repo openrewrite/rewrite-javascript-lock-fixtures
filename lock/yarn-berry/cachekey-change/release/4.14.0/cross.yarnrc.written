@@ -1,0 +1,6 @@
+approvedGitRepositories:
+  - "**"
+
+compressionLevel: mixed
+
+enableScripts: true

@@ -1,0 +1,1 @@
+pm-rejects Usage Error: Unrecognized or legacy configuration settings found: catalog - run "yarn config" to see the list of settings supported in Yarn

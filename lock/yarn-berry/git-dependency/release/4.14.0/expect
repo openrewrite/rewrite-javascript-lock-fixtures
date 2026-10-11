@@ -1,0 +1,1 @@
+pm-rejects YN0080 is-number@github:jonschlinkert/is-number#7.0.0: Request to 'https://github.com/jonschlinkert/is-number.git' has been blocked because it doesn't match any of the patterns in 'approvedGitRepositories'

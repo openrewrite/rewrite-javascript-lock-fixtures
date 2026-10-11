@@ -1,0 +1,6 @@
+approvedGitRepositories:
+  - "**"
+
+enableHardenedMode: true
+
+enableScripts: true

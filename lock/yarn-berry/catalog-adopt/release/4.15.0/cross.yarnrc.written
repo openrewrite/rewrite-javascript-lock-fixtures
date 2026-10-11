@@ -1,0 +1,9 @@
+approvedGitRepositories:
+  - "**"
+
+catalog:
+  ms: 2.1.3
+
+enableScripts: true
+
+npmMinimalAgeGate: 0

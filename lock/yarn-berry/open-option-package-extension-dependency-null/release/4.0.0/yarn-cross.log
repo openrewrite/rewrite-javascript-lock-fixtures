@@ -1,0 +1,1 @@
+Internal Error: Non-nullable configuration settings "packageExtensions['ms@*'].dependencies['lodash']" cannot be set to null in <tmp>/project/.yarnrc.yml (in <home>/.yarnrc.yml, <tmp>/project/.yarnrc.yml)

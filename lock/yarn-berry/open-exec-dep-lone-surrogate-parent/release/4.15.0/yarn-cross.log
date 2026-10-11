@@ -1,0 +1,7 @@
+➤ YN0087: Migrated your project to the latest Yarn version 🚀
+
+➤ YN0000: · Yarn 4.15.0
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: x@exec:./gen.js::locator=p%F0%90%81%80workspace%3A.: Invalid reference (p𐁀workspace:.@unknown)
+➤ YN0000: └ Completed in <time>
+➤ YN0000: · Failed with errors in <time>
