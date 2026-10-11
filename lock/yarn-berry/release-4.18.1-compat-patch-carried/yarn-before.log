@@ -1,0 +1,11 @@
+➤ YN0000: · Yarn 4.18.1
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + resolve@patch:resolve@npm%3A1.22.8#optional!builtin<compat/resolve>::version=1.22.8&hash=9bd1a5, function-bind@npm:1.1.2, hasown@npm:2.0.4, and 4 more.
+➤ YN0000: └ Completed in 0s 269ms
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ 7 packages were added to the project (+ 433.26 KiB).
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Link step
+➤ YN0073: │ Skipped due to mode=update-lockfile
+➤ YN0000: └ Completed
+➤ YN0000: · Done with warnings in 0s 390ms

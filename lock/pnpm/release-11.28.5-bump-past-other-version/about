@@ -1,0 +1,1 @@
+small-bump-past-other-version with packageManager pnpm@11.28.5: a later pnpm 11 release writes the lock 11.2.2 writes
