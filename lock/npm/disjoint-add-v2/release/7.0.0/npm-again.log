@@ -1,4 +1,4 @@
-(node:69403) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(node:1524) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 exit=signal:SIGKILL
 no lock written
