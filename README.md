@@ -26,8 +26,9 @@ Scenarios may also hold the package manager's config files, workspace members, a
 ## Recording
 
 Recorded against registry.npmjs.org with npm 11.17.0, Bun 1.3.10, Yarn 1.22.22, Yarn 4.10.3 and pnpm 11.2.2, the
-releases rewrite-javascript ports. Record with the real package manager and never hand-edit a lock. Tarballs are
-binary (`.gitattributes`); after committing one, check that `git cat-file blob` matches the file's shasum.
+releases rewrite-javascript ports, by the scripts in [`record/`](record/README.md). Record with the real package
+manager and never hand-edit a lock. Tarballs are binary (`.gitattributes`); after committing one, check that
+`git cat-file blob` matches the file's shasum.
 
 ## License
 
