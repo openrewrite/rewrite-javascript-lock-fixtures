@@ -1,0 +1,10 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "lib": "file:lib"
+  },
+  "patchedDependencies": {
+    "lib": "patches/lib.patch"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "once": "1.4.0",
+    "isarray": "2.0.5"
+  },
+  "packageExtensions": {
+    "once": {
+      "peerDependencies": {
+        "isarray": "1"
+      },
+      "peerDependenciesMeta": {
+        "isarray": {
+          "optional": true
+        }
+      }
+    }
+  }
+}

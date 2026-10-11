@@ -1,0 +1,1 @@
+Install over a lock that lacks node_modules/is-buffer, the dependency of the nested is-number/node_modules/kind-of@3.2.2: npm adds it at the top; npm 10.4.0 to 10.7.x never finish, as their depth queue strands the node.

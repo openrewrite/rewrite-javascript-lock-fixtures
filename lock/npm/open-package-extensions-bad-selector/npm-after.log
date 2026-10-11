@@ -1,0 +1,3 @@
+npm error code EEXTENSIONSELECTOR
+npm error Invalid version range in packageExtensions selector: "is-odd@latest". Selectors accept a package name with an optional semver range only.
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T15_10_47_623Z-debug-0.log

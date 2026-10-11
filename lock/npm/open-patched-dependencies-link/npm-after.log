@@ -1,0 +1,4 @@
+npm error code EPATCHNOTFOUND
+npm error path patches/lib.patch
+npm error patch file not found: patches/lib.patch
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T17_17_02_023Z-debug-0.log

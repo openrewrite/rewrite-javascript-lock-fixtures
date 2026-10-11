@@ -1,0 +1,13 @@
+npm warn EBADDEVENGINES The developer of this package has specified the following through devEngines
+npm warn EBADDEVENGINES Invalid devEngines.packageManager
+npm warn EBADDEVENGINES Invalid semver version "^10.9.0" does not match "11.17.0" for "packageManager"
+npm warn EBADDEVENGINES Invalid name "pnpm" does not match "npm" for "packageManager"
+npm warn EBADDEVENGINES {
+npm warn EBADDEVENGINES   current: { name: 'npm', version: '11.17.0' },
+npm warn EBADDEVENGINES   required: [
+npm warn EBADDEVENGINES     { name: 'npm', version: '^10.9.0', onFail: 'error' },
+npm warn EBADDEVENGINES     { name: 'pnpm', onFail: 'warn' }
+npm warn EBADDEVENGINES   ]
+npm warn EBADDEVENGINES }
+
+up to date in 571ms

@@ -1,0 +1,9 @@
+npm error code EBADDEVENGINES
+npm error EBADDEVENGINES The developer of this package has specified the following through devEngines
+npm error EBADDEVENGINES Invalid devEngines.os
+npm error EBADDEVENGINES Invalid name "linux" does not match "darwin" for "os"
+npm error EBADDEVENGINES {
+npm error EBADDEVENGINES   current: { name: 'darwin', version: '25.6.0' },
+npm error EBADDEVENGINES   required: { name: 'linux' }
+npm error EBADDEVENGINES }
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T14_50_46_745Z-debug-0.log

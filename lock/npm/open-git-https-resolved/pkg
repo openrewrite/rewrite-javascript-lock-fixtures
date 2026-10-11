@@ -1,0 +1,8 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "is-number": "git+https://github.com/jonschlinkert/is-number.git#7.0.0",
+    "wrappy": "1.0.2"
+  }
+}

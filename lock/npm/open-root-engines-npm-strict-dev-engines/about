@@ -1,0 +1,1 @@
+Bump abbrev under root engines.npm ^10.9.0 with engine-strict=true and a devEngines field: with devEngines present npm ignores the root's engines and installs.

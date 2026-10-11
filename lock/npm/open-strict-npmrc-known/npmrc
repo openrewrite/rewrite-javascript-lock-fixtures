@@ -1,0 +1,2 @@
+strict-npmrc=true
+legacy-peer-deps=true

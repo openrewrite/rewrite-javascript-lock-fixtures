@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager given as the string npm@11.17.0: npm fails without a code (Invalid non-object value for "packageManager").

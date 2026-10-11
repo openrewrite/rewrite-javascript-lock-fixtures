@@ -1,0 +1,4 @@
+strict-npmrc=true
+@foo:registry=https://registry.npmjs.org/
+//example.invalid/:_authToken=abc
+npm-version=12.0.0

@@ -1,0 +1,3 @@
+npm error code EPATCHWORKSPACE
+npm error patchedDependencies is only supported in the root package.json, but was found in workspace "a". Move the entry to the root.
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T17_17_14_636Z-debug-0.log

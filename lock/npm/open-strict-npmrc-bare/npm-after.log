@@ -1,0 +1,5 @@
+npm error code EUNKNOWNCONFIG
+npm error Unknown npm configuration key:
+npm error   - project config "foo" from <tmp>/.npmrc
+npm error See `npm help npmrc` for supported config options.
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T15_36_10_289Z-debug-0.log

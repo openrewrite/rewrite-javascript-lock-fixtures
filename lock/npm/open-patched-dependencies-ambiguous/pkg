@@ -1,0 +1,11 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "is-odd": "3.0.1"
+  },
+  "patchedDependencies": {
+    "is-odd@>=3.0.0": "a.patch",
+    "is-odd@<4": "b.patch"
+  }
+}

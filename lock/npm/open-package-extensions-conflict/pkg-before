@@ -1,0 +1,8 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "once": "1.4.0",
+    "isarray": "1.0.0"
+  }
+}

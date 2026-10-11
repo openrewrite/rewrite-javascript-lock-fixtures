@@ -1,0 +1,1 @@
+Under engine-strict, a root whose engines.node no Node satisfies gains devEngines.runtime naming node: from npm 10.9.0 the root's devEngines stand in for its engines, before it the root is rejected with EBADENGINE.

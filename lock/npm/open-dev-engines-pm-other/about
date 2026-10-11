@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager naming pnpm: npm rejects the install with EBADDEVENGINES.

@@ -1,0 +1,4 @@
+npm error code EPATCHNOTFOUND
+npm error path patches/is-odd.patch
+npm error patch file not found: patches/is-odd.patch
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T17_17_42_238Z-debug-0.log

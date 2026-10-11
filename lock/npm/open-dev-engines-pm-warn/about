@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager naming pnpm with onFail warn: npm warns EBADDEVENGINES and installs.

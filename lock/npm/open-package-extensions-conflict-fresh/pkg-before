@@ -1,0 +1,14 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "isarray": "1.0.0"
+  },
+  "packageExtensions": {
+    "once": {
+      "peerDependencies": {
+        "isarray": "^2.0.0"
+      }
+    }
+  }
+}

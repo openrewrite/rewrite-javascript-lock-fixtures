@@ -1,0 +1,14 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "is-odd": "3.0.1"
+  },
+  "packageExtensions": {
+    "is-odd@latest": {
+      "dependencies": {
+        "isarray": "2.0.5"
+      }
+    }
+  }
+}

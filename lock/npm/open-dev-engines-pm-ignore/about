@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager naming pnpm with onFail ignore: npm installs without a word.

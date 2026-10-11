@@ -1,0 +1,19 @@
+npm error code ERESOLVE
+npm error ERESOLVE unable to resolve dependency tree
+npm error
+npm error While resolving: p@1.0.0
+npm error Found: isarray@1.0.0
+npm error node_modules/isarray
+npm error   isarray@"1.0.0" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer isarray@"^2.0.0" from once@1.4.0
+npm error node_modules/once
+npm error   once@"1.4.0" from the root project (added by packageExtensions["once"].peerDependencies.isarray)
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error <tmp>/_logs/2026-10-11T17_10_12_260Z-eresolve-report.txt
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T17_10_12_260Z-debug-0.log

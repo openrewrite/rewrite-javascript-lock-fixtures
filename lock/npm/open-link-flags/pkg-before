@@ -1,0 +1,10 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "b": "file:lib"
+  },
+  "dependencies": {
+    "a": "file:lib"
+  }
+}

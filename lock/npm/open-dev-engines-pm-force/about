@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager naming pnpm, with --force: the error is a warning and npm installs.

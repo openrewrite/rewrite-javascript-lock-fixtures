@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager with two alternatives, pnpm ^9 and npm >=11: one that matches is enough.

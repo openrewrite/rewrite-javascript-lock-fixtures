@@ -1,0 +1,12 @@
+npm warn using --force Recommended protections disabled.
+npm warn EBADDEVENGINES The developer of this package has specified the following through devEngines
+npm warn EBADDEVENGINES Invalid devEngines.packageManager
+npm warn EBADDEVENGINES Invalid name "pnpm" does not match "npm" for "packageManager"
+npm warn EBADDEVENGINES {
+npm warn EBADDEVENGINES   current: { name: 'npm', version: '11.17.0' },
+npm warn EBADDEVENGINES   required: { name: 'pnpm' }
+npm warn EBADDEVENGINES }
+
+up to date in 529ms
+exit=0
+lock unchanged

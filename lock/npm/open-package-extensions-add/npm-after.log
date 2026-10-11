@@ -1,0 +1,4 @@
+npm warn shrinkwrap manifest extensions require lockfileVersion 4; upgrading the lockfile from version 3.
+npm warn shrinkwrap Converting lock file (package-lock.json) from v3 -> v4
+
+up to date in 777ms

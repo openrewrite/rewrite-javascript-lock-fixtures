@@ -1,0 +1,1 @@
+Bump abbrev under devEngines.packageManager with two alternatives that both fail, npm ^10.9.0 (onFail error) and pnpm (onFail warn): the last one's onFail decides, so npm warns and installs.

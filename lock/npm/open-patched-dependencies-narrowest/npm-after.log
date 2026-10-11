@@ -1,0 +1,4 @@
+npm error code EPATCHUNSAFE
+npm error path ../../b.patch
+npm error patch path escapes the project: ../../b.patch
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T17_16_46_083Z-debug-0.log

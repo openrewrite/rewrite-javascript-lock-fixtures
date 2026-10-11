@@ -1,0 +1,1 @@
+Bump abbrev under devEngines: null, which is not undefined: npm fails without a code (Invalid non-object value for "devEngines").

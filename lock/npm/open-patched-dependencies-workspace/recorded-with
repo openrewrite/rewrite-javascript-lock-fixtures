@@ -1,0 +1,4 @@
+npm 12.2.0, node v24.21.0, 2026-10-11
+before exit=1 at 2026-10-11T17:17:08Z, after exit=1 at 2026-10-11T17:17:13Z, again exit=-
+before args: 
+after args: 

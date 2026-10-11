@@ -1,0 +1,9 @@
+npm error code EBADDEVENGINES
+npm error EBADDEVENGINES The developer of this package has specified the following through devEngines
+npm error EBADDEVENGINES Invalid devEngines.packageManager
+npm error EBADDEVENGINES Invalid name "pnpm" does not match "npm" for "packageManager"
+npm error EBADDEVENGINES {
+npm error EBADDEVENGINES   current: { name: 'npm', version: '11.17.0' },
+npm error EBADDEVENGINES   required: { name: 'pnpm', onFail: 'download' }
+npm error EBADDEVENGINES }
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T14_50_24_732Z-debug-0.log

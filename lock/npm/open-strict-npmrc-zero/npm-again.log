@@ -1,0 +1,5 @@
+npm warn Unknown project config "foo". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+up to date in 815ms
+exit=0
+lock unchanged

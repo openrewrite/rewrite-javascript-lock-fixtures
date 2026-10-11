@@ -1,0 +1,3 @@
+npm error code EEXTENSIONDUPDEP
+npm error packageExtensions["is-odd"].dependencies.is-number conflicts with the package's existing dependencies.is-number. Use overrides to change a dependency version; packageExtensions only adds missing dependencies.
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T15_10_57_721Z-debug-0.log

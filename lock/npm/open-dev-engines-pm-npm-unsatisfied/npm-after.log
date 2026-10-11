@@ -1,0 +1,9 @@
+npm error code EBADDEVENGINES
+npm error EBADDEVENGINES The developer of this package has specified the following through devEngines
+npm error EBADDEVENGINES Invalid devEngines.packageManager
+npm error EBADDEVENGINES Invalid semver version "^10.9.0" does not match "11.17.0" for "packageManager"
+npm error EBADDEVENGINES {
+npm error EBADDEVENGINES   current: { name: 'npm', version: '11.17.0' },
+npm error EBADDEVENGINES   required: { name: 'npm', version: '^10.9.0' }
+npm error EBADDEVENGINES }
+npm error A complete log of this run can be found in: <tmp>/_logs/2026-10-11T14_50_20_583Z-debug-0.log
