@@ -1,0 +1,8 @@
+approvedGitRepositories:
+  - "**"
+
+compressionLevel: mixed
+
+enableScripts: true
+
+npmMinimalAgeGate: 0

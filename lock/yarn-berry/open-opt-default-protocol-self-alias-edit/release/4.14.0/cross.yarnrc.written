@@ -1,0 +1,6 @@
+approvedGitRepositories:
+  - "**"
+
+defaultProtocol: "npm:ms@"
+
+enableScripts: true

@@ -1,0 +1,17 @@
+{
+  "name": "lws-b",
+  "dist-tags": {
+    "latest": "1.0.0"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "lws-b",
+      "version": "1.0.0",
+      "dist": {
+        "shasum": "3205869c9139a7064ccbd90691e868c5a72eec54",
+        "integrity": "sha512-VHJo4mlysS6gdc4Vne5iWWNSaW+usSEpAlFi8zReK77grPYUl5qNXvWSKpH/g4B6bA4u9hnXbFZyhsFFYHoAdA==",
+        "tarball": "https://registry.npmjs.org/lws-b/-/lws-b-1.0.0.tgz"
+      }
+    }
+  }
+}

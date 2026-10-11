@@ -1,0 +1,12 @@
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+supportedArchitectures:
+  cpu:
+    - x64
+  libc:
+    - glibc
+  os:
+    - linux

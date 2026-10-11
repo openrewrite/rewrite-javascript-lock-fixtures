@@ -1,0 +1,7 @@
+➤ YN0087: Migrated your project to the latest Yarn version 🚀
+
+➤ YN0000: · Yarn 4.15.0
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ TypeError: lwt-dist@npm:latest: Cannot convert undefined or null to object
+➤ YN0000: └ Completed in <time>
+➤ YN0000: · Failed with errors in <time>

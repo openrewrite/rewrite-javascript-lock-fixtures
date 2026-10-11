@@ -1,0 +1,5 @@
+➤ YN0000: · Yarn 4.14.0
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ TypeError: inherits@npm:^2.0.0: r.startsWith is not a function
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in <time>

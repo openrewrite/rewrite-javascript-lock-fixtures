@@ -1,0 +1,6 @@
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+npmRegistryServer: "https://registry.npmjs.org"

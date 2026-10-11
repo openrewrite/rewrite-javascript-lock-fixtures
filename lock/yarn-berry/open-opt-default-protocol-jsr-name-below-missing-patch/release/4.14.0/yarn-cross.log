@@ -1,0 +1,7 @@
+➤ YN0087: Migrated your project to the latest Yarn version 🚀
+
+➤ YN0000: · Yarn 4.14.0
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: is-number@patch:is-number@npm%3A7.0.0#./missing.patch::locator=p%40workspace%3A.: ENOENT: no such file or directory, open '<tmp>/project/missing.patch'
+➤ YN0000: └ Completed in <time>
+➤ YN0000: · Failed with errors in <time>

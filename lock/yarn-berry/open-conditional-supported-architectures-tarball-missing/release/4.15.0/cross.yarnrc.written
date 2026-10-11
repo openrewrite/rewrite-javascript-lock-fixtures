@@ -1,0 +1,10 @@
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+npmMinimalAgeGate: 0
+
+supportedArchitectures:
+  os:
+    - linux

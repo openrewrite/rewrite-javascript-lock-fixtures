@@ -1,0 +1,9 @@
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+npmMinimalAgeGate: 0
+
+plugins:
+  - path: .yarn/plugins/plugin-noop.cjs

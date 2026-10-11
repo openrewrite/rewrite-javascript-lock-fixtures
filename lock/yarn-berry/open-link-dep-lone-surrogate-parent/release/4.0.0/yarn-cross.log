@@ -1,0 +1,9 @@
+➤ YN0000: · Yarn 4.0.0
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + x@link:./x::locator=p%F0%90%81%80workspace%3A.
+➤ YN0085: │ - p@workspace:.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0001: │ Error: x@link:./x::locator=p%F0%90%81%80workspace%3A.: Invalid locator (p𐁀workspace:.)
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in <time>

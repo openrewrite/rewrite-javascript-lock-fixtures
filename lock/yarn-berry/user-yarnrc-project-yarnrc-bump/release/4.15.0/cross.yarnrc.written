@@ -1,0 +1,8 @@
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+npmMinimalAgeGate: 0
+
+npmRegistryServer: "https://registry.npmjs.org"

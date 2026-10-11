@@ -1,0 +1,17 @@
+{
+  "name": "lwc-base",
+  "dist-tags": {
+    "latest": "1.0.0"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "lwc-base",
+      "version": "1.0.0",
+      "dist": {
+        "shasum": "22d892b58badcd436103ffd18ad34fd4db32418c",
+        "integrity": "sha512-v62ZHX5PSMsoFGmquZlG7vL4UulBD2VUos/ZuPTRpLt0XqlYj0k4e6HfNHqr+BE00PxNcGrV2UzchAa3o//i4A==",
+        "tarball": "https://registry.npmjs.org/lwc-base/-/lwc-base-1.0.0.tgz"
+      }
+    }
+  }
+}

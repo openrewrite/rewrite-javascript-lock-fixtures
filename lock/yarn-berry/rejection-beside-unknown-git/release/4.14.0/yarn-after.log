@@ -1,0 +1,5 @@
+➤ YN0000: · Yarn 4.14.0
+➤ YN0000: ┌ Resolution step
+➤ YN0080: │ is-even@git+https://github.com/jonschlinkert/is-even.git: Request to 'https://github.com/jonschlinkert/is-even.git' has been blocked because it doesn't match any of the patterns in 'approvedGitRepositories'
+➤ YN0000: └ Completed in <time>
+➤ YN0000: · Failed with errors in <time>

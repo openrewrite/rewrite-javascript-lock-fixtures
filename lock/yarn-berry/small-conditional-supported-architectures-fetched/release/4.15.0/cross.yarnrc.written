@@ -1,0 +1,14 @@
+approvedGitRepositories:
+  - "**"
+
+enableScripts: true
+
+npmMinimalAgeGate: 0
+
+supportedArchitectures:
+  cpu:
+    - x64
+  libc:
+    - glibc
+  os:
+    - linux

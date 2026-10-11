@@ -1,0 +1,5 @@
+➤ YN0000: · Yarn 4.0.0
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: x@portal:./x::locator=p%F0%90%81%80workspace%3A.: Invalid locator (p𐁀workspace:.)
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in <time>
