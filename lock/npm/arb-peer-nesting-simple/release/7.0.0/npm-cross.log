@@ -1,0 +1,19 @@
+(node:35469) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! Found: @isaacs/testing-peer-dep-nesting-p@2.0.0
+npm ERR! node_modules/@isaacs/testing-peer-dep-nesting-p
+npm ERR!   @isaacs/testing-peer-dep-nesting-p@"2" from the root project
+npm ERR! Could not resolve dependency:
+npm ERR! peer @isaacs/testing-peer-dep-nesting-p@"1" from @isaacs/testing-peer-dep-nesting-q@1.0.0
+npm ERR! node_modules/@isaacs/testing-peer-dep-nesting-q
+npm ERR!   peer @isaacs/testing-peer-dep-nesting-q@"1" from @isaacs/testing-peer-dep-nesting-x@1.0.0
+npm ERR!   node_modules/@isaacs/testing-peer-dep-nesting-s/node_modules/@isaacs/testing-peer-dep-nesting-x
+npm ERR!     @isaacs/testing-peer-dep-nesting-x@"" from @isaacs/testing-peer-dep-nesting-s@1.0.0
+npm ERR!     node_modules/@isaacs/testing-peer-dep-nesting-s
+npm ERR!       @isaacs/testing-peer-dep-nesting-s@"1" from the root project
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! See <scratch>/cache-P6kBXh/eresolve-report.txt for a full report.

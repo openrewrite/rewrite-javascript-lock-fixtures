@@ -1,0 +1,27 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "p",
+      "version": "1.0.0",
+      "devDependencies": {
+        "wrappy": ""
+      },
+      "peerDependencies": {
+        "abbrev": "",
+        "wrappy": ""
+      },
+      "peerDependenciesMeta": {
+        "abbrev": {
+          "optional": true
+        },
+        "wrappy": {
+          "optional": true
+        }
+      }
+    }
+  }
+}

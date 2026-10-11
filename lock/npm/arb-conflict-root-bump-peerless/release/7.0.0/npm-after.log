@@ -1,0 +1,13 @@
+(node:34976) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! Found: @isaacs/testing-peer-dep-conflict-chain-single-a@1.0.0
+npm ERR! node_modules/@isaacs/testing-peer-dep-conflict-chain-single-a
+npm ERR!   @isaacs/testing-peer-dep-conflict-chain-single-a@"2.0.0" from the root project
+npm ERR! Could not resolve dependency:
+npm ERR! @isaacs/testing-peer-dep-conflict-chain-single-a@"2.0.0" from the root project
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! See <scratch>/cache-Il6mGz/eresolve-report.txt for a full report.

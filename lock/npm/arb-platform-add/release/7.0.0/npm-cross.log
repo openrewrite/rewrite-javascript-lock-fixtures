@@ -1,0 +1,8 @@
+(node:35628) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! code EBADPLATFORM
+npm ERR! notsup Unsupported platform for platform-specifying-test-package@1.0.0: wanted {"os":"win32"} (current: {"os":"darwin","arch":"arm64"})
+npm ERR! notsup Valid OS:    win32
+npm ERR! notsup Valid Arch:  undefined
+npm ERR! notsup Actual OS:   darwin
+npm ERR! notsup Actual Arch: arm64

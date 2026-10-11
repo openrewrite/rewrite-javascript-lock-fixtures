@@ -1,4 +1,0 @@
-(node:5763) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-npm ERR! code EUNSUPPORTEDPROTOCOL
-npm ERR! Unsupported URL Type "workspace:": workspace:*

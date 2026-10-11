@@ -1,0 +1,19 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "p",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib": "file:lib"
+      }
+    },
+    "node_modules/lib": {
+      "version": "1.0.0",
+      "resolved": "file:lib"
+    }
+  }
+}
