@@ -1,0 +1,25 @@
+{
+  "name": "peer-fork",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "peer-fork",
+      "version": "1.0.0",
+      "dependencies": {
+        "micromatch": "4.0.8",
+        "ms": "2.1.3",
+        "tinyglobby": "0.2.14"
+      }
+    },
+    "node_modules/micromatch": {},
+    "node_modules/ms": {},
+    "node_modules/tinyglobby": {}
+  },
+  "dependencies": {
+    "micromatch": {},
+    "ms": {},
+    "tinyglobby": {}
+  }
+}

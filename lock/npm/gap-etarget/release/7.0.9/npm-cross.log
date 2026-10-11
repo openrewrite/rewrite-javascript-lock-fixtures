@@ -1,0 +1,6 @@
+(node:5645) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for is-number@^99.0.0.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.

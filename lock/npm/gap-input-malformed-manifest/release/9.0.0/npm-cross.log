@@ -1,0 +1,8 @@
+npm ERR! code EJSONPARSE
+npm ERR! path <scratch>/cross/project/package.json
+npm ERR! JSON.parse Expected double-quoted property name in JSON at position 63 (line 5 column 1) while parsing '{
+npm ERR! JSON.parse   "name": "p",
+npm ERR! JSON.parse   "dependencies": {
+npm ERR! JSON.parse    '
+npm ERR! JSON.parse Failed to parse JSON data.
+npm ERR! JSON.parse Note: package.json must be actual JSON, not just JavaScript.

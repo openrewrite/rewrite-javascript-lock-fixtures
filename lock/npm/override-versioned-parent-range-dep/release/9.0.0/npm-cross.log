@@ -1,0 +1,2 @@
+npm ERR! code EOVERRIDE
+npm ERR! Override for is-odd@^3.0.0 conflicts with direct dependency

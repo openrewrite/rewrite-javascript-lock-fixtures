@@ -1,0 +1,22 @@
+{
+  "name": "optpeer",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "optpeer",
+      "version": "1.0.0",
+      "dependencies": {
+        "fdir": "6.5.0",
+        "picomatch": "4.0.7"
+      }
+    },
+    "node_modules/fdir": {},
+    "node_modules/picomatch": {}
+  },
+  "dependencies": {
+    "fdir": {},
+    "picomatch": {}
+  }
+}

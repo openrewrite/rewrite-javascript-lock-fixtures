@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "root",
+      "version": "1.0.0",
+      "workspaces": [
+        "a"
+      ]
+    },
+    "a": {
+      "version": "1.0.0"
+    },
+    "node_modules/a": {
+      "resolved": "a",
+      "link": true
+    }
+  },
+  "dependencies": {
+    "a": {
+      "version": "file:a"
+    }
+  }
+}

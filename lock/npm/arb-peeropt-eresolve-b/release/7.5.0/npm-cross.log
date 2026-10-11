@@ -1,0 +1,16 @@
+(node:66905) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! While resolving: p@1.0.0
+npm ERR! Found: @isaacs/testing-peer-optional-conflict-b-y@1.0.0
+npm ERR! node_modules/@isaacs/testing-peer-optional-conflict-b-y
+npm ERR!   peerOptional @isaacs/testing-peer-optional-conflict-b-y@"1" from the root project
+npm ERR! Could not resolve dependency:
+npm ERR! peerOptional @isaacs/testing-peer-optional-conflict-b-y@"2" from @isaacs/testing-peer-optional-conflict-b-x@1.0.0
+npm ERR! node_modules/@isaacs/testing-peer-optional-conflict-b-x
+npm ERR!   @isaacs/testing-peer-optional-conflict-b-x@"1" from the root project
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! See <scratch>/cache-Ri9lvb/eresolve-report.txt for a full report.

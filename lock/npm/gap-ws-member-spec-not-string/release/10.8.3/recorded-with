@@ -1,3 +1,0 @@
-npm 10.8.3, node v24.21.0, replayed against http/
-before exit=0 at 2026-10-06T12:00:00Z, after exit=1 at 2026-10-06T12:00:00Z, again exit=-, cross exit=1
-platform os=darwin cpu=arm64 libc=

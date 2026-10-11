@@ -1,0 +1,6 @@
+npm error code EBADENGINE
+npm error engine Unsupported engine
+npm error engine Not compatible with your version of node/npm: engine-specifying-test-package@1.0.0
+npm error notsup Not compatible with your version of node/npm: engine-specifying-test-package@1.0.0
+npm error notsup Required: {"node":"8.17.0"}
+npm error notsup Actual:   {"npm":"10.8.0","node":"v24.21.0"}

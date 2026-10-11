@@ -1,0 +1,25 @@
+{
+  "name": "peer-fork-required",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "peer-fork-required",
+      "version": "1.0.0",
+      "dependencies": {
+        "ajv": "6.15.0",
+        "escape-string-regexp": "4.0.0",
+        "schema-utils": "4.5.0"
+      }
+    },
+    "node_modules/ajv": {},
+    "node_modules/escape-string-regexp": {},
+    "node_modules/schema-utils": {}
+  },
+  "dependencies": {
+    "ajv": {},
+    "escape-string-regexp": {},
+    "schema-utils": {}
+  }
+}

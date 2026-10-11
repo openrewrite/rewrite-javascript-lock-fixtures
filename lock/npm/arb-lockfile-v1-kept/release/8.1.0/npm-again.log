@@ -1,0 +1,6 @@
+npm WARN invalid config lockfile-version="1" set in <scratch>/scratch/project/.npmrc
+npm WARN invalid config Must be one of: null, 1, 2, 3
+
+up to date in 754ms
+exit=0
+lock unchanged

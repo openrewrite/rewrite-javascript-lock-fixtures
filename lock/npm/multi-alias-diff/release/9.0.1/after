@@ -1,0 +1,18 @@
+{
+  "name": "multi-alias-diff",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "multi-alias-diff",
+      "version": "1.0.0",
+      "dependencies": {
+        "er10": "npm:emoji-regex@^10.0.0",
+        "er8": "npm:emoji-regex@^8.0.0"
+      }
+    },
+    "node_modules/er10": {},
+    "node_modules/er8": {}
+  }
+}

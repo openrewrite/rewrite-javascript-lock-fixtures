@@ -1,0 +1,19 @@
+{
+  "name": "engines-change",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "engines-change",
+      "version": "1.0.0",
+      "dependencies": {
+        "has-flag": "3.0.0"
+      }
+    },
+    "node_modules/has-flag": {}
+  },
+  "dependencies": {
+    "has-flag": {}
+  }
+}

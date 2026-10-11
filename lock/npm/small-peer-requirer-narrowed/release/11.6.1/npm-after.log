@@ -1,0 +1,14 @@
+npm error code ERESOLVE
+npm error ERESOLVE unable to resolve dependency tree
+npm error While resolving: p@1.0.0
+npm error Found: @isaacs/testing-peer-deps-c@2.0.0
+npm error node_modules/@isaacs/testing-peer-deps-c
+npm error   @isaacs/testing-peer-deps-c@"2.0.0" from the root project
+npm error Could not resolve dependency:
+npm error peer @isaacs/testing-peer-deps-c@"1" from @isaacs/testing-peer-deps-b@1.2.4
+npm error node_modules/@isaacs/testing-peer-deps-b
+npm error   @isaacs/testing-peer-deps-b@"1.2.4" from the root project
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error For a full report see:

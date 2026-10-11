@@ -1,0 +1,21 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE could not resolve
+npm ERR! While resolving: @isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0
+npm ERR! Found: @isaacs/testing-peer-dep-conflict-chain-single-a@2.0.0
+npm ERR! node_modules/@isaacs/testing-peer-dep-conflict-chain-single-a
+npm ERR!   @isaacs/testing-peer-dep-conflict-chain-single-a@"2.0.0" from the root project
+npm ERR! Could not resolve dependency:
+npm ERR! peer @isaacs/testing-peer-dep-conflict-chain-single-a@"1" from @isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0
+npm ERR! node_modules/@isaacs/testing-peer-dep-conflict-chain-single-b
+npm ERR!   @isaacs/testing-peer-dep-conflict-chain-single-b@"1.0.0" from the root project
+npm ERR! Conflicting peer dependency: @isaacs/testing-peer-dep-conflict-chain-single-a@1.0.1
+npm ERR! node_modules/@isaacs/testing-peer-dep-conflict-chain-single-a
+npm ERR!   peer @isaacs/testing-peer-dep-conflict-chain-single-a@"1" from @isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0
+npm ERR!   node_modules/@isaacs/testing-peer-dep-conflict-chain-single-b
+npm ERR!     @isaacs/testing-peer-dep-conflict-chain-single-b@"1.0.0" from the root project
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! See <scratch>/cache-MnzSr8/eresolve-report.txt for a full report.
+exit=1
+no lock written

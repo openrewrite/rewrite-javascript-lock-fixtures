@@ -1,0 +1,21 @@
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error While resolving: @isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0
+npm error Found: @isaacs/testing-peer-dep-conflict-chain-single-a@2.0.0
+npm error node_modules/@isaacs/testing-peer-dep-conflict-chain-single-a
+npm error   @isaacs/testing-peer-dep-conflict-chain-single-a@"2.0.0" from the root project
+npm error Could not resolve dependency:
+npm error peer @isaacs/testing-peer-dep-conflict-chain-single-a@"1" from @isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0
+npm error node_modules/@isaacs/testing-peer-dep-conflict-chain-single-b
+npm error   @isaacs/testing-peer-dep-conflict-chain-single-b@"1.0.0" from the root project
+npm error Conflicting peer dependency: @isaacs/testing-peer-dep-conflict-chain-single-a@1.0.1
+npm error node_modules/@isaacs/testing-peer-dep-conflict-chain-single-a
+npm error   peer @isaacs/testing-peer-dep-conflict-chain-single-a@"1" from @isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0
+npm error   node_modules/@isaacs/testing-peer-dep-conflict-chain-single-b
+npm error     @isaacs/testing-peer-dep-conflict-chain-single-b@"1.0.0" from the root project
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --no-strict-peer-deps, --force, or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error For a full report see:
+exit=1
+no lock written

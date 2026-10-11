@@ -1,0 +1,19 @@
+{
+  "name": "peer-opt",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "peer-opt",
+      "version": "1.0.0",
+      "dependencies": {
+        "ws": "8.11.0"
+      }
+    },
+    "node_modules/ws": {}
+  },
+  "dependencies": {
+    "ws": {}
+  }
+}

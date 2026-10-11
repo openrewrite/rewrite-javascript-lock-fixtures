@@ -1,0 +1,48 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "root",
+      "version": "1.0.0",
+      "workspaces": [
+        "packages/*",
+        "!packages/c"
+      ],
+      "dependencies": {
+        "c": "file:packages/c",
+        "d": "file:d"
+      }
+    },
+    "node_modules/a": {
+      "resolved": "packages/a",
+      "link": true
+    },
+    "node_modules/b": {
+      "resolved": "packages/b",
+      "link": true
+    },
+    "node_modules/c": {
+      "version": "1.0.0",
+      "resolved": "file:packages/c"
+    },
+    "node_modules/d": {
+      "version": "1.0.0",
+      "resolved": "file:d",
+      "dependencies": {
+        "b": "^1.0.0"
+      }
+    },
+    "packages/a": {
+      "version": "1.0.0",
+      "dependencies": {
+        "d": "^1.0.0"
+      }
+    },
+    "packages/b": {
+      "version": "1.0.0"
+    }
+  }
+}

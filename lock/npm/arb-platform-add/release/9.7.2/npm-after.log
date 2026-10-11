@@ -1,4 +1,0 @@
-npm ERR! code EBADPLATFORM
-npm ERR! notsup Unsupported platform for platform-specifying-test-package@1.0.0: wanted {"os":"win32"} (current: {"os":"darwin"})
-npm ERR! notsup Valid os:  win32
-npm ERR! notsup Actual os: darwin
