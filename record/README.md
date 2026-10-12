@@ -15,6 +15,11 @@ The two phases install `pkg-before` from scratch (`before`), then `pkg` in the s
 (`after`, absent when the package manager fails). The second install runs the edit's command again over `after`:
 a lock that changes or is rejected there is a failure for the regenerator too.
 
+`record-npm-repository.sh`, `record-yarn-classic-repository.sh` and `record-pnpm-repository.sh` record a
+`lock/repository/<package manager>/<scenario>` the same way, over a whole repository tree laid out as `repo/`: the
+package manager runs in the scenario's `lock-dir`, so a workspace root above it, a member beside it and a `file:`
+target elsewhere in the repository are all there for it to read.
+
 ## Recording a scenario
 
 1. Make `lock/<family>/<scenario>/` with `pkg-before`, `pkg`, a one-line `about`, and any config files the

@@ -80,6 +80,6 @@ if [ -z "${NO_HTTP:-}" ]; then
   EXTRA=()
   [ -f "$D/http-extra" ] && while read -r l; do [ -n "$l" ] && EXTRA+=("$l"); done < "$D/http-extra"
   # shellcheck disable=SC2046
-  "$NODE" "$BIN/fetch-http.js" "$D" $("$NODE" "$BIN/pnpm-lock-names.js" "$D") "${EXTRA[@]}"
+  "$NODE" "$BIN/fetch-http.js" "$D" $("$NODE" "$BIN/pnpm-lock-names.js" "$D") ${EXTRA[@]+"${EXTRA[@]}"}
 fi
 echo "$(basename "$D") before=$B after=$A"

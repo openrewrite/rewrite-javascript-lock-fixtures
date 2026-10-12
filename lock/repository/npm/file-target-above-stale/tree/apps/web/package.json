@@ -1,0 +1,9 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "dependencies": {
+    "lib": "file:../../libs/lib",
+    "is-odd": "3.0.0",
+    "ms": "2.1.3"
+  }
+}

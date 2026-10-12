@@ -1,0 +1,1 @@
+A pnpm workspace listing members by pattern and by path; the edit bumps a dependency of one member and adds one to another, and leaves a third alone.
