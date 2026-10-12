@@ -1,0 +1,7 @@
+# after
+GET https://registry.npmmirror.com/@types%2fms abbreviated recorded
+GET https://registry.npmmirror.com/@types/ms/-/ms-0.7.34.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmmirror.com/@types%2fms abbreviated recorded
+GET https://registry.npmmirror.com/@types/ms/-/ms-0.7.34.tgz tarball tarball

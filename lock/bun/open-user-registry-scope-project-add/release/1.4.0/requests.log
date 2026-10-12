@@ -1,0 +1,8 @@
+# after
+GET https://registry.npmmirror.com/@types%2fms abbreviated recorded
+GET https://registry.yarnpkg.com/ms abbreviated recorded
+# again
+# cross
+GET https://registry.npmmirror.com/@types%2fms abbreviated recorded
+GET https://registry.yarnpkg.com/ms abbreviated recorded
+# cross-again

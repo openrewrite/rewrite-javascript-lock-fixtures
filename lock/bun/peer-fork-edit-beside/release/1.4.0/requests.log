@@ -1,0 +1,6 @@
+# after
+GET https://registry.npmjs.org/escape-string-regexp abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/escape-string-regexp abbreviated recorded
+# cross-again

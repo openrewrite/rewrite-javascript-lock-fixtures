@@ -1,0 +1,5 @@
+# after
+GET https://registry.npmjs.org/ms/-/ms-2.1.3.tgz tarball tarball
+# cross
+GET https://registry.npmjs.org/ms abbreviated recorded
+GET https://registry.npmjs.org/ms/-/ms-2.1.3.tgz tarball tarball

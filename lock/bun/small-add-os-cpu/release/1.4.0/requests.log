@@ -1,0 +1,6 @@
+# after
+GET https://registry.npmjs.org/@napi-rs%2fnice-linux-x64-gnu abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/@napi-rs%2fnice-linux-x64-gnu abbreviated recorded
+# cross-again

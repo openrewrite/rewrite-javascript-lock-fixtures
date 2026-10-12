@@ -1,0 +1,7 @@
+# after
+GET https://registry.npmjs.org/isarray abbreviated recorded
+GET https://registry.npmjs.org/isarray/-/isarray-2.0.5.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/isarray abbreviated recorded
+GET https://registry.npmjs.org/isarray/-/isarray-2.0.5.tgz tarball tarball

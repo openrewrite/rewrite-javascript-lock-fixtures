@@ -14,10 +14,13 @@
 //                                       install's rewrite of it
 //       expect, expect-cross            the outcome of the edit and of cross when it is not byte-exact
 //       bun-<phase>.log                 bun's output for a phase that failed
+//       requests.log                    the requests of the phases a replay reads, as the sweep's requests.log has
+//                                       them (under `# <phase>`, each with what answered it): after and again where
+//                                       the outcome holds an after, cross and cross-again
 //   <scenario>/http/...                 the registry documents a replay of the after, cross or second-install phases
-//                                       asked for that the recording did not keep, as the sweep's frozen registry
-//                                       served them (http/ for registry.npmjs.org and the recording's loopback stub,
-//                                       http-<label>/ for registry.<label>.<tld>)
+//                                       asked for that the scenario does not keep under that host's own directory
+//                                       (http/ for registry.npmjs.org and the recording's loopback stub, http-<label>/
+//                                       for registry.<label>.<tld>), as the sweep's frozen registry served them
 // An outcome is what the regeneration writes too: the lock where the scenario keeps it (lock-dir's for a lockdir
 // scenario) for the edit over the release's own before and for cross, with each phase's exit and error lines, the
 // second install over each, the before it edits over, and for a lockdir or rundir scenario which locks the edit
@@ -220,25 +223,30 @@ const homeOf = (scenarioDir, key) => {
   if (labels.length >= 3 && labels[0] === 'registry') return `http-${labels[1]}`
   return null
 }
+// the lines of a cell's requests.log (`# <phase>` and its requests) of the phases a replay reads: the edit over the
+// release's own before and its second install where the outcome holds that edit (without a before it installed from
+// scratch), cross and its second install
+const replayedRequests = c => {
+  const out = []
+  let phase = null
+  for (const line of String(read(path.join(c.dir, 'requests.log')) || '').split('\n')) {
+    const h = line.match(/^# (\S+)/)
+    if (h) phase = h[1]
+    if (!line || !['after', 'again', 'cross', 'cross-again'].includes(phase)) continue
+    if ((phase === 'after' || phase === 'again') && !c.outcome.after) continue
+    out.push({ phase, line, header: !!h })
+  }
+  return out
+}
 // the engine resolves, and so asks the registry, only where its replay is to write the lock
 const RESOLVES = /^(exact|exact-or|second-install-rejects)\b/
 const addHttp = (scenario, cells, review, added) => {
   const dir = path.join(FIXTURES, scenario)
   for (const c of cells) {
-    let phase = null
-    for (const line of String(read(path.join(c.dir, 'requests.log')) || '').split('\n')) {
-      const h = line.match(/^# (\S+)/)
-      if (h) {
-        phase = h[1]
-        continue
-      }
-      if (!['after', 'again', 'cross', 'cross-again'].includes(phase)) continue
-      if (phase === 'after' || phase === 'again') {
-        // the edit over the release's own before only: without one it installed from scratch
-        if (!c.outcome.after || !RESOLVES.test(c.expect.after || 'exact')) continue
-      } else if (!RESOLVES.test(c.expect.cross || 'exact')) {
-        continue
-      }
+    for (const { phase, line, header } of replayedRequests(c)) {
+      if (header) continue
+      const expect = phase === 'after' || phase === 'again' ? c.expect.after : c.expect.cross
+      if (!RESOLVES.test(expect || 'exact')) continue
       const m = line.match(/^GET (https?):\/\/([^/\s]+)(\/\S*) (abbreviated|full) (.*)$/)
       if (!m) continue
       const how = m[5]
@@ -256,8 +264,9 @@ const addHttp = (scenario, cells, review, added) => {
       }
       const file = m[4] === 'full' ? `${name}@full` : name
       const own = path.join(dir, home, file)
-      // the replay's registry reads a mirror's own directory where the scenario has one, and http/ after it
-      const recorded = [own, path.join(dir, 'http', file)]
+      // a document is kept only in its host's own directory: http/ holds registry.npmjs.org's, and a mirror's own can
+      // differ from it (registry.npmmirror.com's names its own tarball URLs)
+      const recorded = [own]
       if (home !== 'http') recorded.push(path.join(dir, home, file.replace('/', '%2f')))
       if (recorded.some(f => fs.existsSync(f)) || added.has(own)) continue
       const kept = path.join(SWEEP, '_overlay', NAMESPACE, scenario, key, file)
@@ -394,6 +403,8 @@ const main = () => {
       for (const ph of ['before', 'after', 'cross']) {
         if (o[ph] && o[ph].exit !== 0) write(path.join(gdir, `bun-${ph}.log`), stable(read(path.join(g.cell.dir, `${ph}.log`))))
       }
+      const requests = replayedRequests(g.cell)
+      if (requests.length) write(path.join(gdir, 'requests.log'), requests.map(r => r.line).join('\n') + '\n')
       groupsWritten++
       report.push(`${scenario}  release/${label}  [${spans.join(', ')}]  after: ${expect || '-'}  cross: ${expectCross || '-'}`)
     }

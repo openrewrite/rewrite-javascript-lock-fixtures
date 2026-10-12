@@ -1,0 +1,11 @@
+# after
+GET https://registry.npmjs.org/which abbreviated recorded
+GET https://registry.npmjs.org/isexe abbreviated recorded
+GET https://registry.npmjs.org/which/-/which-2.0.2.tgz tarball tarball
+GET https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/which abbreviated recorded
+GET https://registry.npmjs.org/isexe abbreviated recorded
+GET https://registry.npmjs.org/which/-/which-2.0.2.tgz tarball tarball
+GET https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz tarball tarball

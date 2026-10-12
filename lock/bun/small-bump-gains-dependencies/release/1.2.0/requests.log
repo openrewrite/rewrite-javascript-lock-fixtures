@@ -1,0 +1,10 @@
+# after
+GET https://registry.npmjs.org/wrappy abbreviated recorded
+GET https://registry.npmjs.org/once/-/once-1.4.0.tgz tarball tarball
+GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/once abbreviated recorded
+GET https://registry.npmjs.org/wrappy abbreviated recorded
+GET https://registry.npmjs.org/once/-/once-1.4.0.tgz tarball tarball
+GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz tarball tarball

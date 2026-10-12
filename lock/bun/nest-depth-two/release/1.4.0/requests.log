@@ -1,0 +1,14 @@
+# after
+GET https://registry.npmjs.org/is-even abbreviated recorded
+GET https://registry.npmjs.org/is-odd abbreviated recorded
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/kind-of abbreviated recorded
+GET https://registry.npmjs.org/is-buffer abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/is-even abbreviated recorded
+GET https://registry.npmjs.org/is-odd abbreviated recorded
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/kind-of abbreviated recorded
+GET https://registry.npmjs.org/is-buffer abbreviated recorded
+# cross-again

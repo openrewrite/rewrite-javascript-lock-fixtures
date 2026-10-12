@@ -1,0 +1,9 @@
+# after
+GET https://registry.npmjs.org/anymatch abbreviated recorded
+GET https://registry.npmjs.org/normalize-path abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/anymatch abbreviated recorded
+GET https://registry.npmjs.org/picomatch abbreviated recorded
+GET https://registry.npmjs.org/normalize-path abbreviated recorded
+# cross-again

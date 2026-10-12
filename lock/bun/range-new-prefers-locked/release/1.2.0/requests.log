@@ -1,0 +1,8 @@
+# after
+GET https://registry.npmjs.org/humanize-ms abbreviated recorded
+GET https://registry.npmjs.org/humanize-ms/-/humanize-ms-1.2.1.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/humanize-ms abbreviated recorded
+GET https://registry.npmjs.org/ms abbreviated recorded
+GET https://registry.npmjs.org/humanize-ms/-/humanize-ms-1.2.1.tgz tarball tarball

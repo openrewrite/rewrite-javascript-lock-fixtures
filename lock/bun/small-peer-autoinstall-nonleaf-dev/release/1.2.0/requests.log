@@ -1,0 +1,15 @@
+# after
+GET https://registry.npmjs.org/better-opn abbreviated recorded
+GET https://registry.npmjs.org/better-opn/-/better-opn-0.1.0.tgz tarball tarball
+GET https://registry.npmjs.org/opn abbreviated recorded
+GET https://registry.npmjs.org/is-wsl abbreviated recorded
+GET https://registry.npmjs.org/opn/-/opn-5.5.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-wsl/-/is-wsl-1.1.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/better-opn abbreviated recorded
+GET https://registry.npmjs.org/better-opn/-/better-opn-0.1.0.tgz tarball tarball
+GET https://registry.npmjs.org/opn abbreviated recorded
+GET https://registry.npmjs.org/is-wsl abbreviated recorded
+GET https://registry.npmjs.org/opn/-/opn-5.5.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-wsl/-/is-wsl-1.1.0.tgz tarball tarball

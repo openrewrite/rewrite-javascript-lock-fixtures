@@ -1,0 +1,27 @@
+# after
+GET https://registry.npmjs.org/is-even abbreviated recorded
+GET https://registry.npmjs.org/is-odd abbreviated recorded
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/is-odd/-/is-odd-3.0.1.tgz tarball tarball
+GET https://registry.npmjs.org/is-even/-/is-even-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-odd/-/is-odd-0.1.2.tgz tarball tarball
+GET https://registry.npmjs.org/kind-of abbreviated recorded
+GET https://registry.npmjs.org/is-number/-/is-number-6.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-number/-/is-number-3.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-buffer abbreviated recorded
+GET https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz tarball tarball
+GET https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/is-even abbreviated recorded
+GET https://registry.npmjs.org/is-odd abbreviated recorded
+GET https://registry.npmjs.org/is-even/-/is-even-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/is-odd/-/is-odd-3.0.1.tgz tarball tarball
+GET https://registry.npmjs.org/is-odd/-/is-odd-0.1.2.tgz tarball tarball
+GET https://registry.npmjs.org/kind-of abbreviated recorded
+GET https://registry.npmjs.org/is-number/-/is-number-6.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-number/-/is-number-3.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-buffer abbreviated recorded
+GET https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz tarball tarball
+GET https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz tarball tarball

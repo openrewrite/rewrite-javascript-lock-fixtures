@@ -1,0 +1,6 @@
+# after
+GET https://registry.npmjs.org/isarray abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/isarray abbreviated recorded
+# cross-again
