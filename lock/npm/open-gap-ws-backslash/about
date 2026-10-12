@@ -1,0 +1,1 @@
+Workspaces named by a pattern written with a backslash (packages\*): @npmcli/map-workspaces reads the backslash as a slash from 2.0.1 (npm 8.5.3), as glob's escape before, so the members come in from npm 8.5.3; a root dependency is added.

@@ -1,0 +1,1 @@
+Workspace patterns as glob walks them: packages/*/** finds packages/a itself (** matches no portion) and packages/a/plugin, tools/./t finds tools/t until npm 10.5.2 (whose map-workspaces 3.0.6 drops it again), libs/*// finds libs/l; a root dependency is added.
