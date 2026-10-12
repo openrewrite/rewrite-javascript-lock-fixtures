@@ -35,13 +35,19 @@
 //     differs, the same kind with this release's words, and the recording's line where it says the engine cannot know
 //     the outcome or the input is malformed;
 //   - Yarn's own failure otherwise: `pm-rejects <message>` for the message of an error Yarn reports as its own
-//     (`error <message>`, a registry's `Not found`), `pm-fails <message>` for an unexpected one (`An unexpected error
-//     occurred: ...`, an Error's stack, a crash), the kind alone where the release prints no error; a message is cut
+//     (`error <message>`) and for a registry's `Not found` however Yarn reports it, `pm-fails <message>` for an
+//     unexpected one (`An unexpected error occurred: ...`, an Error's stack, a crash), the kind alone where the release
+//     prints no error; a message is cut
 //     where it names a scratch path, a home or the stub, which differ on every machine, or the workspace aggregator's
 //     random name;
 //   - a lock written where the recording's line says the engine cannot know it, or that the input is malformed (a
 //     Berry lock 1.19.0 sets aside, which 1.17.0 to 1.18.0 read as theirs): `exact-or <line>` (sweep-export.js); the
 //     recording's `not-reproduced` line stands as it is;
+//   - where the recording's line says nothing the engine cannot know, what the recorders give the engine to not know,
+//     as the line of the cannot-know above: a run in a member directory no workspaces list that writes the member's
+//     lock (`after-member-lock`) where the recording release writes none (the line of open-cwd-unlisted-member's
+//     recording, the scenario's `cwd` in it), and a lock that names yarn's cache folder (the line of
+//     open-fetch-tarball-file-dependency's recording, the dependency and its package as the lock names them);
 //   - a lock a second install (fixpoint or again) rewrites or rejects: `second-install-rejects`.
 //
 // Usage: node sweep-export-yarn-classic.js --sweep <sweep>/yarn-classic --fixtures <fixtures>/lock/yarn-classic
@@ -181,6 +187,9 @@ const cut = message => {
 const kindOf = first => {
   if (first == null) return 'pm-fails'
   const message = first.replace(/^error /, '')
+  // the registry's verdict however yarn reports it: before 1.5.0 a nested request's 404 is an unexpected error, as a
+  // root request's is in every release before 1.22.20
+  if (/: Not found$/.test(core(first))) return 'pm-rejects'
   if (!/^error /.test(first) || /^An unexpected error occurred: /.test(message)) return 'pm-fails'
   if (/: Not found$/.test(message)) return 'pm-rejects'
   return /^(?:[A-Z]\w*)?Error\b[^:]*: /.test(message) ? 'pm-fails' : 'pm-rejects'
@@ -198,7 +207,7 @@ const firstLine = fail => fail == null ? null : String(fail).split('\n')[0]
 
 // the outcome of after or cross when it is not the lock byte for byte; base is the recording release's cell, previous
 // the release swept before this one (whose error a release that prints none, 1.22.20, ended with)
-const classify = ({ o, phase, base, previous, rootExpect, second }) => {
+const classify = ({ o, phase, base, previous, rootExpect, second, cwd }) => {
   const exit = o.exits[phase]
   if (exit === undefined) return null
   const kind = (rootExpect || 'exact').split(/\s+/)[0]
@@ -221,8 +230,31 @@ const classify = ({ o, phase, base, previous, rootExpect, second }) => {
   // discards as malformed this one may read: the lock byte for byte when the engine writes one, the recording's own
   // line when not
   if (kind === 'cannot-know' || kind === 'malformed') return rejects(second) ? rootExpect : `exact-or ${rootExpect}`
+  // what the recorders say the engine cannot know, where this release writes it and the recording release does not:
+  // run in a member directory no workspaces list (yarn before 1.7.0 drops a .yarnrc's --focus), it writes the member's
+  // lock, not this one; a lock that names yarn's cache folder, which differs from machine to machine
+  const unknowable = o.memberLock !== '-' && base.memberLock === '-' && cwd ?
+    `cannot-know the lock yarn writes: run in ${cwd}, which no workspaces list, it writes ${cwd}/yarn.lock (member ` +
+    'lock written), not this lock' : cacheEntryOf(o.text[phase])
+  if (unknowable) return rejects(second) ? unknowable : `exact-or ${unknowable}`
   if (rejects(second)) return 'second-install-rejects'
   return 'exact'
+}
+
+// the cannot-know of a lock entry's dependency written relative to yarn's cache folder (the sweep's <tmp>/cache), in
+// the words the recorders give it, as far as the lock says them
+const cacheEntryOf = text => {
+  let entry = null
+  let type = null
+  for (const line of String(text || '').split('\n')) {
+    if (/^\S.*:$/.test(line)) entry = line.slice(0, -1).split(', ')[0].replace(/^"|"$/g, '').replace(/(.)@[^@]*$/, '$1')
+    else if (/^ {2}\S.*:$/.test(line)) type = line.trim().slice(0, -1)
+    else if (/^ {4}\S/.test(line) && line.includes('<tmp>/cache/') && entry && type) {
+      const name = line.trim().split(' ')[0].replace(/^"|"$/g, '')
+      return `cannot-know where yarn's cache sits, which the ${type} entry ${name} of ${entry} is written relative to`
+    }
+  }
+  return null
 }
 
 // ---- the registry documents and tarballs a replay asks for that the recording lacks ---------------------------------
@@ -390,6 +422,7 @@ const main = () => {
     }
     const rootExpect = (read(path.join(dir, 'expect')) || '').trim() || null
     const given = fs.existsSync(path.join(dir, 'before-given')) || /^before exit=given/m.test(recorded)
+    const cwd = (read(path.join(dir, 'cwd')) || '').trim()
     const groups = new Map()
     for (const o of cells) {
       const r = o.release
@@ -419,9 +452,9 @@ const main = () => {
         `before exit=${exit('before')}, after exit=${exit('after')}, cross exit=${exit('cross')}\n`)
       for (const f of LOCKS) if (o.text[f] != null) write(path.join(gdir, f), o.text[f])
       const previous = cells.find(x => x.release === swept[swept.indexOf(label) - 1]) || null
-      const expect = classify({ o, phase: 'after', base, previous, rootExpect, second: o.second.after })
+      const expect = classify({ o, phase: 'after', base, previous, rootExpect, second: o.second.after, cwd })
       const expectCross = given ? null :
-        classify({ o, phase: 'cross', base, previous, rootExpect, second: o.second.cross })
+        classify({ o, phase: 'cross', base, previous, rootExpect, second: o.second.cross, cwd })
       if (expect && expect !== 'exact') write(path.join(gdir, 'expect'), expect + '\n')
       if (expectCross && expectCross !== 'exact') write(path.join(gdir, 'expect-cross'), expectCross + '\n')
       for (const ph of PHASES) if (o.exits[ph]) write(path.join(gdir, `yarn-${ph}.log`), stable(o.log[ph]))
