@@ -1,0 +1,3 @@
+{
+  "review-option-offline-mode-range": "the edit sets enableOfflineMode, under which Yarn resolves from what its cache and metadata folder hold. The recording's edit ran with the first phase's cache (ms 2.1.2 only) and asked the registry nothing; the `after` phase, replayed the same way, reproduces. `cross` starts from the fixture's `before` in a fresh directory with an empty cache and metadata folder, so Yarn asks the registry and takes ms 2.1.3. Not a harness infidelity: `cross` is no recorded phase."
+}

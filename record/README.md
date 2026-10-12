@@ -31,3 +31,9 @@ The recordings are hermetic: HOME, the XDG directories, caches and the user conf
 so no `~/.npmrc` or other user configuration is read and no credential is recorded. A scenario that needs a user
 config names it (`user-npmrc`, `user-yarnrc-yml`, ...). Every recorder runs `redact-paths.js` (machine paths) and
 `strip-registry-people.js` (maintainer, author, contributor and README fields) over what it wrote.
+
+## Other releases
+
+A scenario's `releases` file and `release/<first>/` outcomes say what every other release of its package manager
+writes. They are written by the release sweep in [`sweep/`](sweep/README.md), which replays each real release over
+the recorded scenarios against their own registry responses.
