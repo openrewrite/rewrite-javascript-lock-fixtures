@@ -1,0 +1,1 @@
+A dependency added as a tag with spaces around it (" latest "): npm-package-arg trims a registry spec from 8.1.4 (npm 7.16.0); before, the spaces make it an invalid tag name (EINVALIDTAGNAME).

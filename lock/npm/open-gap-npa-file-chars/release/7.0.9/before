@@ -1,0 +1,65 @@
+{
+  "name": "npa-file-chars",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "npa-file-chars",
+      "version": "1.0.0",
+      "dependencies": {
+        "a": "file:libs/a#1",
+        "b": "file:libs/b%41",
+        "c": "file:libs/c?x"
+      }
+    },
+    "libs/a#1": {
+      "version": "1.0.0",
+      "dependencies": {
+        "abbrev": "1.1.1"
+      }
+    },
+    "libs/b%41": {
+      "version": "1.0.0"
+    },
+    "libs/c?x": {
+      "version": "1.0.0"
+    },
+    "node_modules/a": {
+      "resolved": "libs/a#1",
+      "link": true
+    },
+    "node_modules/abbrev": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz",
+      "integrity": "sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q=="
+    },
+    "node_modules/b": {
+      "resolved": "libs/b%41",
+      "link": true
+    },
+    "node_modules/c": {
+      "resolved": "libs/c?x",
+      "link": true
+    }
+  },
+  "dependencies": {
+    "a": {
+      "version": "file:libs/a#1",
+      "requires": {
+        "abbrev": "1.1.1"
+      }
+    },
+    "abbrev": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz",
+      "integrity": "sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q=="
+    },
+    "b": {
+      "version": "file:libs/b%41"
+    },
+    "c": {
+      "version": "file:libs/c?x"
+    }
+  }
+}
