@@ -1,1 +1,0 @@
-Yarn 4.15.0 over the version 8 lock 4.10.3 wrote: its migration rules write approvedGitRepositories, enableScripts and npmMinimalAgeGate 0 to .yarnrc.yml, so ^1.0.0 takes fresh-pkg@1.1.0

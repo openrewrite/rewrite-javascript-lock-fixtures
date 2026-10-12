@@ -12,9 +12,6 @@
 //            is written in the ustar name field instead of path (for pax / GNU long names)
 //   "tarball": "url"         dist.tarball instead of REGISTRY/<name>/-/<name>-<version>.tgz
 //   "noDist": true           no dist object at all
-//   "publishedHoursAgo": n   the version's entry in the packument's time, n hours before the overlay is made (a replay
-//                            runs at the start of the recording's day, so n must keep each version on the same side
-//                            of an age gate from there too)
 // }], "distTags": {"<name>": {"latest": "<version>"}}}
 // Usage: node record/make-berry-overlay.js <scenario-dir>
 const fs = require('fs')
@@ -132,10 +129,6 @@ for (const p of spec.packages) {
   const doc = packuments.get(p.name)
   doc.versions[p.version] = versionEntry
   doc['dist-tags'].latest = p.version
-  if (p.publishedHoursAgo !== undefined) {
-    const published = new Date(Date.now() - p.publishedHoursAgo * 3600 * 1000).toISOString()
-    doc.time = {...(doc.time || {created: published}), modified: published, [p.version]: published}
-  }
 }
 for (const [name, tags] of Object.entries(spec.distTags || {})) packuments.get(name)['dist-tags'] = tags
 

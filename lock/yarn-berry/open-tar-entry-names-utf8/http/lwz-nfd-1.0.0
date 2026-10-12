@@ -1,9 +1,0 @@
-{
-  "name": "lwz-nfd",
-  "version": "1.0.0",
-  "dist": {
-    "shasum": "4ceccc84d611ab8bb1d1ca442f50972d061b8e95",
-    "integrity": "sha512-8g0cZeqQVPEqahCcCGsY/x6exCesdDDBVRAIWRa+RyJ8Rn6YrjfrwmySk3m8ppaPQ/T7ecrJYXoLkwadLJaN0Q==",
-    "tarball": "https://registry.npmjs.org/lwz-nfd/-/lwz-nfd-1.0.0.tgz"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "name": "lwz-control",
-  "version": "1.0.0",
-  "dist": {
-    "shasum": "22d465e367504b92326d4e0b9386c05aaf355ded",
-    "integrity": "sha512-D267MdjgXYruIVJxDBUVm9fkXP2Bxa+iWz+0EPR9VNT0BAuvnqJWyx2hEVfNzNg4eNpXkxK3O6pPJLcnOXs9EA==",
-    "tarball": "https://registry.npmjs.org/lwz-control/-/lwz-control-1.0.0.tgz"
-  }
-}

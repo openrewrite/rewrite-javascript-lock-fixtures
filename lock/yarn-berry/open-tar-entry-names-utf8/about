@@ -1,1 +1,0 @@
-Adding packages whose tarball entry names are NFC, NFD, an emoji, a pax long name, a non-ASCII directory, or hold a control character with and without non-ASCII (lwz-ascii is the ASCII control): which names Yarn's libzip flags as UTF-8 (general purpose bit 11), and the checksum.

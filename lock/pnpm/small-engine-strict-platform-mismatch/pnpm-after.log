@@ -1,4 +1,0 @@
-Progress: resolved 1, reused 0, downloaded 0, added 0
-[ERR_PNPM_UNSUPPORTED_PLATFORM] Unsupported platform for @esbuild/linux-x64@0.24.0: wanted {"cpu":["x64"],"os":["linux"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
-
-This error happened while installing a direct dependency of <tmp>/project

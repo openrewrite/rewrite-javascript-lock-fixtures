@@ -1,1 +1,0 @@
-Upgrade a dependency beside both an npm-shrinkwrap.json and a package-lock.json: npm writes the shrinkwrap and leaves the package-lock.json as it was.

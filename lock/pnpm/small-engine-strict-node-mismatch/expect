@@ -1,1 +1,0 @@
-not-reproduced until openrewrite/rewrite#9156 merges; then: pm-rejects ERR_PNPM_UNSUPPORTED_ENGINE
