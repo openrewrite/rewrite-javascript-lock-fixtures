@@ -1,0 +1,10 @@
+# after
+GET https://registry.npmjs.org/better-opn abbreviated recorded
+GET https://registry.npmjs.org/opn abbreviated recorded
+GET https://registry.npmjs.org/is-wsl abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/better-opn abbreviated recorded
+GET https://registry.npmjs.org/opn abbreviated recorded
+GET https://registry.npmjs.org/is-wsl abbreviated recorded
+# cross-again

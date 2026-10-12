@@ -1,0 +1,6 @@
+# after
+GET https://api.github.com/repos/jonschlinkert/is-number/tarball/7.0.0 url live-url
+# again
+# cross
+GET https://api.github.com/repos/jonschlinkert/is-number/tarball/7.0.0 url live-url
+# cross-again

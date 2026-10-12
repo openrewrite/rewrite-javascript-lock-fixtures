@@ -1,0 +1,6 @@
+# after
+GET https://registry.npmjs.org/@isaacs%2ftesting-fail-install abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/@isaacs%2ftesting-fail-install abbreviated recorded
+# cross-again

@@ -1,0 +1,15 @@
+# after
+GET https://registry.npmjs.org/@isaacs%2ftesting-dev-optional-flags abbreviated recorded
+GET https://registry.npmjs.org/wrappy abbreviated recorded
+GET https://registry.npmjs.org/own-or abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-dev-optional-flags/-/testing-dev-optional-flags-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz tarball tarball
+GET https://registry.npmjs.org/own-or/-/own-or-1.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/@isaacs%2ftesting-dev-optional-flags abbreviated recorded
+GET https://registry.npmjs.org/wrappy abbreviated recorded
+GET https://registry.npmjs.org/own-or abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-dev-optional-flags/-/testing-dev-optional-flags-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz tarball tarball
+GET https://registry.npmjs.org/own-or/-/own-or-1.0.0.tgz tarball tarball

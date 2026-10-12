@@ -1,0 +1,7 @@
+# after
+GET https://registry.npmjs.org/escape-string-regexp abbreviated recorded
+GET https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/escape-string-regexp abbreviated recorded
+GET https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz tarball tarball

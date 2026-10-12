@@ -1,0 +1,7 @@
+# after
+GET https://registry.npmjs.org/wrappy abbreviated recorded
+# again
+# cross
+GET https://registry.npmjs.org/once abbreviated recorded
+GET https://registry.npmjs.org/wrappy abbreviated recorded
+# cross-again

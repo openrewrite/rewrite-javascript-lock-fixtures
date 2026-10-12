@@ -1,0 +1,6 @@
+# after
+GET https://registry.npmjs.org/@isaacs/testing-peer-dep-conflict-chain-single-b/-/testing-peer-dep-conflict-chain-single-b-2.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/@isaacs%2ftesting-peer-dep-conflict-chain-single-b abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-peer-dep-conflict-chain-single-b/-/testing-peer-dep-conflict-chain-single-b-2.0.0.tgz tarball tarball

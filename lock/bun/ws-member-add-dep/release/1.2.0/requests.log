@@ -1,0 +1,8 @@
+# after
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/ms abbreviated recorded
+GET https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz tarball tarball

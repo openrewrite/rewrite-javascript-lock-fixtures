@@ -1,0 +1,9 @@
+# after
+GET https://registry.npmjs.org/debug abbreviated live (cut at 2026-10-05T23:59:59Z, 0 later versions dropped)
+GET https://registry.npmjs.org/is-number abbreviated live (cut at 2026-10-05T23:59:59Z, 0 later versions dropped)
+GET https://registry.npmjs.org/ms abbreviated live (cut at 2026-10-05T23:59:59Z, 0 later versions dropped)
+# again
+# cross
+GET https://registry.npmjs.org/debug abbreviated live (cut at 2026-10-05T23:59:59Z, 0 later versions dropped)
+GET https://registry.npmjs.org/is-number abbreviated live (cut at 2026-10-05T23:59:59Z, 0 later versions dropped)
+GET https://registry.npmjs.org/ms abbreviated live (cut at 2026-10-05T23:59:59Z, 0 later versions dropped)

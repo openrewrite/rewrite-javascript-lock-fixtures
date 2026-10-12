@@ -1,0 +1,19 @@
+# after
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps abbreviated recorded
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps-a abbreviated recorded
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps-c abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps/-/testing-bundledeps-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps-b abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps-a/-/testing-bundledeps-a-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps-c/-/testing-bundledeps-c-2.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps-b/-/testing-bundledeps-b-1.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps abbreviated recorded
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps-a abbreviated recorded
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps-c abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps/-/testing-bundledeps-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps-a/-/testing-bundledeps-a-1.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/@isaacs%2ftesting-bundledeps-b abbreviated recorded
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps-c/-/testing-bundledeps-c-2.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/@isaacs/testing-bundledeps-b/-/testing-bundledeps-b-1.0.0.tgz tarball tarball

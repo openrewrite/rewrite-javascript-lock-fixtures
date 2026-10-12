@@ -1,0 +1,9 @@
+# after
+GET http://127.0.0.1:48731/zz-vb-peer-b abbreviated recorded
+GET http://127.0.0.1:48731/zz-vb-peer-a abbreviated recorded (held 1500 ms)
+GET http://127.0.0.1:48731/zz-vb-peer-p abbreviated recorded
+# again
+# cross
+GET http://127.0.0.1:48731/zz-vb-peer-b abbreviated recorded
+GET http://127.0.0.1:48731/zz-vb-peer-a abbreviated recorded (held 1500 ms)
+GET http://127.0.0.1:48731/zz-vb-peer-p abbreviated recorded

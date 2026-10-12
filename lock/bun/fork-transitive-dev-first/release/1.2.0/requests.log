@@ -1,0 +1,17 @@
+# after
+GET https://registry.npmjs.org/to-regex-range abbreviated recorded
+GET https://registry.npmjs.org/is-odd abbreviated recorded
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/is-odd/-/is-odd-3.0.1.tgz tarball tarball
+GET https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz tarball tarball
+GET https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-number/-/is-number-6.0.0.tgz tarball tarball
+# again
+# cross
+GET https://registry.npmjs.org/to-regex-range abbreviated recorded
+GET https://registry.npmjs.org/is-odd abbreviated recorded
+GET https://registry.npmjs.org/is-number abbreviated recorded
+GET https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz tarball tarball
+GET https://registry.npmjs.org/is-odd/-/is-odd-3.0.1.tgz tarball tarball
+GET https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz tarball tarball
+GET https://registry.npmjs.org/is-number/-/is-number-6.0.0.tgz tarball tarball
