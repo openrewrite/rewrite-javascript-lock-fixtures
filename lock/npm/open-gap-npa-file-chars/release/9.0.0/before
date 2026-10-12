@@ -1,0 +1,24 @@
+{
+  "name": "npa-file-chars",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "npa-file-chars",
+      "version": "1.0.0",
+      "dependencies": {
+        "a": "file:libs/a#1",
+        "b": "file:libs/b%41"
+      }
+    },
+    "node_modules/a": {
+      "version": "2.0.0",
+      "resolved": "file:libs/a"
+    },
+    "node_modules/b": {
+      "version": "2.0.0",
+      "resolved": "file:libs/bA"
+    }
+  }
+}

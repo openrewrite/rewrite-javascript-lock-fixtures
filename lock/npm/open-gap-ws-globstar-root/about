@@ -1,0 +1,1 @@
+Workspaces ["**"]: glob 9 and 10 behind map-workspaces 3.0.3 and 3.0.4 (npm 9.6.3 to 10.5.1) find the project directory itself as a member, glob 7 and 8 before and map-workspaces 3.0.6 after do not; a root dependency is added.
