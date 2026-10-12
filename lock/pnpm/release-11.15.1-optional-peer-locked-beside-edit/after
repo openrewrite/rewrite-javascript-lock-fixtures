@@ -1,0 +1,44 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@isaacs/testing-peer-optional-conflict-b-x':
+        specifier: 1.0.0
+        version: 1.0.0(@isaacs/testing-peer-optional-conflict-b-y@2.0.0)
+      is-number:
+        specifier: 7.0.0
+        version: 7.0.0
+
+packages:
+
+  '@isaacs/testing-peer-optional-conflict-b-x@1.0.0':
+    resolution: {integrity: sha512-19feHJAqq5HG2RrN2zHXiPXujXqHgJuGyZaKFolghgYKyncZYRpBwxboSDgMp8SxyrGx9EF74x6yarrVXRo9hw==}
+    peerDependencies:
+      '@isaacs/testing-peer-optional-conflict-b-y': '2'
+    peerDependenciesMeta:
+      '@isaacs/testing-peer-optional-conflict-b-y':
+        optional: true
+
+  '@isaacs/testing-peer-optional-conflict-b-y@2.0.0':
+    resolution: {integrity: sha512-85pQWyE3xVc7wt3z8wTWGNSaUQ83UAF4oloEi7UcNUfXqa5HPMPbmBg4pwoF6X4GdufTCzmwRyEvF9Ru3hShVg==}
+
+  is-number@7.0.0:
+    resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
+    engines: {node: '>=0.12.0'}
+
+snapshots:
+
+  '@isaacs/testing-peer-optional-conflict-b-x@1.0.0(@isaacs/testing-peer-optional-conflict-b-y@2.0.0)':
+    optionalDependencies:
+      '@isaacs/testing-peer-optional-conflict-b-y': 2.0.0
+
+  '@isaacs/testing-peer-optional-conflict-b-y@2.0.0':
+    optional: true
+
+  is-number@7.0.0: {}

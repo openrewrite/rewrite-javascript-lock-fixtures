@@ -1,0 +1,1 @@
+project2 lowers bufferutil from 4.0.8 to 4.0.7 beside project1's ws@8.18.0, whose optional peer (bufferutil ^4.0.1) was hoisted at 4.0.8, with packageManager pnpm@11.5.1: ws stays at (bufferutil@4.0.8), which stays in the lock, now optional; pnpm 11.5.1 and later count the version the lock holds as a candidate (pnpm/pnpm#12075).

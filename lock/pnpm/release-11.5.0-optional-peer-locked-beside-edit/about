@@ -1,0 +1,1 @@
+Add is-number@7.0.0 beside b-x@1.0.0(b-y@2.0.0), an optional peer only the lock holds (seed-lock is release-11.5.1-optional-peer-provider-removed's after, which pnpm 11.5.1 wrote), with packageManager pnpm@11.5.0: the unrelated edit drops the suffix and prunes b-y; before pnpm 11.5.1 a version only the lock holds is no candidate (pnpm/pnpm#12075).

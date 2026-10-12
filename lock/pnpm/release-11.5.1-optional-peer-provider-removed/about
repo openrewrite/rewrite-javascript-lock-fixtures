@@ -1,0 +1,1 @@
+Remove b-y@2.0.0, the direct dependency that provided b-x@1.0.0's optional peer (b-y 2), with packageManager pnpm@11.5.1: b-x keeps (b-y@2.0.0) and b-y stays, now optional; pnpm 11.5.1 and later count the version the lock holds as a candidate (pnpm/pnpm#12075).

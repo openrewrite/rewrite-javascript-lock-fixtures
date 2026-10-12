@@ -1,0 +1,8 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "@isaacs/testing-peer-optional-conflict-b-x": "1.0.0"
+  },
+  "packageManager": "pnpm@11.28.5"
+}

@@ -1,0 +1,6 @@
+? Verifying lockfile against supply-chain policies (2 entries)...
+Progress: resolved 1, reused 0, downloaded 0, added 0
+✓ Lockfile passes supply-chain policies (2 entries in 120ms)
+Progress: resolved 3, reused 0, downloaded 0, added 0, done
+
+Done in 574ms using pnpm v11.15.1
