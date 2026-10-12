@@ -72,6 +72,9 @@ const arg = (name, dflt) => {
   const i = process.argv.indexOf(`--${name}`)
   return i < 0 ? dflt : process.argv[i + 1]
 }
+// the working directory: the one above bin/ as this script was started (bin/ links to record/sweep, and __dirname is
+// the link's target)
+const ROOT = path.resolve(path.dirname(process.argv[1]), '..')
 const SWEEP = path.resolve(arg('sweep'))
 const CROSS = arg('cross') ? path.resolve(arg('cross')) : null
 const FIXTURES = path.resolve(arg('fixtures'))
@@ -80,8 +83,9 @@ const CREATED_LIST = arg('created-list') ? path.resolve(arg('created-list')) : n
 const REPORT = arg('report') ? path.resolve(arg('report')) : null
 const UNSTABLE = arg('unstable') ? path.resolve(arg('unstable')) : null
 const REPEATS = (arg('repeats') || '').split(',').filter(Boolean).map(d => path.resolve(d))
-// the as-of and live documents the stub served are kept under the namespace of the scenario directory it swept
-const SWEEP_SCENARIOS = path.resolve(arg('sweep-scenarios', path.join(__dirname, '..', 'fixtures', 'lock', 'pnpm')))
+// the as-of and live documents the stub served are kept under the namespace of the scenario directory it swept: its
+// name and a hash of its absolute path, so this must be the path exactly as the sweep was given it
+const SWEEP_SCENARIOS = path.resolve(arg('sweep-scenarios', path.join(ROOT, 'fixtures', 'lock', 'pnpm')))
 const NAMESPACE = `${path.basename(SWEEP_SCENARIOS)}-${crypto.createHash('sha1').update(SWEEP_SCENARIOS).digest('hex').slice(0, 8)}`
 // where the stub kept what it served: the cross runs' copy first, then the sweep's
 const SHARED = (arg('shared') ? arg('shared').split(',') : [CROSS && path.join(path.dirname(CROSS), 'shared'), SWEEP])
@@ -219,7 +223,7 @@ const FILESYSTEM = /\b(ENOENT|ENOTDIR|EISDIR|EACCES|EPERM|EEXIST|ENOTEMPTY|EBUSY
 // the codes the releases' own bundles give the messages they printed without one, looked up once per release before
 // any phase is classified (pnpm-export-source.js); and where that and a code printed elsewhere disagree
 const { codesOf } = require('./pnpm-export-source.js')
-const PM = path.resolve(arg('pm', path.join(__dirname, '..', 'pm', 'pnpm')))
+const PM = path.resolve(arg('pm', path.join(ROOT, 'pm', 'pnpm')))
 const sourceCodes = new Map()
 const sourceDisagrees = new Set()
 

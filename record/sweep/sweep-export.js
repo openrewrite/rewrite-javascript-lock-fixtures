@@ -12,6 +12,7 @@
 // A range joins releases only when every stable release between them was swept and wrote the same outcome.
 // Only scenarios the baseline release reproduces from the fixture are exported.
 // Usage: node sweep-export.js --sweep <sweep out> --fixtures <lock/npm> --packument <npm packument.json>
+//          [--created-list <file>] [--report <file, default <sweep out>/_report/export.txt>]
 //          [--baseline 11.17.0] [--min-major 7] [--dry]
 const fs = require('fs')
 const path = require('path')
@@ -21,11 +22,15 @@ const arg = (name, dflt) => {
   const i = process.argv.indexOf(`--${name}`)
   return i < 0 ? dflt : process.argv[i + 1]
 }
+// the working directory: the one above bin/ as this script was started (bin/ links to record/sweep, and __dirname is
+// the link's target)
+const ROOT = path.resolve(path.dirname(process.argv[1]), '..')
 const SWEEP = path.resolve(arg('sweep'))
 const FIXTURES = path.resolve(arg('fixtures'))
 const BASE = arg('baseline', '11.17.0')
 const MIN_MAJOR = Number(arg('min-major', 7))
 const DRY = process.argv.includes('--dry')
+const REPORT = path.resolve(arg('report', path.join(SWEEP, '_report', 'export.txt')))
 // the registry files this export creates, by path in the fixtures repository, so the next export removes only those
 const CREATED_LIST = arg('created-list')
 const created = []
@@ -74,7 +79,7 @@ const FILES = ['before', 'after', 'after-again', 'cross', 'cross-again']
 // A scenario's releases-expect, written by a person with the reason in '#' lines, states what the engine should do
 // where a release's outcome followed something the sweep cannot show (a filesystem error npm swallowed): one line
 // per rule, "<node-semver range>\t<after|cross|*>\t<expect line>". It wins over the classification below.
-const semver = require(path.join(__dirname, '..', 'pm', 'npm', '11.17.0', 'package', 'node_modules', 'semver'))
+const semver = require(path.join(ROOT, 'pm', 'npm', '11.17.0', 'package', 'node_modules', 'semver'))
 const rulesOf = scenario => (read(path.join(FIXTURES, scenario, 'releases-expect')) || '').split('\n')
   .filter(l => l.trim() && !l.startsWith('#')).map(l => {
     const [range, phase, ...rest] = l.split('\t')
@@ -371,10 +376,10 @@ const main = async () => {
   for (const r of swept) lines.push(`${r.padEnd(12)} ${String(perRelease[r].root).padEnd(28)} ${String(perRelease[r].other).padEnd(15)} ${perRelease[r].missing}`)
   lines.push('', 'outcomes other releases write:', ...report.map(l => '  ' + l))
   if (review.length) lines.push('', 'to review:', ...review.map(l => '  ' + l))
-  fs.mkdirSync(path.join(SWEEP, '_report'), { recursive: true })
-  fs.writeFileSync(path.join(SWEEP, '_report', 'export.txt'), lines.join('\n') + '\n')
+  fs.mkdirSync(path.dirname(REPORT), { recursive: true })
+  fs.writeFileSync(REPORT, lines.join('\n') + '\n')
   if (CREATED_LIST && !DRY) fs.writeFileSync(CREATED_LIST, created.sort().join('\n') + (created.length ? '\n' : ''))
   console.log(lines[0])
-  console.log(`${review.length} to review -> ${path.join(SWEEP, '_report', 'export.txt')}`)
+  console.log(`${review.length} to review -> ${REPORT}`)
 }
 main()

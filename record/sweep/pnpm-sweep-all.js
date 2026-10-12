@@ -5,7 +5,8 @@
 //   2  the from-9151 optional-peer scenarios over 12, 10 and 9, with the manifest's release pin ignored
 //   3  every valid scenario over every release: 11, then 12, 10, 9   (the finished sweep)
 //   4  the optional-peer scenarios over 12, 10 and 9 as recorded
-// Usage: node pnpm-sweep-all.js <.lockwork dir> [--jobs 8] [--from <step>]     output: <.lockwork>/sweep/pnpm/sweep-all.log
+// Usage: node pnpm-sweep-all.js <working dir> [--jobs 8] [--from <step>] [--work <scratch root>]
+//          output: <working dir>/sweep/pnpm/sweep-all.log; without --work, sweep-pnpm.js's own (the system temp directory)
 const fs = require('fs')
 const path = require('path')
 const { spawnSync } = require('child_process')
@@ -22,7 +23,7 @@ const OUT = path.join(L, 'sweep', 'pnpm')
 const FIXTURES = path.join(L, 'fixtures', 'lock', 'pnpm')
 const PEERS = path.join(L, 'from-9151', 'pnpm-peers', 'scenarios', 'pnpm')
 const NODE_RECORDED = path.join(L, 'pm', 'node', 'v24.19.0', 'bin', 'node')
-const WORK = opt('work', '/private/tmp/claude-501/-Users-jon-Projects-github-openrewrite-rewrite/4188a488-5b8b-47b0-a1a5-92eea1c5fcfd/scratchpad/pw')
+const WORK = opt('work', null)
 const log = path.join(OUT, 'sweep-all.log')
 const say = line => fs.appendFileSync(log, `${new Date().toISOString()} ${line}\n`)
 const node = (script, args) => {
@@ -34,7 +35,7 @@ const node = (script, args) => {
 const order = major => path.join(L, 'inventory', `pnpm-sweep-order-${major}.txt`)
 const sweep = (label, args) => {
   say(`START ${label}`)
-  const status = node('sweep-pnpm.js', ['--pm', path.join(L, 'pm', 'pnpm'), '--shared', OUT, '--jobs', JOBS, '--work', WORK, ...args])
+  const status = node('sweep-pnpm.js', ['--pm', path.join(L, 'pm', 'pnpm'), '--shared', OUT, '--jobs', JOBS, ...(WORK ? ['--work', WORK] : []), ...args])
   say(`END ${label} (exit ${status})`)
 }
 const unstable = new Set(fs.readFileSync(path.join(OUT, '_report', 'unstable.txt'), 'utf8').split('\n').filter(l => l && !l.startsWith('#')))

@@ -12,7 +12,9 @@ const fs = require('fs')
 const path = require('path')
 const { spawnSync } = require('child_process')
 
-const W = path.resolve(__dirname, '..')
+// the working directory: the one above bin/ as this script was started (bin/ links to record/sweep, and __dirname is
+// the link's target)
+const W = path.resolve(path.dirname(process.argv[1]), '..')
 const pid = Number(process.argv[2] || 0)
 const jobs = process.argv.includes('--jobs') ? process.argv[process.argv.indexOf('--jobs') + 1] : '10'
 const out = path.join(W, 'sweep', 'yarn-berry')

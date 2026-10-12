@@ -64,7 +64,10 @@ const CELLS = arg('cells-file')
 const RELEASES = arg('releases-file') ? fs.readFileSync(arg('releases-file'), 'utf8').split(/\s+/).filter(Boolean) : arg('releases').split(',')
 if (LABEL && RELEASES.length !== 1) throw new Error('--label names the run of one release')
 const RUNNER = path.join(__dirname, 'yarn-classic-run.js')
-const REDACT = path.join(path.resolve(arg('record', path.join(__dirname, '..', 'fixtures', 'record'))), 'redact-paths.js')
+// the working directory: the one above bin/ as this script was started (bin/ links to record/sweep, and __dirname is
+// the link's target)
+const ROOT = path.resolve(path.dirname(process.argv[1]), '..')
+const REDACT = path.join(path.resolve(arg('record', path.join(ROOT, 'fixtures', 'record'))), 'redact-paths.js')
 const ARGS = ['install', '--ignore-scripts', '--non-interactive', '--no-progress']
 // mktemp -d's parent: $TMPDIR as given, not its real path
 const SCRATCH_ROOT = (process.env.TMPDIR || os.tmpdir()).replace(/\/+$/, '')
