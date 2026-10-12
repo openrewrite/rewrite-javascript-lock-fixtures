@@ -1,0 +1,13 @@
+Scope: all 3 workspace projects
+../..                                    | Progress: resolved 1, reused 0, downloaded 0, added 0
+<tmp>/project/packages/b:
+ ERR_PNPM_NO_MATCHING_VERSION  No matching version found for once@99.0.0
+
+This error happened while installing a direct dependency of <tmp>/project/packages/b
+
+The latest release of once is "1.4.0".
+
+If you need the full list of all 7 published versions run "$ pnpm view once versions".
+pnpm 9.0.0, node v24.19.0, 2026-10-10T13:31:18.922Z
+exit=1
+no lock written

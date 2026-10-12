@@ -1,0 +1,12 @@
+dependencies:
++ pnpm 10.18.3
+
+ ERR_PNPM_FETCH_403  GET https://registry.npmjs.org/pnpm/-/pnpm-10.18.3.tgz: Forbidden - 403
+
+No authorization header was set for the request.
+
+No authorization settings were found in the configs.
+Try to log in to the registry by running "pnpm login"
+or add the auth tokens manually to the ~/.npmrc file.
+ ERROR  Command failed with exit code 1: /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/node/v24.19.0/bin/node /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/bin/pnpm.cjs add pnpm@10.18.3 --loglevel=error --allow-build=@pnpm/exe --config.node-linker=hoisted --config.bin=<home>/.local/share/pnpm/.tools/pnpm/10.18.3_tmp_53613/bin
+For help, run: pnpm help install

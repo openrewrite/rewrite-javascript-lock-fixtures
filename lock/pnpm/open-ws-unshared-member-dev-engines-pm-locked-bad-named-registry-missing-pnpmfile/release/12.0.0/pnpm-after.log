@@ -1,0 +1,4 @@
+Error: ERR_PNPM_PNPMFILE_NOT_FOUND
+
+  × adding a new package
+  ╰─▶ pnpmfile at "<tmp>/project/missing.cjs" is not found

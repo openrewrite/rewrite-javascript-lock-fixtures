@@ -1,0 +1,2 @@
+ERROR  Failed to switch pnpm to v11.28.5. Looks like pnpm CLI is missing at "<home>/.local/share/pnpm/.tools/pnpm/11.28.5/bin" or is incorrect
+spawnSync <home>/.local/share/pnpm/.tools/pnpm/11.28.5/bin/pnpm ENOENT

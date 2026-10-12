@@ -1,0 +1,6 @@
+Scope: all 3 workspace projects
+ WARN  There are cyclic workspace dependencies: <tmp>/project/packages/a, <tmp>/project/packages/b
+Done in <time>
+pnpm 9.0.0, node v24.19.0, 2026-10-08T16:02:29.067Z
+exit=0
+lock unchanged

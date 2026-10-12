@@ -1,0 +1,2 @@
+[ERROR] GET https://registry.npmjs.org/pnpm/-/pnpm-11.2.2.tgz: Forbidden - 403
+No authorization header was set for the request.

@@ -1,0 +1,5 @@
+[ERROR] The "update" setting should be an object, but got boolean
+For help, run: pnpm help install
+pnpm 11.16.0, node v24.19.0, 2026-10-09T15:33:36.441Z
+exit=1
+no lock written

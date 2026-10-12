@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/a:
+    dependencies:
+      b:
+        specifier: workspace:*
+        version: link:../b
+
+  packages/b:
+    dependencies:
+      a:
+        specifier: file:../a
+        version: file:packages/a
+      wrappy:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  a@file:packages/a:
+    resolution: {directory: packages/a, type: directory}
+
+  wrappy@1.0.2:
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+snapshots:
+
+  a@file:packages/a:
+    dependencies:
+      b: link:packages/b
+
+  wrappy@1.0.2: {}

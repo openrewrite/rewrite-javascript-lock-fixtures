@@ -1,0 +1,5 @@
+Error: ERR_PNPM_TARBALL_HTTP_STATUS
+
+  × adding a new package
+  ╰─▶ Tarball server returned HTTP 403 for https://registry.npmjs.org/@pnpm/
+      exe/-/exe-11.2.2.tgz

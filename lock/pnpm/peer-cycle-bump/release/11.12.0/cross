@@ -1,0 +1,53 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@isaacs/peer-dep-cycle':
+        specifier: 2.0.0
+        version: 2.0.0(@isaacs/peer-dep-cycle-b@2.0.0)
+
+packages:
+
+  '@isaacs/peer-dep-cycle-a@2.0.0':
+    resolution: {integrity: sha512-vz0Ygp8uqCPI8m0EIVpDPU8ggaTX6WJ5Iege/Mlw0JYF4/AV6DobulRZCc2F5Ypsur7gCgVzynEIkqX2zg+1Fg==}
+    peerDependencies:
+      '@isaacs/peer-dep-cycle-b': '2'
+
+  '@isaacs/peer-dep-cycle-b@2.0.0':
+    resolution: {integrity: sha512-w3SkAMsrutBz1XAyAekHKvoao5gSfFh/ZriPmfdZ4CfkDpYauDqFu5Hz3NuEk7FL8fGuw4c/fM9iUzBTyTnCMw==}
+    peerDependencies:
+      '@isaacs/peer-dep-cycle-c': '2'
+
+  '@isaacs/peer-dep-cycle-c@2.0.0':
+    resolution: {integrity: sha512-DoKE8zfO2ThAaeDmZ/KFdR3X0qxOwbDxV3qTHvr5htz71qKKF1vpLLfZxf5HiDKyPpVGt92dk+gd9CJzVDmCwg==}
+    peerDependencies:
+      '@isaacs/peer-dep-cycle-a': '2'
+
+  '@isaacs/peer-dep-cycle@2.0.0':
+    resolution: {integrity: sha512-8fdESpqn1oi70e/FDFYQe0MwLSGcz5QaeDKbTCngP3BYtzSE2p0VLoBrijTQFiQ0yj7R40YG7+gsxZwJPKT/Pg==}
+
+snapshots:
+
+  '@isaacs/peer-dep-cycle-a@2.0.0(@isaacs/peer-dep-cycle-b@2.0.0)':
+    dependencies:
+      '@isaacs/peer-dep-cycle-b': 2.0.0(@isaacs/peer-dep-cycle-c@2.0.0)
+
+  '@isaacs/peer-dep-cycle-b@2.0.0(@isaacs/peer-dep-cycle-c@2.0.0)':
+    dependencies:
+      '@isaacs/peer-dep-cycle-c': 2.0.0(@isaacs/peer-dep-cycle-a@2.0.0)
+
+  '@isaacs/peer-dep-cycle-c@2.0.0(@isaacs/peer-dep-cycle-a@2.0.0)':
+    dependencies:
+      '@isaacs/peer-dep-cycle-a': 2.0.0(@isaacs/peer-dep-cycle-b@2.0.0)
+
+  '@isaacs/peer-dep-cycle@2.0.0(@isaacs/peer-dep-cycle-b@2.0.0)':
+    dependencies:
+      '@isaacs/peer-dep-cycle-a': 2.0.0(@isaacs/peer-dep-cycle-b@2.0.0)
+    transitivePeerDependencies:
+      - '@isaacs/peer-dep-cycle-b'

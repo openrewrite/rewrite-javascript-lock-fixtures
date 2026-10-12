@@ -1,0 +1,2 @@
+[ERROR] The "update" setting should be an object, but got boolean
+For help, run: pnpm help install

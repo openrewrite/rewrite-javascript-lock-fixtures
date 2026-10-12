@@ -1,0 +1,35 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+pnpmfileChecksum: sha256-Rh3bcxc5WiayysO4OIQUjYRlTS11scUmn6BLPoDhIes=
+
+importers:
+
+  .:
+    dependencies:
+      is-positive:
+        specifier: 3.1.0
+        version: 3.1.0
+      wrappy:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  is-positive@3.1.0:
+    resolution: {integrity: sha512-8ND1j3y9/HP94TOvGzr69/FgbkX2ruOldhLEsTWwcJVfo4oRjwemJmJxt7RJkKYH8tz7vYBP9JcKQY8CLuJ90Q==}
+    engines: {node: '>=0.10.0'}
+
+  wrappy@1.0.2:
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+snapshots:
+
+  is-positive@3.1.0: {}
+
+  wrappy@1.0.2:
+    dependencies:
+      is-positive: 3.1.0

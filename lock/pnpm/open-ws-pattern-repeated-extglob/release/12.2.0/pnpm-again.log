@@ -1,0 +1,8 @@
+Error: ERR_PNPM_WORKSPACE_INVALID_GLOB
+
+  × finding workspace projects
+  ╰─▶ Invalid glob pattern in pnpm-workspace.yaml packages: "packages/+(a|
+      aa)": failed to parse glob expression
+pnpm 12.2.0, node v24.19.0, 2026-10-08T16:54:57.000Z
+exit=1
+no lock written

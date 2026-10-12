@@ -1,0 +1,88 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-single-b':
+        specifier: 1.0.0
+        version: 1.0.0(@isaacs/testing-peer-dep-conflict-chain-single-a@1.0.1(@isaacs/testing-peer-dep-conflict-chain-a@1.0.0))
+      wrappy:
+        specifier: 1.0.2
+        version: 1.0.2
+
+packages:
+
+  '@isaacs/testing-peer-dep-conflict-chain-a@1.0.0':
+    resolution: {integrity: sha512-yUUG0Sem+AzNZ0uPXmEZN/GHHMmAg3kbM/zrijnd+tAAKVV5PhWXVUuLKJ3Q6wSAxz3WuYG08OaJl3lpV4UFOA==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-b': '1'
+
+  '@isaacs/testing-peer-dep-conflict-chain-b@1.0.0':
+    resolution: {integrity: sha512-tbsZ8No4L7h5YiIqDwGlJ14dg44oG4ZstF/wx7eZKUlnZax392thEeac5MNGFsv1T0Uqtiby9+SdpIRpejrHSw==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-c': '1'
+
+  '@isaacs/testing-peer-dep-conflict-chain-c@1.0.0':
+    resolution: {integrity: sha512-173OUwUJK8QN4CGTF+oPHwoOHbUzgxjC3tzg2kBVLE/eak02ZXJrW9l4LmW03vqcToADVhsVMcFLIaAb6yd1mQ==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-d': '1'
+
+  '@isaacs/testing-peer-dep-conflict-chain-d@1.0.0':
+    resolution: {integrity: sha512-zOtmaure/xJHmz7yGU7T33hjV6MZpo8Y6v1GuxDBx0PbqGoCxxCMacNtTUsEL5Sj8T19r5UShGZQmirNqPuhww==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-e': '1'
+
+  '@isaacs/testing-peer-dep-conflict-chain-e@1.0.0':
+    resolution: {integrity: sha512-EDuAVgd6DBGe2tKQKdQt7Z6RoptSWQem4W++F+bqC31E0JuRVJHu44sENtIviUGsi0jVJS5xD75cL6kvvbaw/Q==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-a': '1'
+
+  '@isaacs/testing-peer-dep-conflict-chain-single-a@1.0.1':
+    resolution: {integrity: sha512-NLHsR3z4e5I7+IXbe8l0SXDSdsghDtbsCMAG3deh21djZAH4dawx0bR/V/knYDrd0OZWdr0jDhivmVm42SmB1w==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-a': '1'
+
+  '@isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0':
+    resolution: {integrity: sha512-uYYhNcq5TAG/AAeWyx4+BTECo79HIHxZyr3TEiRI1LtKsI5jyBdvrAKsKRIhZxbzl28gLQIGhi1d+xfb2e8HEQ==}
+    peerDependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-single-a': '1'
+
+  wrappy@1.0.2:
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+snapshots:
+
+  '@isaacs/testing-peer-dep-conflict-chain-a@1.0.0(@isaacs/testing-peer-dep-conflict-chain-b@1.0.0)':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-b': 1.0.0(@isaacs/testing-peer-dep-conflict-chain-c@1.0.0)
+
+  '@isaacs/testing-peer-dep-conflict-chain-b@1.0.0(@isaacs/testing-peer-dep-conflict-chain-c@1.0.0)':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-c': 1.0.0(@isaacs/testing-peer-dep-conflict-chain-d@1.0.0)
+
+  '@isaacs/testing-peer-dep-conflict-chain-c@1.0.0(@isaacs/testing-peer-dep-conflict-chain-d@1.0.0)':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-d': 1.0.0(@isaacs/testing-peer-dep-conflict-chain-e@1.0.0)
+
+  '@isaacs/testing-peer-dep-conflict-chain-d@1.0.0(@isaacs/testing-peer-dep-conflict-chain-e@1.0.0)':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-e': 1.0.0(@isaacs/testing-peer-dep-conflict-chain-a@1.0.0)
+
+  '@isaacs/testing-peer-dep-conflict-chain-e@1.0.0(@isaacs/testing-peer-dep-conflict-chain-a@1.0.0)':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-a': 1.0.0(@isaacs/testing-peer-dep-conflict-chain-b@1.0.0)
+
+  '@isaacs/testing-peer-dep-conflict-chain-single-a@1.0.1(@isaacs/testing-peer-dep-conflict-chain-a@1.0.0)':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-a': 1.0.0(@isaacs/testing-peer-dep-conflict-chain-b@1.0.0)
+
+  '@isaacs/testing-peer-dep-conflict-chain-single-b@1.0.0(@isaacs/testing-peer-dep-conflict-chain-single-a@1.0.1(@isaacs/testing-peer-dep-conflict-chain-a@1.0.0))':
+    dependencies:
+      '@isaacs/testing-peer-dep-conflict-chain-single-a': 1.0.1(@isaacs/testing-peer-dep-conflict-chain-a@1.0.0)
+
+  wrappy@1.0.2: {}

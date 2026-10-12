@@ -1,0 +1,15 @@
+Error:   × load configuration
+  ╰─▶ Failed to parse pnpm-workspace.yaml at <tmp>/project/pnpm-
+      workspace.yaml: error: line 5 column 5: unknown field
+      `autoInstallPeers`, expected one of hoist, modulesDir, overrides,
+      saveExact, savePrefix
+       --> <input>:5:5
+        |
+      3 | packageConfigs:
+      4 |   b:
+      5 |     autoInstallPeers: false
+        |     ^ unknown field `autoInstallPeers`, expected one of hoist,
+      modulesDir, overrides, saveExact, savePrefix
+pnpm 12.4.0, node v24.19.0, 2026-10-09T14:24:25.052Z
+exit=1
+no lock written

@@ -1,0 +1,16 @@
+Error:   × load configuration
+  ╰─▶ Failed to parse pnpm-workspace.yaml at <tmp>/project/pnpm-
+      workspace.yaml: error: line 14 column 9: unexpected event: expected
+      mapping start
+        --> <input>:14:9
+         |
+      12 | resolutionOnly: false
+      13 | saveLockfile: true
+      14 | update: false
+         |         ^ unexpected event: expected mapping start
+      15 | updatePackageManifest: false
+      16 | updateToLatest: false
+         |
+pnpm 12.0.0, node v24.19.0, 2026-10-09T15:33:28.994Z
+exit=1
+no lock written

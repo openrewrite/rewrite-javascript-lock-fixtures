@@ -1,0 +1,12 @@
+Scope: all 2 workspace projects
+ ERR_PNPM_CONFIG_DEP_NO_INTEGRITY  Your config dependency called "is-positive" at "pnpm.configDependencies" doesn't have an integrity checksum
+
+All config dependencies should have their integrity checksum inlined in the version specifier. For example:
+
+{
+  "pnpm": {
+    "configDependencies": {
+      "my-config": "1.0.0+sha512-Xg0tn4HcfTijTwfDwYlvVCl43V6h4KyVVX2aEm4qdO/PC6L2YvzLHFdmxhoeSA3eslcE6+ZVXHgWwopXYLNq4Q=="
+    },
+  }
+}
