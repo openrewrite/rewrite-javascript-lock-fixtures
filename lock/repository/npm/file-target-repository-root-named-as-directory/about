@@ -1,0 +1,1 @@
+A file: dependency on the repository's root from dev/, where the root package is named as the directory npm ran in (repo): npm writes no name into the lock entry, which a host that does not know that directory's name cannot reproduce.

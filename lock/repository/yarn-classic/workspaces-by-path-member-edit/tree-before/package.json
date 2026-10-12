@@ -1,0 +1,9 @@
+{
+  "name": "ws-root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/preset",
+    "packages/core"
+  ]
+}

@@ -1,0 +1,4 @@
+yarn 1.22.22, node v24.21.0, 2026-10-12T12:01:50Z
+before exit=0, after exit=0, again exit=0
+layout repo/exchanges/graphcache/benchmarks
+platform os=darwin cpu=arm64 libc=

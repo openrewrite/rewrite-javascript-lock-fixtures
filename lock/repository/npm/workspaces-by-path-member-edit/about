@@ -1,0 +1,1 @@
+Workspaces listed by path and by pattern; the edit bumps a dependency of the member listed by path, and adds one to a member the pattern matches.

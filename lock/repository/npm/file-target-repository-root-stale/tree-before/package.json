@@ -1,0 +1,7 @@
+{
+  "name": "vc",
+  "version": "3.16.0",
+  "dependencies": {
+    "is-number": "^7.0.0"
+  }
+}

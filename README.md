@@ -23,6 +23,18 @@ lock/<family>/<scenario>/
 
 Scenarios may also hold the package manager's config files, workspace members, and the logs of the recording.
 
+A scenario that needs more than the lock's own directory is a whole repository:
+
+```
+lock/repository/<package manager>/<scenario>/
+  tree-before/  the repository as committed, every file but the lock
+  tree/         the files the edit changes or adds
+  lock-dir      the lock's directory in the repository (absent: its root)
+  seed/         earlier versions of files of tree-before/, in place for the first install only:
+                `before` is then a lock the committed files have moved on from
+  before, after, expect, http/   as above, for the lock in lock-dir
+```
+
 ## Recording
 
 Recorded against registry.npmjs.org with npm 11.17.0, Bun 1.3.10, Yarn 1.22.22, Yarn 4.10.3 and pnpm 11.2.2, the

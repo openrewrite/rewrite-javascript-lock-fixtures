@@ -1,0 +1,22 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "dev",
+      "version": "1.0.0",
+      "dependencies": {
+        "repo": "file:../"
+      }
+    },
+    "..": {
+      "version": "1.0.0"
+    },
+    "node_modules/repo": {
+      "resolved": "..",
+      "link": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "benchmarks",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "exec": "link:../../execute",
+    "is-odd": "3.0.0",
+    "ms": "2.1.3"
+  }
+}
