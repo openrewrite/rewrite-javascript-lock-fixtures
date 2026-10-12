@@ -9,8 +9,7 @@
       "version": "1.0.0",
       "dependencies": {
         "a": "file:libs/a#1",
-        "b": "file:libs/b%41",
-        "c": "file:libs/c?x"
+        "b": "file:libs/b%41"
       }
     },
     "libs/a#1": {
@@ -20,9 +19,6 @@
       }
     },
     "libs/b%41": {
-      "version": "1.0.0"
-    },
-    "libs/c?x": {
       "version": "1.0.0"
     },
     "node_modules/a": {
@@ -36,10 +32,6 @@
     },
     "node_modules/b": {
       "resolved": "libs/b%41",
-      "link": true
-    },
-    "node_modules/c": {
-      "resolved": "libs/c?x",
       "link": true
     }
   },
@@ -57,9 +49,6 @@
     },
     "b": {
       "version": "file:libs/b%41"
-    },
-    "c": {
-      "version": "file:libs/c?x"
     }
   }
 }

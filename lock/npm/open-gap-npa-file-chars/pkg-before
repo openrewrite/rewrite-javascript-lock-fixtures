@@ -1,1 +1,1 @@
-{"name":"npa-file-chars","version":"1.0.0","dependencies":{"a":"file:libs/a#1","b":"file:libs/b%41","c":"file:libs/c?x"}}
+{"name":"npa-file-chars","version":"1.0.0","dependencies":{"a":"file:libs/a#1","b":"file:libs/b%41"}}

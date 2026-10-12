@@ -10,7 +10,6 @@
       "dependencies": {
         "a": "file:libs/a#1",
         "b": "file:libs/b%41",
-        "c": "file:libs/c?x",
         "wrappy": "1.0.2"
       }
     },
@@ -25,10 +24,6 @@
       "name": "b",
       "version": "1.0.0"
     },
-    "libs/c?x": {
-      "name": "c",
-      "version": "1.0.0"
-    },
     "node_modules/a": {
       "resolved": "libs/a#1",
       "link": true
@@ -40,10 +35,6 @@
     },
     "node_modules/b": {
       "resolved": "libs/b%41",
-      "link": true
-    },
-    "node_modules/c": {
-      "resolved": "libs/c?x",
       "link": true
     },
     "node_modules/wrappy": {
@@ -66,9 +57,6 @@
     },
     "b": {
       "version": "file:libs/b%41"
-    },
-    "c": {
-      "version": "file:libs/c?x"
     },
     "wrappy": {
       "version": "1.0.2",

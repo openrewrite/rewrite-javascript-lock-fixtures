@@ -10,7 +10,6 @@
       "dependencies": {
         "a": "file:libs/a#1",
         "b": "file:libs/b%41",
-        "c": "file:libs/c?x",
         "wrappy": "1.0.2"
       }
     },
@@ -21,10 +20,6 @@
     "node_modules/b": {
       "version": "2.0.0",
       "resolved": "file:libs/bA"
-    },
-    "node_modules/c": {
-      "version": "2.0.0",
-      "resolved": "file:libs/c"
     },
     "node_modules/wrappy": {
       "version": "1.0.2",
