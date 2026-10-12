@@ -1,2 +1,19 @@
-(node:13409) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
+(node:7511) [DEP0174] DeprecationWarning: Calling promisify on a function that returns a Promise is likely a mistake.
 (Use `node --trace-deprecation ...` to show where the warning was created)
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! Found: picomatch@2.3.2
+npm ERR! node_modules/picomatch
+npm ERR!   picomatch@"^2.3.1" from micromatch@4.0.8
+npm ERR!   node_modules/micromatch
+npm ERR!     micromatch@"4.0.8" from the root project
+npm ERR! Could not resolve dependency:
+npm ERR! peerOptional picomatch@"^3 || ^4" from fdir@6.5.0
+npm ERR! node_modules/fdir
+npm ERR!   fdir@"^6.4.4" from tinyglobby@0.2.14
+npm ERR!   node_modules/tinyglobby
+npm ERR!     tinyglobby@"0.2.14" from the root project
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! See <scratch>/cache-nz88Wv/eresolve-report.txt for a full report.

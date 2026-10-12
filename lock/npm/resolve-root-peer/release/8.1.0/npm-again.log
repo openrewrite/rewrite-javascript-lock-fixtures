@@ -1,12 +1,3 @@
-npm WARN ERESOLVE overriding peer dependency
-npm WARN While resolving: resolve-root-peer@1.0.0
-npm WARN Found: react@undefined
-npm WARN node_modules/react
-npm WARN   peer react@"^19.0.0" from the root project
-npm WARN 
-npm WARN Could not resolve dependency:
-npm WARN peer react@"^19.0.0" from the root project
-
-up to date in 757ms
+up to date in 80ms
 exit=0
 lock unchanged
