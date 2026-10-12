@@ -283,6 +283,7 @@ cross, cross-again, ...           install's lock `again`, and keeps other projec
 expect, expect-cross              the edit's outcome where it is not the lock byte for byte (Yarn Berry: also
                                   expect-before, over a seeded lock)
 <pm>-<phase>.log                  the package manager's output of a failed phase (npm, pnpm: of the second install too)
+requests.log                      Bun: the requests of the phases the replays read, as the cell's requests.log has them
 ```
 
 The rules every export follows:
@@ -298,8 +299,9 @@ The rules every export follows:
   `second-install-rejects` (npm: `unstable`) where the second install changes or rejects the lock. npm's
   `<scenario>/releases-expect`, a person's rule with its reason, wins over all of these.
 - A registry document a replay of an exported release needs that the recording did not keep is added to the scenario's
-  `http/` (`http-url/`, `http-npmmirror/`, `http-<label>/`) as the stub served it, and named in the created list. An
-  existing file is never written: a recorded file is never touched.
+  `http/` (`http-url/`, `http-npmmirror/`, `http-<label>/`; Bun: wherever that host's own directory lacks it, whatever
+  `http/` holds) as the stub served it, and named in the created list. An existing file is never written: a recorded
+  file is never touched.
 - The export removes what the last one wrote first: every scenario's `releases` and `release/`, and the files the
   created list names (`--created-list` names the last list, and the export writes the new one there; npm's
   `refresh.sh` does both for `sweep-export.js`).
