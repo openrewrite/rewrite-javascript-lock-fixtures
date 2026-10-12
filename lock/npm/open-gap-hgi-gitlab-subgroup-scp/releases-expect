@@ -1,0 +1,4 @@
+# npm 7.0.0 to 7.6.3 bundle hosted-git-info 3, whose scp pattern takes at most one path segment before the project:
+# it reads no host in git@gitlab.com:g/s/r.git, so npm-package-arg reads the spec as a directory and npm links it, a
+# directory the engine cannot read.
+7.0.0 - 7.6.3	*	exact-or cannot-know directory manifest git@gitlab.com:g/s/r.git

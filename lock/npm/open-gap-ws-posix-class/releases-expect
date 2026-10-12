@@ -1,0 +1,4 @@
+# npm 7.0.0 to 9.6.2 read a workspaces pattern with glob 7 or 8, whose minimatch reads [[:alpha:]] as the class
+# [[:alph] and a ]: no directory here matches. The engine reads patterns with minimatch 10 and answers cannot-know
+# where the two readings find other directories.
+7.0.0 - 9.6.2	*	exact-or cannot-know the workspaces pattern packages/[[:alpha:]] as npm before 9.6.3 reads its POSIX class
