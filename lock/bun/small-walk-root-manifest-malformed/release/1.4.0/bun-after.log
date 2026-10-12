@@ -1,0 +1,5 @@
+1 | {"workspaces":["packages/*"]
+                                ^
+error: Expected "}" but found end of file
+    at <tmp>/proj/package.json:1:29
+error: An internal error occurred (ParserError)

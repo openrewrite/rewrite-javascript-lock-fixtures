@@ -1,0 +1,17 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "p",
+      "dependencies": {
+        "is-number": "7.0.0",
+        "vms": "github:vercel/ms#2.1.3",
+      },
+    },
+  },
+  "packages": {
+    "is-number": ["is-number@7.0.0", "", {}, "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng=="],
+
+    "vms": ["ms@github:vercel/ms#1c6264b", {}, "vercel-ms-1c6264b"],
+  }
+}

@@ -1,0 +1,7 @@
+bun install v1.2.0 (b0c5a765)
+Resolving dependencies
+Resolved, downloaded and extracted [1]
+error: "git clone" for "ms" failed
+
+error: InstallFailed cloning repository for ms
+error: ms@catalog:legacy failed to resolve

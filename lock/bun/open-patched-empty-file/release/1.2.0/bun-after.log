@@ -1,0 +1,6 @@
+bun install v1.2.0 (b0c5a765)
+Resolving dependencies
+error: patchfile <tmp>/proj/patches/ms@2.1.3.patch is empty, plese restore or delete it.
+
+
+Errors occured while calculating hash for patches/ms@2.1.3.patch:

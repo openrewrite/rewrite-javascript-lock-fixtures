@@ -1,0 +1,5 @@
+bun install v1.2.0 (b0c5a765)
+Resolving dependencies
+Resolved, downloaded and extracted [2]
+error: No version matching "^99.0.0" found for specifier "ms" (but package exists)
+error: ms@^99.0.0 failed to resolve

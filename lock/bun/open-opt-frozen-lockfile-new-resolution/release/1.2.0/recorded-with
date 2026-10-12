@@ -1,0 +1,4 @@
+bun 1.2.0 (sweep), install --lockfile-only --no-progress, frozen registry, 2026-10-07
+before exit=0, after exit=1, again exit=1, cross exit=1, cross-again exit=-
+edit started 2026-10-07T05:12:31Z
+platform os=darwin cpu=arm64 libc=
