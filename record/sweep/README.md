@@ -257,9 +257,14 @@ node bin/pnpm-export-cross.js --from sweep/pnpm --scenarios $SC --pm pm/pnpm --o
 cp -cR fixtures/lock/pnpm $X/pnpm
 node bin/sweep-export-pnpm.js --sweep sweep/pnpm --cross $X/cross --fixtures $X/pnpm --sweep-scenarios $SC \
   --unstable sweep/pnpm/_report/unstable.txt --repeats sweep/pnpm/_repeat/2,sweep/pnpm/_repeat/3,sweep/pnpm/_repeat/4 \
-  --created-list inventory/export-pnpm-created.txt --report inventory/export-pnpm-report.txt
-node bin/pnpm-export-check.js $X/pnpm fixtures/lock/pnpm inventory/export-pnpm-created.txt sweep/pnpm
+  --created-list fixtures/record/sweep/exported/pnpm.txt --report inventory/export-pnpm-report.txt
+node bin/pnpm-export-check.js $X/pnpm fixtures/lock/pnpm fixtures/record/sweep/exported/pnpm.txt sweep/pnpm
+node bin/pnpm-export-own-docs.js $X/pnpm fixtures/record/sweep/exported/pnpm.txt
 ```
+
+The last step leaves out the copies of pnpm's own registry documents (pnpm, @pnpm/*, @reflink/*, detect-libc), about
+81 MB, that the export adds to the scenarios that pin a pnpm release: every release's replay of every scenario is the
+same without them.
 
 `sweep/pnpm/_repeat/<n>/` hold second runs (`sweep-pnpm.js --out sweep/pnpm/_repeat/<n> --shared sweep/pnpm`): of
 the control (2), and of some scenarios under some 11.0 and 10.28 - 10.33 releases (3, 4). A cell whose second run
