@@ -1,0 +1,7 @@
+yarn install v1.0.2
+warning package.json: No license field
+warning p@1.0.0: No license field
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+error http://127.0.0.1:4879/zz-openrewrite-tampered/-/zz-openrewrite-tampered-1.0.0.tgz: Fetch succeeded for "zz-openrewrite-tampered". However, extracting "http://127.0.0.1:4879/zz-openrewrite-tampered/-/zz-openrewrite-tampered-1.0.0.tgz" resulted in hash "454dc3152b1d8aeaf3da60f684bed22d3587c9c3", which did not match the requested hash "47769708d0df9a8a236d84154eef2fc0b6210e97".
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.

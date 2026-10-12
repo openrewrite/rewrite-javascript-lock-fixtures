@@ -1,0 +1,4 @@
+yarn install v1.4.0
+error An unexpected error occurred: "There are more than one workspace with name \"a\"".
+info If you think this is a bug, please open a bug report with the information provided in "<tmp>/project/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.

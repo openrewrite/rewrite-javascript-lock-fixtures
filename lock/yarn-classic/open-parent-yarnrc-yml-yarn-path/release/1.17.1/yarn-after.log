@@ -1,0 +1,10 @@
+node:internal/modules/cjs/loader:1520
+  throw err;
+  ^
+
+Error: Cannot find module '<tmp>/repo/mid/app/yarn-wrapper.cjs'
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.19.0

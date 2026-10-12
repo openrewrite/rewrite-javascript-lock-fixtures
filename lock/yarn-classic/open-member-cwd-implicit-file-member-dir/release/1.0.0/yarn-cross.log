@@ -1,0 +1,6 @@
+yarn install v1.0.0
+warning package.json: No license field
+[1/4] Resolving packages...
+warning Using the "file:" protocol implicitly is deprecated. Please either the protocol or prepend the path "lib" with "./".
+error "<tmp>/project/lib" doesn't exist.
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
