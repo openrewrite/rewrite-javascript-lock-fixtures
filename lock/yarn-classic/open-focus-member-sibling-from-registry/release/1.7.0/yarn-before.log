@@ -1,0 +1,7 @@
+yarn install v1.7.0
+warning package.json: No license field
+info No lockfile found.
+[1/4] Resolving packages...
+error Couldn't find package "focus-app@1.0.0" required by "workspace-aggregator-9282563a-183d-40b1-8e13-c5148bdad8ec@1.0.0" on the "npm" registry.
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+warning workspace-aggregator-9282563a-183d-40b1-8e13-c5148bdad8ec > focus-sib > left-pad@1.3.0: use String.prototype.padStart()

@@ -1,0 +1,8 @@
+yarn install v1.0.0
+warning package.json: No license field
+warning p@1.0.0: No license field
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+error An unexpected error occurred: "http://127.0.0.1:4879/zz-openrewrite-corrupt/-/zz-openrewrite-corrupt-1.0.0.tgz: Invalid tar header. Maybe the tar is corrupted or it needs to be gunzipped?".
+info If you think this is a bug, please open a bug report with the information provided in "<tmp>/project/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
