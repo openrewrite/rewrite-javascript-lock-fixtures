@@ -1,0 +1,4 @@
+The lock holds r from GitHub, written scp-style with a semver: range (git@github.com:u/r.git#semver:^1.0.0); wrappy
+is added beside it. hosted-git-info 4.0.1 to 5.1.0 (npm 7.7.0 to 8.19.2) read no host in an scp-style spec whose
+committish holds a colon, so npm-package-arg reads the spec as a directory there; 3 (npm 7.0.0 to 7.6.3) and 5.2.1 on
+(npm 8.19.3 on) read it as GitHub's.

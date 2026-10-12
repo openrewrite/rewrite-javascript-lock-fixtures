@@ -1,0 +1,3 @@
+Workspaces ["packages/[[:alpha:]]"] beside packages/a and packages/7: glob 7 and 8 behind map-workspaces before 3.0.3
+(npm 7.0.0 to 9.6.2) read [[:alpha:] as a class of its characters followed by a ], which no directory matches; glob 9
+on (npm 9.6.3 on) reads the POSIX class, which finds packages/a. A root dependency is added.

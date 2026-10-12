@@ -1,0 +1,7 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "r": "git@gitlab.com:g/s/r.git"
+  }
+}

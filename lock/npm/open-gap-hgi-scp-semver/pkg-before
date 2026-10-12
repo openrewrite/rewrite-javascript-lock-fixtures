@@ -1,0 +1,7 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "dependencies": {
+    "r": "git@github.com:u/r.git#semver:^1.0.0"
+  }
+}

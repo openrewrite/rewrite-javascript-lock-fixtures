@@ -1,0 +1,22 @@
+{
+  "name": "ws-posix-class",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "ws-posix-class",
+      "version": "1.0.0",
+      "workspaces": [
+        "packages/[[:alpha:]]"
+      ]
+    },
+    "node_modules/a": {
+      "resolved": "packages/a",
+      "link": true
+    },
+    "packages/a": {
+      "version": "1.0.0"
+    }
+  }
+}
