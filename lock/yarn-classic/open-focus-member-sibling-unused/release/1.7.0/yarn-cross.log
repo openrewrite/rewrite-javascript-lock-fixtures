@@ -1,5 +1,5 @@
 yarn install v1.7.0
 warning package.json: No license field
 [1/4] Resolving packages...
-error Couldn't find package "focus-app@1.0.0" required by "workspace-aggregator-8df4b3a6-18c0-4b4e-9c44-5b7bf9d99b05@1.0.0" on the "npm" registry.
+error Couldn't find package "focus-app@1.0.0" required by "workspace-aggregator-<uuid>@1.0.0" on the "npm" registry.
 info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.

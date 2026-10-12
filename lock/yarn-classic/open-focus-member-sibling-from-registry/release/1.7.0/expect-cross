@@ -1,1 +1,1 @@
-pm-rejects Couldn't find package "focus-app@1.0.0" required by "workspace-aggregator-dfa669b8-14e3-4b62-9b15-48c33f72e0b1@1.0.0" on the "npm" registry.
+pm-rejects Couldn't find package "focus-app@1.0.0" required by "workspace-aggregator-<uuid>@1.0.0" on the "npm" registry.
