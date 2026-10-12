@@ -34,7 +34,7 @@ and the network: what a recording did not keep is fetched once and kept in the s
   fixtures/                               a clone of this repository
   pm/<family>/<version>/                  each release, unpacked;  pm/node/<version>/  the Node builds
   sweep/<family>/<release>/<scenario>/    the cells;  sweep/<family>/_report/  the reports
-  inventory/                              packuments, release orders, the exports' created lists, source inventories
+  inventory/                              packuments, release orders, source inventories
   snap/<n>/lock/                          immutable copies of fixtures/lock for builds (snapshot.sh, refresh.sh)
   scratch/                                pristine scenarios and other working copies
 ```
@@ -58,15 +58,14 @@ bash bin/pristine-npm.sh scratch/npm-pristine                # npm: scratch/npm-
 
 F=yarn-berry P=scratch/pristine                              # the other families
 mkdir -p $P/lock && rm -rf $P/lock/$F && cp -cR fixtures/lock/$F $P/lock/$F
-sed "s|^|$P/|" inventory/export-$F-created.txt | xargs rm -f  # none while lock/<family> holds no export (pnpm)
+sed "s|^|$P/|" fixtures/record/sweep/exported/$F.txt | xargs rm -f  # none while lock/<family> holds no export
 find $P/lock/$F -mindepth 2 -maxdepth 2 \( -name releases -o -name release \) -exec rm -rf {} +
 ln -sfn ../../fixtures/record $P/record     # sweep-yarn-berry.js runs <scenarios>/../../record/make-berry-overlay.js
 ```
 
-The created lists (`inventory/exported-http.txt` for npm, `inventory/export-<family>-created.txt` for the others) are
-written by the exports and name every file one added. They are kept in the working directory that ran the export,
-not in this repository; without the list of the export that is in `lock/`, an added file cannot be told from a
-recorded one.
+The created lists are `record/sweep/exported/<family>.txt` of this repository: each export writes its own
+(`--created-list`), naming every file it added, and it is committed with the export. Without the list of the export
+that is in `lock/`, an added file cannot be told from a recorded one.
 
 ## A cell
 
@@ -137,7 +136,7 @@ node bin/sweep-yarn-berry.js $S --releases-file inventory/yarn-berry-sweep-order
 node bin/sweep-matrix-yarn-berry.js sweep/yarn-berry               # summary, boundaries, boundaries-detail
 node bin/yarn-berry-health.js sweep/yarn-berry > sweep/yarn-berry/_report/health.txt
 node bin/sweep-export-yarn-berry.js --sweep sweep/yarn-berry --fixtures fixtures/lock/yarn-berry \
-  --created-list inventory/export-yarn-berry-created.txt --report inventory/export-yarn-berry-report.txt
+  --created-list fixtures/record/sweep/exported/yarn-berry.txt --report inventory/export-yarn-berry-report.txt
 PORT=<rewrite>/rewrite-javascript/src/main/java/org/openrewrite/javascript/internal/lock
 node bin/yarn-berry-source-inventory.js $PORT/berry pm/yarn-berry inventory
 node bin/yarn-berry-source-diff.js inventory 4.13.0 4.14.0
@@ -171,7 +170,7 @@ node bin/yarn-classic-source-inventory.js pm/yarn-classic inventory/yarn-classic
   --json pm/yarn-classic/source-inventory.json                     # needs pm/yarn-classic/tags.txt, gh
 node bin/sweep-matrix-yarn-classic.js sweep/yarn-classic           # summary, boundaries (and their source), health
 node bin/sweep-export-yarn-classic.js --sweep sweep/yarn-classic --fixtures fixtures/lock/yarn-classic \
-  --packument pm/yarn-classic/packument.json --created-list inventory/export-yarn-classic-created.txt \
+  --packument pm/yarn-classic/packument.json --created-list fixtures/record/sweep/exported/yarn-classic.txt \
   --report inventory/export-yarn-classic-report.txt
 ```
 
@@ -202,7 +201,7 @@ node bin/bun-control.js sweep/bun --scenarios scratch/pristine/lock/bun --runs s
 node bin/sweep-matrix-bun.js sweep/bun --runs sweep/bun/_pass-2 sweep/bun/_pass-3 \
   --repeat sweep/bun/_repeat/control/tally.json sweep/bun/_repeat/boundaries/tally.json
 node bin/sweep-export-bun.js --sweep sweep/bun --fixtures fixtures/lock/bun \
-  --created-list inventory/export-bun-created.txt --report inventory/export-bun-report.txt
+  --created-list fixtures/record/sweep/exported/bun.txt --report inventory/export-bun-report.txt
 node bin/bun-source-inventory.js scratch/bun.git --releases-file sweep/bun/_order.txt --out inventory/bun-source.txt
 ```
 

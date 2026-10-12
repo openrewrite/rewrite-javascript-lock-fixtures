@@ -1,0 +1,9 @@
+lock/bun/catalog-default-name/http/ms
+lock/bun/open-env-registry/http-npmmirror/is-number
+lock/bun/open-user-registry-bunfig-add/http-yarnpkg/ms
+lock/bun/open-user-registry-npmjs-bunfig-add/http-yarnpkg/ms
+lock/bun/open-user-registry-npmjs-bunfig-mirror-add/http-npmmirror/ms
+lock/bun/override-nested/http/ms
+lock/bun/resolutions-nested-path/http/ms
+lock/bun/small-registry-mirror/http-npmmirror/is-number
+lock/bun/small-registry-switch-after/http-npmmirror/is-number

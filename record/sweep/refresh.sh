@@ -2,13 +2,13 @@
 # Rebuilds the sweep's reports, exports its findings into the fixtures clone, commits them there, and with a number
 # makes an immutable snapshot of the fixtures for agents to build against (an APFS clone: instant, no extra space).
 # Each export first removes what the previous one created: every releases file and release/ outcome (no recording
-# has those), and the registry files listed in inventory/exported-http.txt, which the export itself writes. A
+# has those), and the registry files listed in record/sweep/exported/npm.txt, which the export itself writes. A
 # scenario's own recorded registry files are never touched.
 # Usage: bash refresh.sh [snapshot-number]
 set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 F="$ROOT/fixtures"
-LIST="$ROOT/inventory/exported-http.txt"
+LIST="$F/record/sweep/exported/npm.txt"
 node "$ROOT/bin/sweep-matrix.js" "$ROOT/sweep/npm"
 if [ -f "$LIST" ]; then
   while read -r created; do
