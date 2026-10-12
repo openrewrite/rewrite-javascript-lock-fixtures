@@ -1,0 +1,15 @@
+Scope: all 2 workspace projects
+ ERROR  pkgSpec.indexOf is not a function
+
+pnpm: pkgSpec.indexOf is not a function
+    at /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:188013:34
+    at Array.map (<anonymous>)
+    at installConfigDeps (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:188011:52)
+    at async installDeps (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:188125:9)
+    at async /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:220620:21
+    at async main (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:220579:34)
+    at async runPnpm (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:220847:5)
+    at async /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.5.0/package/dist/pnpm.cjs:220839:7
+pnpm 10.5.0, node v24.19.0, 2026-10-10T05:31:14.186Z
+exit=1
+no lock written

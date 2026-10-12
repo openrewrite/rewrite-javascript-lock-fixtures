@@ -1,0 +1,5 @@
+ERROR  The "path" argument must be of type string. Received an instance of Array
+For help, run: pnpm help install
+pnpm 10.8.0, node v24.19.0, 2026-10-10T04:27:21.110Z
+exit=1
+no lock written

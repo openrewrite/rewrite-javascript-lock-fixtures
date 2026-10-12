@@ -1,0 +1,7 @@
+ERR_PNPM_SPEC_NOT_SUPPORTED_BY_ANY_RESOLVER  odd@work:is-odd@^3.0.1 isn't supported by any available resolver.
+
+This error happened while installing a direct dependency of <tmp>/project
+Progress: resolved 1, reused 0, downloaded 0, added 0
+pnpm 10.5.0, node v24.19.0, 2026-10-08T13:45:11.000Z
+exit=1
+no lock written

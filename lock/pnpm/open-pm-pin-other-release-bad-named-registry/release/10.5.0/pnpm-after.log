@@ -1,0 +1,2 @@
+ERROR  Failed to switch pnpm to v10.18.3. Looks like pnpm CLI is missing at "<home>/.local/share/pnpm/.tools/pnpm/10.18.3/bin" or is incorrect
+spawnSync <home>/.local/share/pnpm/.tools/pnpm/10.18.3/bin/pnpm ENOENT

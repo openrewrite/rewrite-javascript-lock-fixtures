@@ -1,0 +1,25 @@
+ERROR  unexpected end of the stream within a flow collection (4:1)
+
+ 1 | autoInstallPeers: true
+ 2 | packages:
+ 3 |   - [packages/*
+ 4 | 
+-----^
+
+pnpm: unexpected end of the stream within a flow collection (4:1)
+
+ 1 | autoInstallPeers: true
+ 2 | packages:
+ 3 |   - [packages/*
+ 4 | 
+-----^
+    at generateError (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:15268:14)
+    at throwError (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:15271:13)
+    at readFlowCollection (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:15700:7)
+    at composeNode (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:16119:135)
+    at readBlockMapping (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:15883:16)
+    at composeNode (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:16119:82)
+    at readBlockSequence (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:15828:9)
+    at composeNode (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:16119:41)
+    at readBlockMapping (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:15926:15)
+    at composeNode (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/9.0.0/package/dist/pnpm.cjs:16119:82)

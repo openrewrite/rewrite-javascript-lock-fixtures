@@ -1,0 +1,5 @@
+ERROR  This project is configured to use 11.2.2 of pnpm. Your current pnpm is v11.0.0
+If you want to bypass this version check, you can set the "pmOnFail" configuration to "warn" or "ignore" (e.g. via --pm-on-fail=ignore). If using "devEngines.packageManager", you can set its "onFail" to "warn" or "ignore"
+pnpm 11.0.0, node v24.19.0, 2026-10-10T05:24:57.504Z
+exit=1
+no lock written

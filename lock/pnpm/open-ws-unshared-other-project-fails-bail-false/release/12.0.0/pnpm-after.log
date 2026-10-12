@@ -1,0 +1,15 @@
+Scope: all 3 workspace projects
+? Verifying lockfile at ../../pnpm-lock.yaml against supply-chain policies (1 entry)...
+✓ Lockfile at ../../pnpm-lock.yaml passes supply-chain policies (1 entry in <time>)
+✓ Lockfile passes supply-chain policies (verified <time> ago)
+? Verifying lockfile at ../b/pnpm-lock.yaml against supply-chain policies (2 entries)...
+✓ Lockfile at ../b/pnpm-lock.yaml passes supply-chain policies (2 entries in <time>)
+Error: ERR_PNPM_NO_MATCHING_VERSION
+
+  × installing dependencies
+  ╰─▶ Failed to resolve dependency tree: No matching version found for
+      once@99.0.0 while fetching it from https://registry.npmjs.org/
+  help: The latest release of once is "1.4.0".
+        
+        If you need the full list of all 7 published versions run "pnpm view
+        once versions".

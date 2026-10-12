@@ -1,0 +1,11 @@
+Error:   × load configuration
+  ╰─▶ Failed to parse pnpm-workspace.yaml at <tmp>/project/pnpm-
+      workspace.yaml: error: line 1 column 21: unexpected event: expected
+      mapping start
+       --> <input>:1:21
+        |
+      1 | configDependencies: abc
+        |                     ^ unexpected event: expected mapping start
+      2 | namedRegistries:
+      3 |   foo: ftp://example.com/
+        |

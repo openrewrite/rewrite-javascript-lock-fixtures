@@ -1,0 +1,7 @@
+pnpm 9.0.0, node v24.19.0, 2026-10-07T01:49:59Z
+before exit=1, after exit=1
+again exit=-
+cross exit=1, cross-again exit=-
+phase times: before at 2026-10-07T01:49:59.000Z, after at 2026-10-07T01:50:00.423Z, cross at 2026-10-07T01:49:59.000Z
+platform os=darwin cpu=arm64 libc=
+swept: replayed against the scenario's http/ by sweep-pnpm.js

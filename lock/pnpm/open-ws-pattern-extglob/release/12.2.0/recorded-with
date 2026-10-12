@@ -1,0 +1,7 @@
+pnpm 12.2.0, node v24.19.0, 2026-10-08T16:54:34Z
+before exit=1, after exit=1
+again exit=1
+cross exit=1, cross-again exit=-
+phase times: before at 2026-10-08T16:54:05.000Z, after at 2026-10-08T16:54:15.000Z, again at 2026-10-08T16:54:26.000Z, cross at 2026-10-08T16:54:15.000Z
+platform os=darwin cpu=arm64 libc=
+swept: the native executable (@pnpm/exe.darwin-arm64), Node from PATH for its children, replayed against the scenario's http/ by sweep-pnpm.js

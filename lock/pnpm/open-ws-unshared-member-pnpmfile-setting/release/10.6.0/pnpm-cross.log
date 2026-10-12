@@ -1,0 +1,12 @@
+Scope: all 2 workspace projects
+ ERR_INVALID_ARG_TYPE  The "path" argument must be of type string. Received an instance of Array
+
+pnpm [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Array
+    at Object.isAbsolute (node:path:1323:5)
+    at getPnpmfilePath (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:134668:33)
+    at requireHooks (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:134778:66)
+    at installDeps (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:188527:50)
+    at async /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:221049:21
+    at async main (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:221008:34)
+    at async runPnpm (/Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:221276:5)
+    at async /Users/jon/Projects/github/openrewrite/rewrite/.claude/worktrees/lock-9150/.lockwork/pm/pnpm/10.6.0/package/dist/pnpm.cjs:221268:7

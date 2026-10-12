@@ -1,0 +1,6 @@
+Scope: all 2 workspace projects
+<tmp>/project/packages/b:
+ ERR_PNPM_SPEC_NOT_SUPPORTED_BY_ANY_RESOLVER  abbrev@catalog: isn't supported by any available resolver.
+
+This error happened while installing a direct dependency of <tmp>/project/packages/b
+Progress: resolved 1, reused 0, downloaded 0, added 0

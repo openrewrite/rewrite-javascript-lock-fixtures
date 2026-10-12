@@ -1,0 +1,4 @@
+Scope: all 2 workspace projects
+ ERR_PNPM_SPEC_NOT_SUPPORTED_BY_ANY_RESOLVER  wrappy@catalog: isn't supported by any available resolver.
+
+This error happened while installing a direct dependency of <tmp>/project

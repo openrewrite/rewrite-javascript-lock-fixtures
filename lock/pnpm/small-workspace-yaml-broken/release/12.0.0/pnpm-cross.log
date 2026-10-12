@@ -1,0 +1,9 @@
+Error:   × load configuration
+  ╰─▶ Failed to parse pnpm-workspace.yaml at <tmp>/project/pnpm-
+      workspace.yaml: error: line 3 column 5: unclosed bracket '['
+       --> <input>:3:5
+        |
+      1 | autoInstallPeers: true
+      2 | packages:
+      3 |   - [packages/*
+        |     ^ unclosed bracket '['

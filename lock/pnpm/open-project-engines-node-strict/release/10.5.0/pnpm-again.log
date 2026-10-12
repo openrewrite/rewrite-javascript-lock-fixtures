@@ -1,0 +1,5 @@
+WARN  Unsupported engine: wanted: {"node":"<10"} (current: {"node":"v24.19.0","pnpm":"10.5.0"})
+Done in <time> using pnpm v10.5.0
+pnpm 10.5.0, node v24.19.0, 2026-10-08T16:02:09.000Z
+exit=0
+lock unchanged

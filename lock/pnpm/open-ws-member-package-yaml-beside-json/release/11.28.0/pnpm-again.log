@@ -1,0 +1,7 @@
+Scope: all 2 workspace projects
+? Verifying lockfile against supply-chain policies (2 entries)...
+✓ Lockfile passes supply-chain policies (2 entries in <time>)
+Done in <time> using pnpm v11.28.0
+pnpm 11.28.0, node v24.19.0, 2026-10-09T15:41:38.017Z
+exit=0
+lock unchanged
