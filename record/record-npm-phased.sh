@@ -22,7 +22,7 @@ cd "$WORK" || exit 1
 [ ! -f "$D/npmrc-before" ] && [ -f "$D/npmrc" ] && cp "$D/npmrc" .npmrc
 [ -d "$D/tree-before" ] && cp -R "$D/tree-before/." .
 cp "$D/pkg-before" package.json
-npm "${ARGS[@]}" "${BARGS[@]}" > "$D/npm-before.log" 2>&1
+npm "${ARGS[@]}" ${BARGS[@]+"${BARGS[@]}"} > "$D/npm-before.log" 2>&1
 B=$?
 rm -f "$D/before"
 [ $B -eq 0 ] && cp package-lock.json "$D/before"
@@ -31,7 +31,7 @@ rm -f .npmrc
 [ -f "$D/npmrc" ] && cp "$D/npmrc" .npmrc
 [ -d "$D/tree" ] && cp -R "$D/tree/." .
 cp "$D/pkg" package.json
-npm "${ARGS[@]}" "${AARGS[@]}" > "$D/npm-after.log" 2>&1
+npm "${ARGS[@]}" ${AARGS[@]+"${AARGS[@]}"} > "$D/npm-after.log" 2>&1
 A=$?
 rm -f "$D/after"
 [ $A -eq 0 ] && cp package-lock.json "$D/after"

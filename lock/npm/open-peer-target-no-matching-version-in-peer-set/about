@@ -1,0 +1,1 @@
+Root adds @testing-library/react, which peers on react and react-dom while react-dom peers on react, and react at a range no version matches.

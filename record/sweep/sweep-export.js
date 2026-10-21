@@ -16,7 +16,7 @@
 //          [--baseline 11.17.0] [--min-major 7] [--dry]
 const fs = require('fs')
 const path = require('path')
-const crypto = require('crypto')
+const { FILES, read, sha, codeOf, loadCell, cmp } = require('./npm-cell')
 
 const arg = (name, dflt) => {
   const i = process.argv.indexOf(`--${name}`)
@@ -38,13 +38,6 @@ const createdHttp = f => created.push(path.join('lock', 'npm', path.relative(FIX
 const REG = 'https://registry.npmjs.org/'
 const LIVE = path.join(SWEEP, '_live')
 
-const cmp = (a, b) => {
-  const x = a.split('.').map(Number)
-  const y = b.split('.').map(Number)
-  return x[0] - y[0] || x[1] - y[1] || x[2] - y[2]
-}
-const read = f => fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : null
-const sha = s => s == null ? '-' : crypto.createHash('sha1').update(s).digest('hex').slice(0, 16)
 const write = (f, text) => {
   if (DRY) return
   fs.mkdirSync(path.dirname(f), { recursive: true })
@@ -74,8 +67,6 @@ const recordedBy = scenario => {
   return m ? m[1] : BASE
 }
 
-const FILES = ['before', 'after', 'after-again', 'cross', 'cross-again']
-
 // A scenario's releases-expect, written by a person with the reason in '#' lines, states what the engine should do
 // where a release's outcome followed something the sweep cannot show (a filesystem error npm swallowed): one line
 // per rule, "<node-semver range>\t<after|cross|*>\t<expect line>". It wins over the classification below.
@@ -91,33 +82,11 @@ const ruled = (rules, release, phase) => {
 }
 const FILESYSTEM = new Set(['ENOENT', 'ENOTDIR', 'EISDIR', 'EACCES', 'EPERM', 'EEXIST', 'ENOTEMPTY'])
 
-const codeOf = log => {
-  const m = log && log.match(/^npm (?:ERR!|error) code (\S+)/m)
-  return m ? m[1] : null
-}
 // npm's output without what differs from run to run
 const stable = log => (log || '').split('\n')
   .filter(l => !/A complete log of this run can be found in|_logs\/|^npm (ERR!|error)\s*$/.test(l)).join('\n').trim() + '\n'
 
-const load = (release, scenario) => {
-  const dir = path.join(SWEEP, release, scenario)
-  const rj = read(path.join(dir, 'result.json'))
-  if (!rj) return null
-  const r = JSON.parse(rj)
-  if (r.skip || r.error) return { skip: r.skip || r.error }
-  const o = { exits: r.exits, again: r.again || null, same: r.same, overlay: r.overlay || [], text: {}, code: {}, log: {} }
-  for (const f of FILES) o.text[f] = read(path.join(dir, f))
-  for (const ph of ['before', 'after', 'again', 'cross', 'cross-again']) {
-    o.log[ph] = read(path.join(dir, `${ph}.log`))
-    o.code[ph] = o.exits[ph] ? codeOf(o.log[ph]) : null
-  }
-  // the second install over `cross`: the one over `after` when the two locks are the same, else its own, and
-  // unknown for a cell swept before that phase existed
-  o.crossAgain = o.text.cross == null ? null : o.text.cross === o.text.after ? o.again : r.crossAgain || 'unknown'
-  o.sig = sha(JSON.stringify([FILES.map(f => sha(o.text[f])),
-    ['before', 'after', 'again', 'cross'].map(ph => [o.exits[ph], o.code[ph]]), o.again, o.crossAgain]))
-  return o
-}
+const load = (release, scenario) => loadCell(path.join(SWEEP, release, scenario))
 
 const ranges = releases => {
   const set = new Set(releases)
