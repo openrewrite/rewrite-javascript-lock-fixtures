@@ -112,6 +112,16 @@ bash bin/npm-upstream-diff.sh 11.17.0 11.18.0 --stat --libs        # the upstrea
 bash bin/npm-first-release-with.sh node_modules/@npmcli/arborist/lib/link.js overrideMatchesSubtree
 ```
 
+A release published after the export joins it from the sweep of the release and its predecessor on the release
+line, where the two write the same in every scenario. `npm-extend-releases.js` then extends the ranges that end at
+the predecessor. Where any cell differs it writes nothing, and the full export places that release.
+
+```bash
+node bin/sweep-npm.js $S --releases 11.21.0,11.21.1
+node bin/npm-extend-releases.js --sweep sweep/npm --fixtures fixtures/lock/npm \
+  --packument inventory/npm-packument.json --releases 11.21.1
+```
+
 ## Yarn Berry
 
 All 83 releases 2.1.0 to 4.18.1, each the single file corepack downloads, run as corepack runs it: Yarn 4 under the

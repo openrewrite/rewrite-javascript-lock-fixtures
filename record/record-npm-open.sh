@@ -38,7 +38,7 @@ if [ -f "$D/before-input" ]; then
   cp "$D/before-input" "$W/package-lock.json"
   rm -f "$D/npm-before.log"
 else
-  node "$BIN/npm-proxied.js" "$W" "$D/requests-before.log" "$SAVE_DIR" "${ARGS[@]}" "${BARGS[@]}" > "$D/npm-before.log" 2>&1
+  node "$BIN/npm-proxied.js" "$W" "$D/requests-before.log" "$SAVE_DIR" "${ARGS[@]}" ${BARGS[@]+"${BARGS[@]}"} > "$D/npm-before.log" 2>&1
   B=$?
   [ $B -eq 0 ] && cp "$W/package-lock.json" "$D/before"
 fi
@@ -50,14 +50,14 @@ rm -f "$W/.npmrc"
 [ -d "$D/tree" ] && cp -R "$D/tree/." "$W/"
 cp "$D/pkg" "$W/package.json"
 A_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-node "$BIN/npm-proxied.js" "$W" "$D/requests-after.log" "$SAVE_DIR" "${ARGS[@]}" "${AARGS[@]}" > "$D/npm-after.log" 2>&1
+node "$BIN/npm-proxied.js" "$W" "$D/requests-after.log" "$SAVE_DIR" "${ARGS[@]}" ${AARGS[@]+"${AARGS[@]}"} > "$D/npm-after.log" 2>&1
 A=$?
 [ $A -eq 0 ] && cp "$W/package-lock.json" "$D/after"
 [ -f "$W/yarn.lock" ] && cp "$W/yarn.lock" "$D/after-yarn"
 
 G=-
 if [ $A -eq 0 ]; then
-  node "$BIN/npm-proxied.js" "$W" "$D/requests-again.log" "$SAVE_DIR" "${ARGS[@]}" "${AARGS[@]}" > "$D/npm-again.log" 2>&1
+  node "$BIN/npm-proxied.js" "$W" "$D/requests-again.log" "$SAVE_DIR" "${ARGS[@]}" ${AARGS[@]+"${AARGS[@]}"} > "$D/npm-again.log" 2>&1
   G=$?
   if cmp -s "$W/package-lock.json" "$D/after"; then S="lock unchanged"; else S="lock changed"; fi
   [ $G -eq 0 ] || S="no lock written"
@@ -75,7 +75,7 @@ if [ -n "${FRESH:-}" ]; then
   [ -d "$D/tree" ] && cp -R "$D/tree/." "$F/"
   rm -f "$F/package-lock.json"
   cp "$D/pkg" "$F/package.json"
-  node "$BIN/npm-proxied.js" "$F" /dev/null - "${ARGS[@]}" "${AARGS[@]}" > "$D/npm-fresh.log" 2>&1
+  node "$BIN/npm-proxied.js" "$F" /dev/null - "${ARGS[@]}" ${AARGS[@]+"${AARGS[@]}"} > "$D/npm-fresh.log" 2>&1
   echo "exit=$?" >> "$D/npm-fresh.log"
   [ -f "$F/package-lock.json" ] && cp "$F/package-lock.json" "$D/fresh"
   rm -rf "$F"
