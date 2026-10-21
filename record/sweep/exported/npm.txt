@@ -340,9 +340,6 @@ lock/npm/open-override-value-file-tarball/http/is-number-6.0.0
 lock/npm/open-override-value-file-tarball/http/is-odd
 lock/npm/open-override-value-file-tarball/http/is-odd-3.0.1
 lock/npm/open-package-extensions-peer/http/isarray
-lock/npm/open-peer-target-no-matching-version/http/js-tokens
-lock/npm/open-peer-target-no-matching-version/http/loose-envify
-lock/npm/open-peer-target-no-matching-version/http/scheduler
 lock/npm/open-root-bundle-override-fresh/http/is-number-6.0.0
 lock/npm/open-strict-npmrc-always-auth/http/wrappy-1.0.2
 lock/npm/open-strict-npmrc-bare/http/wrappy-1.0.2

@@ -1,0 +1,22 @@
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: p@1.0.0
+npm warn Found: react@18.3.1
+npm warn node_modules/react
+npm warn   react@"^999.0.0" from the root project
+npm warn   3 more (react-dom, react-test-renderer, react-shallow-renderer)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-dom@18.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"18.2.0" from the root project
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: p@1.0.0
+npm warn Found: react@18.3.1
+npm warn node_modules/react
+npm warn   react@"^999.0.0" from the root project
+npm warn   3 more (react-dom, react-test-renderer, react-shallow-renderer)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from react-test-renderer@18.2.0
+npm warn node_modules/react-test-renderer
+npm warn   react-test-renderer@"18.2.0" from the root project
