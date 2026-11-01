@@ -5,9 +5,9 @@ Recorded package-manager output used by the lock regeneration tests in
 offline, and the regenerator must reproduce the package manager's lock byte for byte, or the failure the scenario
 records.
 
-The `rewrite-javascript` build downloads the latest `main` of this repository and puts `lock/` on the test
-classpath. There is no published artifact and no version pinning: fixture changes here track the tests in lockstep,
-and older revisions of rewrite are not kept building against newer fixtures.
+The `rewrite-javascript` build pins a commit of this repository, downloads its archive, and puts `lock/` on the
+test classpath. There is no published artifact. Changes needing new recordings update that commit pin in
+`rewrite-javascript/build.gradle.kts`, so older revisions keep their original fixture corpus.
 
 ## Layout
 
@@ -22,6 +22,11 @@ lock/<family>/<scenario>/
 ```
 
 Scenarios may also hold the package manager's config files, workspace members, and the logs of the recording.
+Registry tarballs belong in the scenario's `http/` directory alongside the recorded metadata.
+
+`lock/support/` holds auxiliary byte-exact test data outside scenario discovery: Yarn compression ZIP/tarball
+oracles under `yarn-berry/compression/` and actual Bun semver answers under `bun/1.4.4/`. The Bun 1.4.4
+recordings under `lock/bun/bun144-*` retain their runtime versions and recording logs.
 
 A scenario that needs more than the lock's own directory is a whole repository:
 
