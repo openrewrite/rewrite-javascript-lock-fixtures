@@ -1,0 +1,64 @@
+Lockfile is up to date, resolution step is skipped
+Already up to date
+(node:41116) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @clerk/shared, @prisma/client, @prisma/engines,     │
+│   msgpackr-extract, prisma, sharp, unrs-resolver.                            │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+> next-lms@0.1.0 postinstall /home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms
+> prisma generate
+
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v5.22.0) to ./node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client in 41ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Easily identify and fix slow SQL queries in your app. Optimize helps you enhance your visibility: https://pris.ly/--optimize
+
+Done in 986ms using pnpm v10.11.0
+
+> next-lms@0.1.0 build /home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms
+> next build
+
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 15.3.2
+
+   Creating an optimized production build ...
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (120kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+Browserslist: browsers data (caniuse-lite) is 18 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled successfully in 12.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+Error: API Access Token must be provided.
+    at set tokenId (.next/server/chunks/8173.js:3:27936)
+    at new aW (.next/server/chunks/8173.js:3:26721)
+    at t (.next/server/chunks/8173.js:3:42779)
+    at new iD (.next/server/chunks/8173.js:3:42818)
+    at 34607 (.next/server/app/api/courses/[courseId]/route.js:1:1085)
+    at t (.next/server/webpack-runtime.js:1:142)
+    at t (.next/server/app/api/courses/[courseId]/route.js:1:3826)
+    at <unknown> (.next/server/app/api/courses/[courseId]/route.js:1:3869)
+    at t.X (.next/server/webpack-runtime.js:1:1270)
+    at <unknown> (.next/server/app/api/courses/[courseId]/route.js:1:3839)
+
+> Build error occurred
+[Error: Failed to collect page data for /api/courses/[courseId]] {
+  type: 'Error'
+}
+ ELIFECYCLE  Command failed with exit code 1.

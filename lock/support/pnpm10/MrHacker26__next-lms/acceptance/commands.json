@@ -1,0 +1,232 @@
+[
+  {
+    "label": "init",
+    "argv": [
+      "git",
+      "init",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "init.log"
+  },
+  {
+    "label": "origin",
+    "argv": [
+      "git",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/MrHacker26/next-lms.git"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "origin.log"
+  },
+  {
+    "label": "fetch",
+    "argv": [
+      "git",
+      "fetch",
+      "--depth=1",
+      "origin",
+      "825e9715404cc60e0a8c66ea6279204873f3f261"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.464,
+    "log": "fetch.log"
+  },
+  {
+    "label": "checkout",
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "825e9715404cc60e0a8c66ea6279204873f3f261"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.008,
+    "log": "checkout.log"
+  },
+  {
+    "label": "node-version",
+    "argv": [
+      "node",
+      "--version"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "node-version.log"
+  },
+  {
+    "label": "manager-0-version",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.11.0/package/bin/pnpm.cjs",
+      "--version"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.214,
+    "log": "manager-0-version.log"
+  },
+  {
+    "label": "baseline-0-frozen",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.11.0/package/bin/pnpm.cjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 7.026,
+    "log": "baseline-0-frozen.log"
+  },
+  {
+    "label": "baseline-0-normal",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.11.0/package/bin/pnpm.cjs",
+      "install",
+      "--no-frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.166,
+    "log": "baseline-0-normal.log"
+  },
+  {
+    "label": "baseline-diff",
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "baseline-diff.log"
+  },
+  {
+    "label": "recipe",
+    "argv": [
+      "node",
+      "/home/coder/locks-pnpm10/tools/recipe.cjs",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms/recipe",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms/recipe-input.json"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 25.357,
+    "log": "recipe.log"
+  },
+  {
+    "label": "after-recipe-diff",
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "after-recipe-diff.log"
+  },
+  {
+    "label": "apply-check",
+    "argv": [
+      "git",
+      "apply",
+      "--check",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms/recipe/recipe.patch"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "apply-check.log"
+  },
+  {
+    "label": "apply",
+    "argv": [
+      "git",
+      "apply",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms/recipe/recipe.patch"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.003,
+    "log": "apply.log"
+  },
+  {
+    "label": "patched-0-frozen",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.11.0/package/bin/pnpm.cjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.568,
+    "log": "patched-0-frozen.log"
+  },
+  {
+    "label": "patched-0-normal",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.11.0/package/bin/pnpm.cjs",
+      "install",
+      "--no-frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.066,
+    "log": "patched-0-normal.log"
+  },
+  {
+    "label": "discover-compile",
+    "argv": [
+      "mod",
+      "exec",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+      "MODERNE_BUILD_TOOL_COMPILE",
+      "--dry-run",
+      "--json"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.865,
+    "log": "discover-compile.log"
+  },
+  {
+    "label": "project-compile-0",
+    "argv": [
+      "sh",
+      "-c",
+      "cd /home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms && pnpm install --frozen-lockfile && pnpm run build"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+    "exit": 1,
+    "timeout": false,
+    "seconds": 22.714,
+    "log": "project-compile-0.log"
+  }
+]

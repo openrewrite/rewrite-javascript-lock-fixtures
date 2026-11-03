@@ -1,0 +1,9 @@
+{
+  "name": "pnpm10-npmrc-peers",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "dependencies": {
+    "react-dom": "18.3.1"
+  }
+}

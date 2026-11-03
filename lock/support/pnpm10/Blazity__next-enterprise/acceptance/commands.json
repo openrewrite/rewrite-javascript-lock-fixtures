@@ -1,0 +1,261 @@
+[
+  {
+    "label": "init",
+    "argv": [
+      "git",
+      "init",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "init.log"
+  },
+  {
+    "label": "origin",
+    "argv": [
+      "git",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/Blazity/next-enterprise.git"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "origin.log"
+  },
+  {
+    "label": "fetch",
+    "argv": [
+      "git",
+      "fetch",
+      "--depth=1",
+      "origin",
+      "97c4f3ed6be0a5b255d0e71606c7b355138281a9"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.515,
+    "log": "fetch.log"
+  },
+  {
+    "label": "checkout",
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "97c4f3ed6be0a5b255d0e71606c7b355138281a9"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.016,
+    "log": "checkout.log"
+  },
+  {
+    "label": "node-version",
+    "argv": [
+      "node",
+      "--version"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "node-version.log"
+  },
+  {
+    "label": "manager-0-version",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.0.0/package/bin/pnpm.cjs",
+      "--version"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.214,
+    "log": "manager-0-version.log"
+  },
+  {
+    "label": "baseline-0-frozen",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.0.0/package/bin/pnpm.cjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 8.025,
+    "log": "baseline-0-frozen.log"
+  },
+  {
+    "label": "baseline-0-normal",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.0.0/package/bin/pnpm.cjs",
+      "install",
+      "--no-frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.264,
+    "log": "baseline-0-normal.log"
+  },
+  {
+    "label": "baseline-diff",
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.008,
+    "log": "baseline-diff.log"
+  },
+  {
+    "label": "recipe",
+    "argv": [
+      "node",
+      "/home/coder/locks-pnpm10/tools/recipe.cjs",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise/recipe",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise/recipe-input.json"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 47.842,
+    "log": "recipe.log"
+  },
+  {
+    "label": "after-recipe-diff",
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.008,
+    "log": "after-recipe-diff.log"
+  },
+  {
+    "label": "apply-check",
+    "argv": [
+      "git",
+      "apply",
+      "--check",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise/recipe/recipe.patch"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.004,
+    "log": "apply-check.log"
+  },
+  {
+    "label": "apply",
+    "argv": [
+      "git",
+      "apply",
+      "/home/coder/locks-pnpm10/results/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise/recipe/recipe.patch"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.006,
+    "log": "apply.log"
+  },
+  {
+    "label": "patched-0-frozen",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.0.0/package/bin/pnpm.cjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 6.279,
+    "log": "patched-0-frozen.log"
+  },
+  {
+    "label": "patched-0-normal",
+    "argv": [
+      "/tmp/pnpm-upstream/pm/10.0.0/package/bin/pnpm.cjs",
+      "install",
+      "--no-frozen-lockfile"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.264,
+    "log": "patched-0-normal.log"
+  },
+  {
+    "label": "discover-compile",
+    "argv": [
+      "mod",
+      "exec",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+      "MODERNE_BUILD_TOOL_COMPILE",
+      "--dry-run",
+      "--json"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.865,
+    "log": "discover-compile.log"
+  },
+  {
+    "label": "project-compile-0",
+    "argv": [
+      "sh",
+      "-c",
+      "cd /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise && pnpm install --frozen-lockfile && pnpm run build"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 10.131,
+    "log": "project-compile-0.log"
+  },
+  {
+    "label": "discover-check",
+    "argv": [
+      "mod",
+      "exec",
+      "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+      "MODERNE_BUILD_TOOL_CHECK",
+      "--dry-run",
+      "--json"
+    ],
+    "cwd": "/home/coder/locks-pnpm10",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.815,
+    "log": "discover-check.log"
+  },
+  {
+    "label": "project-check-0",
+    "argv": [
+      "sh",
+      "-c",
+      "cd /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise && pnpm install --frozen-lockfile && pnpm run test"
+    ],
+    "cwd": "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.066,
+    "log": "project-check-0.log"
+  }
+]

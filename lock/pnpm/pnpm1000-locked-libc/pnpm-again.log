@@ -1,0 +1,15 @@
+(node:30020) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Done in 185ms
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 10.0.0 → 12.16.1.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v12.16.1   │
+   │                 Run "pnpm add -g pnpm" to update.                 │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+pnpm 10.0.0, node v24.22.2, 2026-11-03T23:29:49Z
+exit=0
+lock unchanged

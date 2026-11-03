@@ -1,0 +1,9 @@
+[
+  {
+    "file": "package.json",
+    "scope": "devDependencies",
+    "name": "tailwindcss",
+    "current": "^3.4.17",
+    "target": "3.4.19"
+  }
+]

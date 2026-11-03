@@ -1,0 +1,14 @@
+! Corepack is about to download https://registry.npmjs.org/pnpm/-/pnpm-10.34.9.tgz
+Done in 278ms using pnpm v10.34.9
+
+   ╭──────────────────────────────────────────────────────────────────────╮
+   │                                                                      │
+   │                 Update available! 10.34.9 → 12.16.1.                 │
+   │                 Changelog: https://pnpm.io/v/12.16.1                 │
+   │   To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -   │
+   │                                                                      │
+   ╰──────────────────────────────────────────────────────────────────────╯
+
+pnpm 10.34.9, node v24.22.2, 2026-11-03T23:07:34Z
+exit=0
+lock unchanged

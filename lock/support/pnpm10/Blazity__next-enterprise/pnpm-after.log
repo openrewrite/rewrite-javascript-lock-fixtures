@@ -1,0 +1,37 @@
+(node:21388) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 10.0.0 → 12.16.1.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v12.16.1   │
+   │                 Run "pnpm add -g pnpm" to update.                 │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  deprecated @opentelemetry/sdk-trace-node@1.18.1: Use @opentelemetry/sdk-trace package
+ WARN  deprecated eslint@9.39.4: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+ WARN  deprecated tsc@2.0.4: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+Progress: resolved 89, reused 0, downloaded 0, added 0
+Progress: resolved 90, reused 0, downloaded 0, added 0
+Progress: resolved 288, reused 0, downloaded 0, added 0
+Progress: resolved 578, reused 0, downloaded 0, added 0
+Progress: resolved 961, reused 0, downloaded 0, added 0
+Progress: resolved 1502, reused 0, downloaded 0, added 0
+ WARN  14 deprecated subdependencies found: @opentelemetry/otlp-proto-exporter-base@0.45.1, @opentelemetry/propagator-jaeger@1.18.1, @opentelemetry/sdk-trace-base@1.18.1, acorn-import-assertions@1.9.0, expect-playwright@0.8.0, glob@7.2.3, inflight@1.0.6, jest-playwright-preset@4.0.0, jest-process-manager@0.4.0, rimraf@3.0.2, tsconfck@3.1.6, uuid@8.3.2, uuid@9.0.1, whatwg-encoding@3.1.1
+Progress: resolved 1727, reused 0, downloaded 0, added 0, done
+
+ WARN  Issues with peer dependencies found
+.
+├─┬ eslint-plugin-tailwindcss 3.18.2
+│ └── ✕ unmet peer tailwindcss@^3.4.0: found 4.2.1
+└─┬ @vercel/otel 1.14.0
+  ├── ✕ unmet peer @opentelemetry/api-logs@">=0.46.0 <0.200.0": found 0.45.1
+  ├── ✕ unmet peer @opentelemetry/sdk-logs@">=0.46.0 <0.200.0": found 0.45.1
+  ├── ✕ unmet peer @opentelemetry/resources@">=1.19.0 <2.0.0": found 1.18.1
+  ├── ✕ unmet peer @opentelemetry/sdk-metrics@">=1.19.0 <2.0.0": found 1.18.1
+  ├── ✕ unmet peer @opentelemetry/sdk-trace-base@">=1.19.0 <2.0.0": found 1.18.1
+  └── ✕ unmet peer @opentelemetry/instrumentation@">=0.46.0 <0.200.0": found 0.45.1
+
+Done in 20.4s

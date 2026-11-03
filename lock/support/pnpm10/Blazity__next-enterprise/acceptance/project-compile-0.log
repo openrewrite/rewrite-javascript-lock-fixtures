@@ -1,0 +1,39 @@
+Already up to date
+Done in 156ms
+
+> next-enterprise@0.0.0 build /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise
+> next build
+
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 15.5.18
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.2s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      126 B         102 kB
+├ ○ /_not-found                            982 B         103 kB
+└ ƒ /api/health                            126 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/43a8a756-64b0f92213489b03.js  54.2 kB
+  ├ chunks/57-d628c45b8b6e90ab.js        45.9 kB
+  └ other shared chunks (total)          1.84 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

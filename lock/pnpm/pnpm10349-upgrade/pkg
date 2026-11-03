@@ -1,0 +1,9 @@
+{
+  "name": "pnpm10-upgrade",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "dependencies": {
+    "is-odd": "3.0.1"
+  }
+}

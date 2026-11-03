@@ -1,0 +1,116 @@
+(node:41406) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1562
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1562, reused 1562, downloaded 0, added 417
+Progress: resolved 1562, reused 1562, downloaded 0, added 1297
+Progress: resolved 1562, reused 1562, downloaded 0, added 1561
+Progress: resolved 1562, reused 1562, downloaded 0, added 1562, done
+
+dependencies:
++ @next/bundle-analyzer 15.5.13
++ @radix-ui/react-accordion 1.2.12
++ @radix-ui/react-checkbox 1.3.3
++ @radix-ui/react-dialog 1.1.15
++ @radix-ui/react-dropdown-menu 2.1.16
++ @radix-ui/react-form 0.1.8
++ @radix-ui/react-label 2.1.8
++ @radix-ui/react-popover 1.1.15
++ @radix-ui/react-radio-group 1.3.8
++ @radix-ui/react-scroll-area 1.2.10
++ @radix-ui/react-select 2.2.6
++ @radix-ui/react-slider 1.3.6
++ @radix-ui/react-switch 1.2.6
++ @radix-ui/react-tabs 1.1.13
++ @radix-ui/react-toggle-group 1.1.11
++ @radix-ui/react-tooltip 1.2.8
++ @semantic-release/changelog 6.0.3
++ @semantic-release/commit-analyzer 13.0.1
++ @semantic-release/git 10.0.1
++ @semantic-release/github 12.0.10
++ @semantic-release/npm 13.1.5
++ @semantic-release/release-notes-generator 14.1.0
++ @t3-oss/env-nextjs 0.13.10
++ @vercel/otel 1.14.0
++ class-variance-authority 0.7.1
++ lodash 4.17.23
++ next 15.5.18
++ react 19.2.4
++ react-dom 19.2.4
++ tailwind-merge 3.5.0
++ zod 3.25.76
+
+devDependencies:
++ @babel/core 7.29.0
++ @babel/plugin-syntax-flow 7.28.6
++ @babel/plugin-transform-optional-chaining 7.28.6
++ @babel/plugin-transform-react-jsx 7.28.6
++ @eslint/eslintrc 3.3.5
++ @next/eslint-plugin-next 15.1.6
++ @opentelemetry/api 1.7.0
++ @opentelemetry/resources 1.18.1
++ @opentelemetry/sdk-node 0.45.1
++ @opentelemetry/sdk-trace-node 1.18.1
++ @opentelemetry/semantic-conventions 1.40.0
++ @playwright/test 1.58.2
++ @storybook/addon-controls 8.6.18
++ @storybook/addon-essentials 8.6.14
++ @storybook/addon-interactions 8.6.14
++ @storybook/addon-links 8.6.18
++ @storybook/blocks 8.6.14
++ @storybook/nextjs 8.6.18
++ @storybook/react 8.6.18
++ @storybook/test 8.6.18
++ @storybook/test-runner 0.21.3
++ @tailwindcss/postcss 4.2.1
++ @testing-library/jest-dom 6.9.1
++ @testing-library/react 16.3.2
++ @total-typescript/ts-reset 0.6.1
++ @types/node 22.19.15
++ @types/react 19.2.14
++ @types/react-dom 19.2.3
++ @typescript-eslint/eslint-plugin 8.57.1
++ @vitejs/plugin-react 4.7.0
++ @vitest/ui 3.2.4
++ all-contributors-cli 6.26.1
++ cross-env 7.0.3
++ eslint 9.39.4
++ eslint-config-next 15.1.6
++ eslint-config-prettier 10.1.8
++ eslint-plugin-import 2.32.0
++ eslint-plugin-storybook 0.11.6
++ eslint-plugin-tailwindcss 3.18.2
++ fetch-mock 12.6.0
++ gzip-size 6.0.0
++ jsdom 26.1.0
++ mkdirp 3.0.1
++ patch-package 8.0.1
++ postcss 8.5.8
++ postcss-import 16.1.1
++ postinstall-postinstall 2.1.0
++ prettier 3.8.1
++ prettier-plugin-tailwindcss 0.7.2
++ semantic-release 25.0.3
++ storybook 8.6.18
++ tailwindcss 4.2.1
++ tsc 2.0.4
++ typed-query-selector 2.12.1
++ typescript 5.9.3
++ typescript-eslint 8.57.1
++ vite-tsconfig-paths 5.1.4
++ vitest 3.2.4
++ webpack 5.99.9
+
+The following dependencies have build scripts that were ignored: @swc/core, core-js-pure, esbuild, postinstall-postinstall, protobufjs, sharp, unrs-resolver
+To allow the execution of build scripts for these packages, add their names to "pnpm.onlyBuiltDependencies" in your "package.json", then run "pnpm rebuild"
+
+
+> next-enterprise@0.0.0 postinstall /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise
+> npx patch-package -y
+
+patch-package 8.0.1
+Applying patches...
+No patch files found
+Done in 6.2s

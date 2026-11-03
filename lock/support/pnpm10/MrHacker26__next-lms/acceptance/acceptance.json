@@ -1,0 +1,312 @@
+{
+  "id": "MrHacker26__next-lms",
+  "repository": "https://github.com/MrHacker26/next-lms.git",
+  "baseline": "825e9715404cc60e0a8c66ea6279204873f3f261",
+  "fingerprint": "36ec5c868a8a6cbde06a1947ba63120d859160a971481ab2a8809545da48c418",
+  "status": "native_accepted",
+  "finished": true,
+  "lockgroups": 1,
+  "provenance": {
+    "java": {
+      "kind": "source",
+      "coordinates": [],
+      "repository": "https://artifacts.codegenomeproject.org/maven",
+      "artifacts": [
+        {
+          "file": "test",
+          "sha256": "03aede3929a6e5f1c19c18668f6fd827d81088465dfaff9c658d1f40d012608f"
+        },
+        {
+          "file": "test",
+          "sha256": "005c6b7f31f32679194f2d67b98aa0e9defc8c13423693cc6cccb1b813ceb782"
+        },
+        {
+          "file": "main",
+          "sha256": "75643f257ea832f76938a18b48ea069c06787a5b12135ddcbfde8085acdd386e"
+        },
+        {
+          "file": "main",
+          "sha256": "bd1cc8e7b14a217a7453302a4d3d640ba46ac3d4324fbf764060225020379b6b"
+        },
+        {
+          "file": "rewrite-json-0.1.0-SNAPSHOT.jar",
+          "sha256": "a6b5b2ad05c5084cad6a9e011fc3a677f100415678e177ca8c7241ff5b7960df"
+        },
+        {
+          "file": "rewrite-yaml-0.1.0-SNAPSHOT.jar",
+          "sha256": "5f34e0d43a0e6c0c201c1585b94b1dc0eea093b5040249d637fb98f5d9d5dbf9"
+        },
+        {
+          "file": "rewrite-test-0.1.0-SNAPSHOT.jar",
+          "sha256": "fbd208b1cb9266cbcd57e51450248131bf4cd24c747c74099082c7251e3165a5"
+        },
+        {
+          "file": "rewrite-java-25-0.1.0-SNAPSHOT.jar",
+          "sha256": "c56ceaa1c835959b4fc81d198573e8f3bc03aeb4d441794ee6df4155ff998cc6"
+        },
+        {
+          "file": "rewrite-maven-0.1.0-SNAPSHOT.jar",
+          "sha256": "e7b11806833a2c81c210aef3d94e35f3e48660f0578ee2f183bfa13fa04081e1"
+        },
+        {
+          "file": "rewrite-java-lombok-0.1.0-SNAPSHOT.jar",
+          "sha256": "6f81f7ffaab5770765f8ecefc1e952335621e5f1e93bd5bfffc9c46c81b769ee"
+        },
+        {
+          "file": "rewrite-xml-0.1.0-SNAPSHOT.jar",
+          "sha256": "c6d38a9c8bcf4f84330505bd8abeee5fe751694ebe65a1c0ed54824e9fba3046"
+        },
+        {
+          "file": "rewrite-properties-0.1.0-SNAPSHOT.jar",
+          "sha256": "5f6f6dc6846008f1c0ffa07d527bda148c5c8d9bff3a2aa03901084e4e3e9666"
+        },
+        {
+          "file": "rewrite-core-0.1.0-SNAPSHOT.jar",
+          "sha256": "fc7cce9fc07cef7720973d1f0576c223de2b4996faaa958e5833fdd20dff7f5a"
+        },
+        {
+          "file": "jackson-dataformat-smile-2.21.8.jar",
+          "sha256": "bfb990ea7681b3084db5c4d5a294ad69e7bdcab9577f9522849faac81218f570"
+        },
+        {
+          "file": "jsonrpc-1.7.0.jar",
+          "sha256": "02b5ecfa651e7f57f195aa281dee0f3ad5accb07614b93cbbfc38cd9d7b8be71"
+        },
+        {
+          "file": "jackson-module-parameter-names-2.21.8.jar",
+          "sha256": "e85e512d196bb3cc0a7c86ec98d4e22998e81dc84021cb02064eec1c5ce88bed"
+        },
+        {
+          "file": "jackson-datatype-jsr310-2.21.8.jar",
+          "sha256": "63a0854504aa90ed8f34f891aaa5259f9bd622bac115323559a38abdc1e81632"
+        },
+        {
+          "file": "jackson-dataformat-csv-2.21.8.jar",
+          "sha256": "f4f868f00bfaf2037bfb7f26828387ae5ab0d81e1e0e989c79f6f3e6ebb61492"
+        },
+        {
+          "file": "jackson-dataformat-xml-2.21.8.jar",
+          "sha256": "0285fed528d3a7f73aeef5c4f5c3380810936c62094a56afe6c604657c682d84"
+        },
+        {
+          "file": "jackson-datatype-jdk8-2.21.8.jar",
+          "sha256": "a7b796d0ec9d0a8d5cb683a01f2a70638dc968444c66031ed366b0ab70911d84"
+        },
+        {
+          "file": "jackson-databind-2.21.8.jar",
+          "sha256": "ad77f2285717e2f34c319d988b7c85783a47d0b33f33a501d1fcbf196e61bbaa"
+        },
+        {
+          "file": "jackson-core-2.21.8.jar",
+          "sha256": "604ef7765013daf5cde192e40bc4c8412c4ca93f4aaf7bf8e9a62fad1e1026bb"
+        },
+        {
+          "file": "rewrite-java-0.1.0-SNAPSHOT.jar",
+          "sha256": "5cb97d9430020ce3dc1b28e7d85cc7c8941a9771e5c377068f8a055ec8dd6f17"
+        },
+        {
+          "file": "jgit-1.13.0.jar",
+          "sha256": "b2a54d91ce1dad90a656e8b887b46ed2f02a55a658367ab81657b1e5fe8130f8"
+        },
+        {
+          "file": "java-object-diff-1.0.2.jar",
+          "sha256": "86c5e72942bb12143f2c283bb2d44c9f022e52d44361751ead8c11f3ebde2596"
+        },
+        {
+          "file": "annotations-26.1.0.jar",
+          "sha256": "ebc7aec252ed0c7d2d04c039d7f00e69f7b86b1f493c741d67b3ef31b986b054"
+        },
+        {
+          "file": "jackson-annotations-2.21.jar",
+          "sha256": "53ca085f4a150f703f49e1aabd935bd03b43e1ea3d55d135438292af22cef56b"
+        },
+        {
+          "file": "snakeyaml-2.7.jar",
+          "sha256": "2e194eba45a67dee19a4e272f4a04b18de8054e9f598b094382f6dae0b0e4b5e"
+        },
+        {
+          "file": "junit-jupiter-engine-6.1.3.jar",
+          "sha256": "414559e78bbfa3bdb2eab009ac3ab1e22369ac31117c270a0bd666da115c5c6c"
+        },
+        {
+          "file": "junit-jupiter-params-6.1.3.jar",
+          "sha256": "05c51cedba2c06a9770707391e006cee825876937dea580b94a265ce145d4939"
+        },
+        {
+          "file": "junit-platform-launcher-6.1.3.jar",
+          "sha256": "1dec64b1fc0b7c47a11302aa5b4d37d8160c041b396e27067709ce775601a7b6"
+        },
+        {
+          "file": "junit-platform-engine-6.1.3.jar",
+          "sha256": "21ad7ad3a35beda16387979317be1833a72a71d812f9a66ee4b9a7bafb56334c"
+        },
+        {
+          "file": "junit-platform-commons-6.1.3.jar",
+          "sha256": "a4774ae923c109544034aeae7c762cf017fbcdd1342403ba90e0921984b608c3"
+        },
+        {
+          "file": "junit-jupiter-api-6.1.3.jar",
+          "sha256": "555d6cf20fa1710884dd01b86cc5785397ba73e21ada2d4b784f5f1a14dcafc4"
+        },
+        {
+          "file": "assertj-core-3.27.7.jar",
+          "sha256": "c4a445426c3c2861666863b842cc4ec7bbb1c4226fefd370b6d2fe83d6c4ff0f"
+        },
+        {
+          "file": "micrometer-core-1.17.2.jar",
+          "sha256": "e28ddecbd27477cc7020defd1c2061a3d8b6b2e543d90856186711fe7f346532"
+        },
+        {
+          "file": "micrometer-observation-1.17.2.jar",
+          "sha256": "d3ff53cfa0532dc1af0de349073f9aeb985e01f4b88c1d904350178805859695"
+        },
+        {
+          "file": "micrometer-commons-1.17.2.jar",
+          "sha256": "af8c85e879025ce30c381e6810e14c4f52b4150894e36c815860d14763271348"
+        },
+        {
+          "file": "jspecify-1.0.1.jar",
+          "sha256": "070d75f261fe4c5b8202508366715f7f2d4660f88c8ef7e6d3575e48c9683b66"
+        },
+        {
+          "file": "gizmo-1.0.11.Final.jar",
+          "sha256": "a54bfbb6dcce9298134595b3cd1df961bc732468825f26ee5296f2b5f88c0b99"
+        },
+        {
+          "file": "asm-util-9.11.1.jar",
+          "sha256": "23fdffacdfc38f447cbd8b80e058f462451fa5d4709e437067d530fa6513579d"
+        },
+        {
+          "file": "asm-analysis-9.11.1.jar",
+          "sha256": "3a91769287d0a186333d6e384e5d4eec37e4b8f705dcf920ff4aea4cc452fac2"
+        },
+        {
+          "file": "asm-tree-9.11.1.jar",
+          "sha256": "2b15c3c1b288a9fad3bb2cd6d988ba9521554914ed1f2a2029141fa3f483154a"
+        },
+        {
+          "file": "asm-9.11.1.jar",
+          "sha256": "ae4e6e10d59d0a1500317764b21881ad883f8550e33c66e6142f7032c6fb566c"
+        },
+        {
+          "file": "jna-platform-5.19.1.jar",
+          "sha256": "3b3864f5b449e9c3c24b16861524b622b086563f44e0cd8384c8efc5a6052f82"
+        },
+        {
+          "file": "univocity-parsers-2.9.1.jar",
+          "sha256": "31685122d5e392e98672ed6009a95a4c1623ca1185567bd44ee94527d454e5c3"
+        },
+        {
+          "file": "caffeine-2.9.3.jar",
+          "sha256": "1e0a7bbef1dd791653143f3f05d0e489934bf5481e58a87c9e619cd46b68729b"
+        },
+        {
+          "file": "commons-text-1.15.0.jar",
+          "sha256": "58d2da30f058512a1e7f914e39241deca4dff5c27a085b4ed2faa9e7208067f6"
+        },
+        {
+          "file": "objenesis-3.6.jar",
+          "sha256": "6ecc0fc776af04e2bfd2bf42d618ab5161440dcb8a0e7dff9e84c065c7cec3dd"
+        },
+        {
+          "file": "antlr4-runtime-4.13.2.jar",
+          "sha256": "dd3e8a13a2d669bf84fb8d834de35ce4875f27157698d206241ec8488aadcaf7"
+        },
+        {
+          "file": "byte-buddy-1.18.3.jar",
+          "sha256": "d78396e3c5bce3f2865c9186647481e5589d34cacc632484715b686108d17c66"
+        },
+        {
+          "file": "slf4j-nop-1.7.36.jar",
+          "sha256": "c214958b07816cb4412b30c7bdbd4308ffdc6ba2a83767b8f3a9229cbd9274d6"
+        },
+        {
+          "file": "slf4j-api-1.7.36.jar",
+          "sha256": "d3ef575e3e4979678dc01bf1dcce51021493b4d11fb7f1be8ad982877c16a1c0"
+        },
+        {
+          "file": "failsafe-3.3.2.jar",
+          "sha256": "2c5dc879a6dac7ea3a7b29d795e27bd49b8e7908b05c2f3e56053c19d79850f5"
+        },
+        {
+          "file": "JavaEWAH-1.1.13.jar",
+          "sha256": "4c0fda2b1d317750d7ea324e36c70b2bc48310c0aaae67b98df0915d696d7111"
+        },
+        {
+          "file": "jandex-2.4.2.Final.jar",
+          "sha256": "3f2ce55c7d71e744581488dc5105806aa8084c08e6e916a019bab8f8698994f0"
+        },
+        {
+          "file": "jna-5.19.1.jar",
+          "sha256": "4fb141dd8ef6b0585ffceea4bc49602fbc6312fa977e2c488794ea3e6aafecae"
+        },
+        {
+          "file": "checker-qual-3.19.0.jar",
+          "sha256": "a827c49183f3a632277d27a0a4673686cb341507447b9d570261094bd748aa68"
+        },
+        {
+          "file": "error_prone_annotations-2.10.0.jar",
+          "sha256": "a249d4d25dfb86d41e6c82fc335df580189f0c9feeabdc53233fc1e5060724a1"
+        },
+        {
+          "file": "commons-lang3-3.20.0.jar",
+          "sha256": "69e5c9fa35da7a51a5fd2099dfe56a2d8d32cf233e2f6d770e796146440263f4"
+        },
+        {
+          "file": "HdrHistogram-2.2.2.jar",
+          "sha256": "22d1d4316c4ec13a68b559e98c8256d69071593731da96136640f864fa14fad8"
+        },
+        {
+          "file": "opentest4j-1.3.0.jar",
+          "sha256": "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b"
+        },
+        {
+          "file": "lombok-1.18.48.jar",
+          "sha256": "85477a4655ebb2c074a9099cfb749be454449fee564d4282610df1b85f7c508b"
+        },
+        {
+          "file": "woodstox-core-7.1.1.jar",
+          "sha256": "02b9d022e9d47704ff8a7a859a0dbfd3b2882a8311eb7ff1e180f760ccda2712"
+        },
+        {
+          "file": "stax2-api-4.2.2.jar",
+          "sha256": "a61c48d553efad78bc01fffc4ac528bebbae64cbaec170b2a5e39cf61eb51abe"
+        }
+      ],
+      "commit": "50201298e742a8e92175369540023d50fff74271"
+    },
+    "typescript": {
+      "kind": "published",
+      "package": "@openrewrite/rewrite",
+      "version": "8.97.1",
+      "distSha256": "572ced0b49cec4d8a1a89a25b76e4466f49ccb5a66e425295aeaebeecb619b40",
+      "lockSha256": "0db3ccbb8c706a435867d2ed70883ab76518bef80d39113f4b8592313e4312da"
+    },
+    "node": "v24.22.2"
+  },
+  "parseMode": "fresh-pinned-files-no-consumer-LST",
+  "nodeVersion": "v24.22.2",
+  "changedLocks": [
+    "pnpm-lock.yaml"
+  ],
+  "changedManifests": [
+    "package.json"
+  ],
+  "mutatedLockgroups": 1,
+  "checks": [
+    {
+      "type": "COMPILE",
+      "status": "failed",
+      "exit": 1,
+      "reason": null
+    }
+  ],
+  "projectCommands": 1,
+  "installCommands": 4,
+  "verifiedParserVersions": [
+    "10.11.0"
+  ],
+  "byteExactNativeLockOnly": false,
+  "lockOnlyDifference": "Cyclic eslint peer suffixes differ; generated lock passes both frozen and ordinary PNPM10.11.0 installs unchanged. No byte-exact lock-only claim for this case.",
+  "consumerEnvironmentLimitation": "The resolved compile command compiles and type-checks successfully, then page-data collection requires an unavailable API Access Token. CHECK was not run after that command failed."
+}

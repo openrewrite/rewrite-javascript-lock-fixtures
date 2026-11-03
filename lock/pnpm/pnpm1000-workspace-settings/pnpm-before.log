@@ -1,0 +1,23 @@
+! Corepack is about to download https://registry.npmjs.org/pnpm/-/pnpm-10.0.0.tgz
+(node:17238) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 10.0.0 → 12.16.1.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v12.16.1   │
+   │         Run "corepack install -g pnpm@12.16.1" to update.         │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 4, reused 0, downloaded 0, added 0, done
+
+ WARN  Issues with peer dependencies found
+.
+└─┬ react-dom 18.2.0
+  └── ✕ missing peer react@^18.2.0
+Peer dependencies that should be installed:
+  react@^18.2.0
+
+Done in 534ms

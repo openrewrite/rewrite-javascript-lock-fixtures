@@ -1,0 +1,1 @@
+A lock recorded with PNPM 10.34.9 contains libc. A PNPM 10.11.0 edit reads the locked optional package.

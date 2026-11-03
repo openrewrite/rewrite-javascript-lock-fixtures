@@ -1,0 +1,26 @@
+{
+  "id": "Blazity__next-enterprise",
+  "repository": "https://github.com/Blazity/next-enterprise.git",
+  "commit": "97c4f3ed6be0a5b255d0e71606c7b355138281a9",
+  "nodeVersion": "v24.22.2",
+  "lockgroups": [
+    {
+      "root": ".",
+      "locks": [
+        "pnpm-lock.yaml"
+      ],
+      "manager": "pnpm",
+      "version": "10.0.0",
+      "argv": [
+        "/tmp/pnpm-upstream/pm/10.0.0/package/bin/pnpm.cjs"
+      ]
+    }
+  ],
+  "recipe": {
+    "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+    "options": {
+      "packageName": "@semantic-release/github",
+      "newVersion": "12.0.10"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +10
+++++++++++
+Progress: resolved 10, reused 0, downloaded 10, added 10, done
+
+dependencies:
++ ansi <- wrap-ansi 7.0.0
++ ms 2.1.2
+
+Done in 358ms using pnpm v10.34.9
