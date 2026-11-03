@@ -48,4 +48,6 @@ the recorded scenarios against their own registry responses.
 `python3 record/verify-pnpm-installs.py <scenario> /absolute/path/to/pnpm` checks both the recorded baseline and
 edited lock with a full frozen install followed by an ordinary install. It checks the executable's actual version,
 requires every original input to remain byte-identical, writes `native-installs.json` and four logs, and deletes the
-scratch dependency trees. `.github/workflows/pnpm10.yml` repeats these checks with each exact PNPM 10 executable.
+scratch dependency trees. A proposed three-version CI workflow is preserved in the campaign message board; the
+current OAuth connection cannot install workflows. The source PR pins these fixtures and its existing CI must pass
+before either PR is merged.

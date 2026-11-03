@@ -12,7 +12,8 @@ manifest and recording log. Locks were never edited by hand.
 Each scenario has its native lock-only recording and unchanged second install. `native-installs.json` and four
 `native-*.log` files also record full baseline and edited frozen/ordinary installs: 24 scenarios, 96 successful
 commands, with every original input byte unchanged. `record/verify-pnpm-installs.py` reproduces those checks, and
-the PNPM 10 workflow repeats them in CI. OpenRewrite's PNPM scenario tests compare regenerated locks with `after`
+the paired source PR's existing CI checks the pinned fixture replay. A proposed native CI workflow is retained in
+the campaign board because the OAuth connection lacks workflow scope. OpenRewrite's PNPM scenario tests compare regenerated locks with `after`
 byte for byte.
 
 The engine's PNPM 10 profile covers registry dependencies, linked workspaces and catalog resolution. Patches,
