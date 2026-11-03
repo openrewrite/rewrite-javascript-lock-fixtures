@@ -42,3 +42,10 @@ config names it (`user-npmrc`, `user-yarnrc-yml`, ...). Every recorder runs `red
 A scenario's `releases` file and `release/<first>/` outcomes say what every other release of its package manager
 writes. They are written by the release sweep in [`sweep/`](sweep/README.md), which replays each real release over
 the recorded scenarios against their own registry responses.
+
+## PNPM 10 full install verification
+
+`python3 record/verify-pnpm-installs.py <scenario> /absolute/path/to/pnpm` checks both the recorded baseline and
+edited lock with a full frozen install followed by an ordinary install. It checks the executable's actual version,
+requires every original input to remain byte-identical, writes `native-installs.json` and four logs, and deletes the
+scratch dependency trees. `.github/workflows/pnpm10.yml` repeats these checks with each exact PNPM 10 executable.

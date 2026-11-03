@@ -1,0 +1,19 @@
+{
+  "recipe": {
+    "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+    "options": {
+      "packageName": "tailwindcss",
+      "newVersion": "3.4.19"
+    }
+  },
+  "changes": [
+    {
+      "before": "package.json",
+      "after": "package.json"
+    },
+    {
+      "before": "pnpm-lock.yaml",
+      "after": "pnpm-lock.yaml"
+    }
+  ]
+}

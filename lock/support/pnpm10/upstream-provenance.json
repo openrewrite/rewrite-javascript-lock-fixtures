@@ -1,0 +1,36 @@
+{
+  "registry": "https://registry.npmjs.org/pnpm",
+  "latest10": "10.34.9",
+  "observedAt": "2026-11-03T22:59:17.241604+00:00",
+  "rewriteSourceCommit": "50201298e742a8e92175369540023d50fff74271",
+  "releases": {
+    "10.0.0": {
+      "upstreamTag": "v10.0.0",
+      "upstreamCommit": "42ecf04fd0e442af8610ae4231855e004732dbf7",
+      "tarball": "https://registry.npmjs.org/pnpm/-/pnpm-10.0.0.tgz",
+      "integrity": "sha512-uP71SUvT/ky9Ttq9B0XfLuW+PksLiwj6ZDqj5MZwLMwPANaPqKjJhYpzWgAySFpEmQ7SgQUmyHXkFvABsX3xKw==",
+      "node": ">=18.12"
+    },
+    "10.11.0": {
+      "upstreamTag": "v10.11.0",
+      "upstreamCommit": "789e7235ce2a7e528abdfe1e42afd643a3714d16",
+      "tarball": "https://registry.npmjs.org/pnpm/-/pnpm-10.11.0.tgz",
+      "integrity": "sha512-ZUBYP0HMX2KOs9l3Ps7oAvT575kjzEW2mJD7R5kdSwkpZGlOw6T3OKQgyRijMwYsi5JdMS9C5PDCY+tgNVH5dw==",
+      "node": ">=18.12"
+    },
+    "10.34.9": {
+      "upstreamTag": "v10.34.9",
+      "upstreamCommit": "aa97047a81b4a7ed41f9a2f5479555ed7f7685b6",
+      "tarball": "https://registry.npmjs.org/pnpm/-/pnpm-10.34.9.tgz",
+      "integrity": "sha512-9JtajqD97bRLs8DB1ldQkqU8KVDZW3rRXfEfF5dId6LeOgHAfpNOmyjOcW5RwJqUlixzBtCb4uHksYqMh2L9Mg==",
+      "node": ">=18.12"
+    }
+  },
+  "comparisonBase": "pnpm/pnpm v11.0.3 and port v11.2.2",
+  "compatibilityDatabase": {
+    "package": "@yarnpkg/extensions",
+    "version": "2.0.3",
+    "entries": 147,
+    "jsonSha256": "784f45b56324467287c7fe714de34ec7f3f78da4b34939882ca0d929d361420f"
+  }
+}

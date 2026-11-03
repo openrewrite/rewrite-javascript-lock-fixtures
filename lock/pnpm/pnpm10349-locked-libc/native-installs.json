@@ -1,0 +1,60 @@
+{
+  "pnpm": "10.34.9",
+  "node": "v24.22.2",
+  "executableSha256": "b276da51dc8ca5b0d3ee3371695b50fc8b3244b281b091c63a3f082a88dadeb9",
+  "recordedAt": "2026-11-03T23:35:12.511074+00:00",
+  "commands": [
+    {
+      "phase": "before",
+      "mode": "frozen",
+      "command": [
+        "pnpm@10.34.9",
+        "install",
+        "--frozen-lockfile",
+        "--no-color"
+      ],
+      "exit": 0,
+      "inputsUnchanged": true,
+      "lockSha256": "fa4909cf9fe5d6d8e2d7b42414464b663869d3ac8b55d9941144da476a5c0c4d"
+    },
+    {
+      "phase": "before",
+      "mode": "normal",
+      "command": [
+        "pnpm@10.34.9",
+        "install",
+        "--no-frozen-lockfile",
+        "--no-color"
+      ],
+      "exit": 0,
+      "inputsUnchanged": true,
+      "lockSha256": "fa4909cf9fe5d6d8e2d7b42414464b663869d3ac8b55d9941144da476a5c0c4d"
+    },
+    {
+      "phase": "after",
+      "mode": "frozen",
+      "command": [
+        "pnpm@10.34.9",
+        "install",
+        "--frozen-lockfile",
+        "--no-color"
+      ],
+      "exit": 0,
+      "inputsUnchanged": true,
+      "lockSha256": "47759f975c8b0200b149e54d5fe2903afab268617a82ffc60cd4654f6e74895e"
+    },
+    {
+      "phase": "after",
+      "mode": "normal",
+      "command": [
+        "pnpm@10.34.9",
+        "install",
+        "--no-frozen-lockfile",
+        "--no-color"
+      ],
+      "exit": 0,
+      "inputsUnchanged": true,
+      "lockSha256": "47759f975c8b0200b149e54d5fe2903afab268617a82ffc60cd4654f6e74895e"
+    }
+  ]
+}

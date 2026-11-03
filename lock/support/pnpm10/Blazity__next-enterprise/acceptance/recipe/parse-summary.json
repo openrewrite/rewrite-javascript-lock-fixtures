@@ -1,0 +1,21 @@
+{
+  "mode": "fresh-pinned-files-no-consumer-LST",
+  "files": 45,
+  "runtimes": [
+    {
+      "file": "package.json",
+      "runtime": {
+        "kind": "org.openrewrite.javascript.marker.NodeRuntime",
+        "id": "d2411549-8578-4ee2-8c15-7fd9ae2d305e",
+        "nodeVersion": "v24.22.2",
+        "os": "linux",
+        "cpu": "arm64",
+        "libc": "glibc",
+        "packageManager": "Pnpm",
+        "packageManagerVersion": "10.0.0"
+      },
+      "hasResolution": true
+    }
+  ],
+  "errors": []
+}

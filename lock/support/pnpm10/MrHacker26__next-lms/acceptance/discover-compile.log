@@ -1,0 +1,9 @@
+[ {
+  "origin" : "github.com",
+  "path" : "MrHacker26/next-lms",
+  "directory" : "/home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms",
+  "runnable" : true,
+  "shell" : "sh",
+  "command" : "cd /home/coder/locks-pnpm10/work/pnpm10-aligned/MrHacker26__next-lms/MrHacker26__next-lms && pnpm install --frozen-lockfile && pnpm run build",
+  "buildTool" : "pnpm"
+} ]

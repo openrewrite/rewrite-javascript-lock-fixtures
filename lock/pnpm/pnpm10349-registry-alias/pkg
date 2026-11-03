@@ -1,0 +1,10 @@
+{
+  "name": "pnpm10-registry-alias",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "dependencies": {
+    "ansi": "npm:wrap-ansi@7.0.0",
+    "ms": "2.1.3"
+  }
+}

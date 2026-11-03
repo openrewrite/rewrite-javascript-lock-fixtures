@@ -1,0 +1,9 @@
+{
+  "name": "pnpm10-workspace-settings",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "react-dom": "18.3.1"
+  }
+}

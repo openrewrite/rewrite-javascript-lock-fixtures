@@ -1,0 +1,14 @@
+{
+  "name": "pnpm10-override",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "dependencies": {
+    "is-odd": "3.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "is-number": "6.0.0"
+    }
+  }
+}

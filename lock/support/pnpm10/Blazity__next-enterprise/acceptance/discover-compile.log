@@ -1,0 +1,9 @@
+[ {
+  "origin" : "github.com",
+  "path" : "Blazity/next-enterprise",
+  "directory" : "/home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise",
+  "runnable" : true,
+  "shell" : "sh",
+  "command" : "cd /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise && pnpm install --frozen-lockfile && pnpm run build",
+  "buildTool" : "pnpm"
+} ]

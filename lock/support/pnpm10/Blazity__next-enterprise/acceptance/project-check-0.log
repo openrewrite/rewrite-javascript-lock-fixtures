@@ -1,0 +1,34 @@
+Already up to date
+Done in 156ms
+
+> next-enterprise@0.0.0 test /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise
+> cross-env FORCE_COLOR=1 vitest
+
+(node:42505) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+ RUN  v3.2.4 /home/coder/locks-pnpm10/work/pnpm10-aligned/Blazity__next-enterprise/Blazity__next-enterprise
+
+(node:42542) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42543) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42556) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42562) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ components/Button/Button.test.tsx (3 tests) 20ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  23:44:19
+   Duration  417ms (transform 22ms, setup 27ms, collect 56ms, tests 20ms, environment 168ms, prepare 35ms)
+
+(node:42686) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

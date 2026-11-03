@@ -1,0 +1,7 @@
+Scope: all 2 workspace projects
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+Done in 216ms using pnpm v10.11.0
+(node:33885) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)

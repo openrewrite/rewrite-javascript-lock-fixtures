@@ -1,0 +1,294 @@
+Index: package.json
+===================================================================
+--- package.json	
++++ package.json	
+@@ -44,7 +44,7 @@
+     "@semantic-release/changelog": "^6.0.3",
+     "@semantic-release/commit-analyzer": "^13.0.1",
+     "@semantic-release/git": "^10.0.1",
+-    "@semantic-release/github": "^12.0.6",
++    "@semantic-release/github": "12.0.10",
+     "@semantic-release/npm": "^13.1.5",
+     "@semantic-release/release-notes-generator": "^14.1.0",
+     "@t3-oss/env-nextjs": "^0.13.10",
+Index: pnpm-lock.yaml
+===================================================================
+--- pnpm-lock.yaml	
++++ pnpm-lock.yaml	
+@@ -69,8 +69,8 @@
+         specifier: ^10.0.1
+         version: 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
+       '@semantic-release/github':
+-        specifier: ^12.0.6
+-        version: 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
++        specifier: 12.0.10
++        version: 12.0.10(semantic-release@25.0.3(typescript@5.9.3))
+       '@semantic-release/npm':
+         specifier: ^13.1.5
+         version: 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
+@@ -1857,8 +1857,11 @@
+   '@octokit/openapi-types@27.0.0':
+     resolution: {integrity: sha512-whrdktVs1h6gtR+09+QsNk2+FO+49j6ga1c55YZudfEG+oKJVvJLQi3zkOm5JjiUXAagWK2tI2kTGKJ2Ys7MGA==}
+ 
+-  '@octokit/plugin-paginate-rest@14.0.0':
+-    resolution: {integrity: sha512-fNVRE7ufJiAA3XUrha2omTA39M6IXIc6GIZLvlbsm8QOQCYvpq/LkMNGyFlB1d8hTDzsAXa3OKtybdMAYsV/fw==}
++  '@octokit/openapi-types@28.0.0':
++    resolution: {integrity: sha512-0rFyLuyHvIj6uuZWuDslxkowFYdPXoNIkeAv4b27dzm2Tf4vGWXnPsMcxs7d65kLdMERgP3wc1AEPlqMz8e1cQ==}
++
++  '@octokit/plugin-paginate-rest@15.0.0':
++    resolution: {integrity: sha512-lw9A9YL5s4VPj+VEx8uMxaxQm2YTgrPDkrLEuZuu18R8TK3oPcXF4K6t52nx6xn1RcogZC9i188sAr/4XYJaQQ==}
+     engines: {node: '>= 20'}
+     peerDependencies:
+       '@octokit/core': '>=6'
+@@ -1886,6 +1889,9 @@
+   '@octokit/types@16.0.0':
+     resolution: {integrity: sha512-sKq+9r1Mm4efXW1FCk7hFSeJo4QKreL/tTbR0rz/qx/r1Oa2VV83LTA/H/MuCOX7uCIJmQVRKBcbmWoySjAnSg==}
+ 
++  '@octokit/types@17.0.0':
++    resolution: {integrity: sha512-ByP1v7YL5SMveFPP7+sj0/ZuWCOOg/Chs4NafOMpq6WNIM/hdGY0S7C0TCGDBWu1aGmOxmUIhMx3cO+IdwYZ1Q==}
++
+   '@opentelemetry/api-logs@0.45.1':
+     resolution: {integrity: sha512-zVGq/k70l+kB/Wuv3O/zhptP2hvDhEbhDu9EtHde1iWZJf3FedeYS/nWVcMBkkyPAjS/JKNk86WN4CBQLGUuOw==}
+     engines: {node: '>=14'}
+@@ -1970,6 +1976,7 @@
+   '@opentelemetry/propagator-jaeger@1.18.1':
+     resolution: {integrity: sha512-Kh4M1Qewv0Tbmts6D8LgNzx99IjdE18LCmY/utMkgVyU7Bg31Yuj+X6ZyoIRKPcD2EV4rVkuRI16WVMRuGbhWA==}
+     engines: {node: '>=14'}
++    deprecated: Package no longer supported. See https://github.com/open-telemetry/opentelemetry-js/pull/7077
+     peerDependencies:
+       '@opentelemetry/api': '>=1.0.0 <1.8.0'
+ 
+@@ -2001,12 +2008,14 @@
+   '@opentelemetry/sdk-trace-base@1.18.1':
+     resolution: {integrity: sha512-tRHfDxN5dO+nop78EWJpzZwHsN1ewrZRVVwo03VJa3JQZxToRDH29/+MB24+yoa+IArerdr7INFJiX/iN4gjqg==}
+     engines: {node: '>=14'}
++    deprecated: Use @opentelemetry/sdk-trace package
+     peerDependencies:
+       '@opentelemetry/api': '>=1.0.0 <1.8.0'
+ 
+   '@opentelemetry/sdk-trace-node@1.18.1':
+     resolution: {integrity: sha512-ML0l9TNlfLoplLF1F8lb95NGKgdm6OezDS3Ymqav9sYxMd5bnH2LZVzd4xEF+ov5vpZJOGdWxJMs2nC9no7+xA==}
+     engines: {node: '>=14'}
++    deprecated: Use @opentelemetry/sdk-trace package
+     peerDependencies:
+       '@opentelemetry/api': '>=1.0.0 <1.8.0'
+ 
+@@ -2791,8 +2800,8 @@
+     peerDependencies:
+       semantic-release: '>=18.0.0'
+ 
+-  '@semantic-release/github@12.0.6':
+-    resolution: {integrity: sha512-aYYFkwHW3c6YtHwQF0t0+lAjlU+87NFOZuH2CvWFD0Ylivc7MwhZMiHOJ0FMpIgPpCVib/VUAcOwvrW0KnxQtA==}
++  '@semantic-release/github@12.0.10':
++    resolution: {integrity: sha512-QskygvpX8hFx9UEbqJ+C46OIhaJjsysNQ8PYJPuRDc/ek5+dh8WYGD1ofUahCcGLAOmnnwZTcmCJCEXM8XxhRw==}
+     engines: {node: ^22.14.0 || >= 24.10.0}
+     peerDependencies:
+       semantic-release: '>=24.1.0'
+@@ -3729,6 +3738,10 @@
+     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
+     engines: {node: '>= 14'}
+ 
++  agent-base@9.0.0:
++    resolution: {integrity: sha512-TQf59BsZnytt8GdJKLPfUZ54g/iaUL2OWDSFCCvMOhsHduDQxO8xC4PNeyIkVcA5KwL2phPSv0douC0fgWzmnA==}
++    engines: {node: '>= 20'}
++
+   aggregate-error@3.1.0:
+     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
+     engines: {node: '>=8'}
+@@ -4853,6 +4866,7 @@
+   eslint@9.39.4:
+     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
+     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
++    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+     hasBin: true
+     peerDependencies:
+       jiti: '*'
+@@ -5365,6 +5379,10 @@
+     resolution: {integrity: sha512-T1gkAiYYDWYx3V5Bmyu7HcfcvL7mUrTWiM6yOfa3PIphViJ/gFPbvidQ+veqSOHci/PxBcDabeUNCzpOODJZig==}
+     engines: {node: '>= 14'}
+ 
++  http-proxy-agent@9.1.0:
++    resolution: {integrity: sha512-2NxoveTT58mjYT4n3RPTEfCZGLMbidoO8XEieXfpSYxu+PQJ1qpx4ypwH6N+uF9twBPIvRRgvkvW5HUTYWENig==}
++    engines: {node: '>= 20'}
++
+   https-browserify@1.0.0:
+     resolution: {integrity: sha512-J+FkSdyD+0mA0N+81tMotaRMfSL9SGi+xpD3T6YApKsc3bGSXJlfXri3VyFOeYkfLRQisDk1W+jIFFKBeUBbBg==}
+ 
+@@ -5372,6 +5390,10 @@
+     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
+     engines: {node: '>= 14'}
+ 
++  https-proxy-agent@9.1.0:
++    resolution: {integrity: sha512-ag87y7cJJ9/3+GxFr8Oy4O5faDsGRGnBGsJj/YjOSsSx/5eadKLYTMPlzuR6obgoCDDm0abAAZitXXQkMOPSpA==}
++    engines: {node: '>= 20'}
++
+   human-signals@2.1.0:
+     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
+     engines: {node: '>=10.17.0'}
+@@ -6968,6 +6990,15 @@
+     resolution: {integrity: sha512-CvexbZtbov6jW2eXAvLukXjXUW1TzFaivC46BpWc/3BpcCysb5Vffu+B3XHMm8lVEuy2Mm4XGex8hBSg1yapPg==}
+     engines: {node: '>=12.0.0'}
+ 
++  proxy-agent-negotiate@1.1.0:
++    resolution: {integrity: sha512-N8IBcM3UgCVzz2L2Lqv8DVntDnnC8/hiV4nEDUPkqq72TPUgYWjQc+bdZlBPZK9LzPAvOY//gAt0S0DApoOXWQ==}
++    engines: {node: '>= 20'}
++    peerDependencies:
++      kerberos: ^2.0.0
++    peerDependenciesMeta:
++      kerberos:
++        optional: true
++
+   proxy-from-env@1.1.0:
+     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+ 
+@@ -7837,11 +7868,13 @@
+ 
+   tsc@2.0.4:
+     resolution: {integrity: sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==}
++    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+     hasBin: true
+ 
+   tsconfck@3.1.6:
+     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
+     engines: {node: ^18 || >=20}
++    deprecated: unmaintained
+     hasBin: true
+     peerDependencies:
+       typescript: ^5.0.0
+@@ -8057,10 +8090,12 @@
+ 
+   uuid@8.3.2:
+     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
++    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+     hasBin: true
+ 
+   uuid@9.0.1:
+     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
++    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+     hasBin: true
+ 
+   v8-to-istanbul@9.3.0:
+@@ -10033,10 +10068,12 @@
+ 
+   '@octokit/openapi-types@27.0.0': {}
+ 
+-  '@octokit/plugin-paginate-rest@14.0.0(@octokit/core@7.0.6)':
++  '@octokit/openapi-types@28.0.0': {}
++
++  '@octokit/plugin-paginate-rest@15.0.0(@octokit/core@7.0.6)':
+     dependencies:
+       '@octokit/core': 7.0.6
+-      '@octokit/types': 16.0.0
++      '@octokit/types': 17.0.0
+ 
+   '@octokit/plugin-retry@8.1.0(@octokit/core@7.0.6)':
+     dependencies:
+@@ -10068,6 +10105,10 @@
+     dependencies:
+       '@octokit/openapi-types': 27.0.0
+ 
++  '@octokit/types@17.0.0':
++    dependencies:
++      '@octokit/openapi-types': 28.0.0
++
+   '@opentelemetry/api-logs@0.45.1':
+     dependencies:
+       '@opentelemetry/api': 1.7.0
+@@ -10969,18 +11010,18 @@
+     transitivePeerDependencies:
+       - supports-color
+ 
+-  '@semantic-release/github@12.0.6(semantic-release@25.0.3(typescript@5.9.3))':
++  '@semantic-release/github@12.0.10(semantic-release@25.0.3(typescript@5.9.3))':
+     dependencies:
+       '@octokit/core': 7.0.6
+-      '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
++      '@octokit/plugin-paginate-rest': 15.0.0(@octokit/core@7.0.6)
+       '@octokit/plugin-retry': 8.1.0(@octokit/core@7.0.6)
+       '@octokit/plugin-throttling': 11.0.3(@octokit/core@7.0.6)
+       '@semantic-release/error': 4.0.0
+       aggregate-error: 5.0.0
+       debug: 4.4.3
+       dir-glob: 3.0.1
+-      http-proxy-agent: 7.0.2
+-      https-proxy-agent: 7.0.6
++      http-proxy-agent: 9.1.0
++      https-proxy-agent: 9.1.0
+       issue-parser: 7.0.1
+       lodash-es: 4.17.23
+       mime: 4.1.0
+@@ -10990,6 +11031,7 @@
+       undici: 7.24.4
+       url-join: 5.0.0
+     transitivePeerDependencies:
++      - kerberos
+       - supports-color
+ 
+   '@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3))':
+@@ -12118,6 +12160,8 @@
+ 
+   agent-base@7.1.4: {}
+ 
++  agent-base@9.0.0: {}
++
+   aggregate-error@3.1.0:
+     dependencies:
+       clean-stack: 2.2.0
+@@ -14110,6 +14154,15 @@
+     transitivePeerDependencies:
+       - supports-color
+ 
++  http-proxy-agent@9.1.0:
++    dependencies:
++      agent-base: 9.0.0
++      debug: 4.4.3
++      proxy-agent-negotiate: 1.1.0
++    transitivePeerDependencies:
++      - kerberos
++      - supports-color
++
+   https-browserify@1.0.0: {}
+ 
+   https-proxy-agent@7.0.6:
+@@ -14119,6 +14172,15 @@
+     transitivePeerDependencies:
+       - supports-color
+ 
++  https-proxy-agent@9.1.0:
++    dependencies:
++      agent-base: 9.0.0
++      debug: 4.4.3
++      proxy-agent-negotiate: 1.1.0
++    transitivePeerDependencies:
++      - kerberos
++      - supports-color
++
+   human-signals@2.1.0: {}
+ 
+   human-signals@5.0.0: {}
+@@ -15821,6 +15883,8 @@
+       '@types/node': 22.19.15
+       long: 5.3.2
+ 
++  proxy-agent-negotiate@1.1.0: {}
++
+   proxy-from-env@1.1.0: {}
+ 
+   public-encrypt@4.0.3:
+@@ -16238,7 +16302,7 @@
+     dependencies:
+       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3(typescript@5.9.3))
+       '@semantic-release/error': 4.0.0
+-      '@semantic-release/github': 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
++      '@semantic-release/github': 12.0.10(semantic-release@25.0.3(typescript@5.9.3))
+       '@semantic-release/npm': 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
+       '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.3(typescript@5.9.3))
+       aggregate-error: 5.0.0
+@@ -16265,6 +16329,7 @@
+       signale: 1.4.0
+       yargs: 18.0.0
+     transitivePeerDependencies:
++      - kerberos
+       - supports-color
+       - typescript
+ 

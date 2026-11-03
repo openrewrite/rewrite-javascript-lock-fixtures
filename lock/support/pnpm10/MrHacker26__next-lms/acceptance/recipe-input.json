@@ -1,0 +1,7 @@
+{
+  "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+  "options": {
+    "packageName": "tailwindcss",
+    "newVersion": "3.4.19"
+  }
+}

@@ -1,0 +1,13 @@
+Progress: resolved 1, reused 0, downloaded 0, added 0
+
+   ╭──────────────────────────────────────────╮
+   │                                          │
+   │   Update available! 10.11.0 → 12.16.1.   │
+   │   Changelog: https://pnpm.io/v/12.16.1   │
+   │     To update, run: pnpm add -g pnpm     │
+   │                                          │
+   ╰──────────────────────────────────────────╯
+
+Progress: resolved 10, reused 0, downloaded 0, added 0, done
+
+Done in 326ms using pnpm v10.11.0
