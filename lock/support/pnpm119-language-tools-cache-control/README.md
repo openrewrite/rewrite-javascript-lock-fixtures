@@ -18,8 +18,9 @@ the baseline, edits only the four selected Vue dependency fields, then installs 
 The initial recording contains three cold edited lock-only runs and four cold edited full installs. Two of those
 full installs forbid all upstream fetches from the proxy, serving only the recorded metadata and cached tarballs.
 The successful warm confirmation forbids new metadata but allows immutable tarball downloads. Metadata snapshot
-hashes are unchanged across these controls. The first strict warm attempt needed two previously uncached optional
-tarballs and could not complete; its log is retained as `warm-strict-incomplete.log` and is not counted as a result.
+hashes are unchanged across these controls. The first strict warm attempt initially needed two uncached optional tarballs, then completed after the other
+control populated their shared immutable tarball cache. Its log is retained as `warm-strict-concurrent-cache.log`;
+this overlapping probe is excluded from totals. The serial portable replay below independently confirms the result.
 
 `replay.cjs` reproduces the distinction using four native commands: cold baseline full install, warm edited full
 install, cold edited full install, and cold edited lock-only install. It checks every generated lock byte against
