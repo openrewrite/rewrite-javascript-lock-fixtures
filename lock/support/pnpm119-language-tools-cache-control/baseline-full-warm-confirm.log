@@ -1,0 +1,23 @@
+Scope: all 11 workspace projects
+? Verifying lockfile against supply-chain policies (460 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +393
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 393, reused 0, downloaded 0, added 0
+✓ Lockfile passes supply-chain policies (460 entries in 1.7s)
+Progress: resolved 393, reused 0, downloaded 393, added 393, done
+[WARN] Failed to create bin at <control>/warm-confirm/project/extensions/vscode/node_modules/.bin/vue-language-server. ENOENT: no such file or directory, open '<control>/warm-confirm/project/packages/language-server/bin/vue-language-server.js'
+
+devDependencies:
++ @lerna-lite/cli 5.6.4
++ @lerna-lite/version 5.6.4
++ @tsslint/cli 3.1.4
++ @tsslint/compat-eslint 3.1.4
++ @tsslint/config 3.1.4
++ @typescript-eslint/eslint-plugin 8.65.0
++ dprint 0.55.2
++ typescript <- typescript-native-bridge 6.0.3-bridge.16.tsgo.7.0.2
++ vitest 4.1.10
+
+Done in 2.3s using pnpm v11.9.0

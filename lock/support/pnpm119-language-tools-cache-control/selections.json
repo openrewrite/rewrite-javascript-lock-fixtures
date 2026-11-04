@@ -1,0 +1,30 @@
+[
+  {
+    "file": "packages/language-core/package.json",
+    "scope": "dependencies",
+    "name": "@vue/compiler-dom",
+    "current": "^3.5.0",
+    "target": "3.5.44"
+  },
+  {
+    "file": "packages/language-plugin-pug/package.json",
+    "scope": "devDependencies",
+    "name": "@vue/compiler-dom",
+    "current": "^3.5.0",
+    "target": "3.5.44"
+  },
+  {
+    "file": "packages/language-service/package.json",
+    "scope": "devDependencies",
+    "name": "@vue/compiler-dom",
+    "current": "^3.5.0",
+    "target": "3.5.44"
+  },
+  {
+    "file": "packages/typescript-plugin/package.json",
+    "scope": "devDependencies",
+    "name": "@vue/compiler-dom",
+    "current": "^3.5.0",
+    "target": "3.5.44"
+  }
+]

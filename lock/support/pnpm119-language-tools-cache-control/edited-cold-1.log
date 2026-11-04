@@ -1,0 +1,12 @@
+Scope: all 11 workspace projects
+? Verifying lockfile against supply-chain policies (460 entries)...
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 47, reused 0, downloaded 5, added 0
+✓ Lockfile passes supply-chain policies (460 entries in 2s)
+Progress: resolved 150, reused 0, downloaded 6, added 0
+Progress: resolved 379, reused 0, downloaded 6, added 0
+[WARN] 1 deprecated subdependencies found: @types/parse-path@7.1.0
+Progress: resolved 468, reused 0, downloaded 6, added 0, done
+[WARN] Issues with peer dependencies found. Run "pnpm peers check" to list them.
+
+Done in 3.8s using pnpm v11.9.0

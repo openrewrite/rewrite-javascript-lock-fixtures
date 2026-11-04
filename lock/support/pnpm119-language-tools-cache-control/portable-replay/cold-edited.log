@@ -1,0 +1,29 @@
+Scope: all 11 workspace projects
+? Verifying lockfile against supply-chain policies (460 entries)...
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 46, reused 0, downloaded 46, added 0
+Progress: resolved 143, reused 0, downloaded 48, added 0
+✓ Lockfile passes supply-chain policies (460 entries in 2.5s)
+Progress: resolved 304, reused 0, downloaded 228, added 0
+[WARN] 1 deprecated subdependencies found: @types/parse-path@7.1.0
+Packages: +399
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 468, reused 0, downloaded 405, added 80
+Progress: resolved 468, reused 0, downloaded 405, added 399, done
+[WARN] Failed to create bin at <tmp>/cold-edited/project/extensions/vscode/node_modules/.bin/vue-language-server. ENOENT: no such file or directory, open '<tmp>/cold-edited/project/packages/language-server/bin/vue-language-server.js'
+[WARN] Issues with peer dependencies found. Run "pnpm peers check" to list them.
+
+dependencies:
++ typescript <- typescript-native-bridge 6.0.3-bridge.16.tsgo.7.0.2 (6.0.3-bridge.19.tsgo.7.0.2 is available)
+
+devDependencies:
++ @lerna-lite/cli 5.7.0
++ @lerna-lite/version 5.7.0
++ @tsslint/cli 3.1.4
++ @tsslint/compat-eslint 3.1.4
++ @tsslint/config 3.1.4
++ @typescript-eslint/eslint-plugin 8.72.1
++ dprint 0.64.3
++ vitest 5.1.0
+
+Done in 4.8s using pnpm v11.9.0

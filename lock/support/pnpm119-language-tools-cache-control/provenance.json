@@ -1,0 +1,32 @@
+{
+  "repository": "vuejs/language-tools",
+  "commit": "c59f9908b4912ee20141b53a99b1ce485bff0dc7",
+  "manager": "pnpm",
+  "actualVersion": "11.9.0",
+  "dist": {
+    "shasum": "10da06e30a629cc94ecf7ca009c6ce696f55fbf1",
+    "tarball": "https://registry.npmjs.org/pnpm/-/pnpm-11.9.0.tgz",
+    "fileCount": 450,
+    "integrity": "sha512-vWgtXQP+Ul73yf1ngMaITR51asTJyf4AxTh4KCQxDc+Q493E9Tg18G3669UIXkGFXgvLs7YN4qxburieUDbwOw==",
+    "signatures": [
+      {
+        "sig": "MEUCIAKaXOQO+Yb1TVOdmAMRNmI5iFE1wFscO5ZjuYGo4whJAiEApE0vf6Q/Y/RapqbDWVQLtLEUJRyBAGzI4nH4/AadTCk=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/pnpm@11.9.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 18742792
+  },
+  "upstreamTag": "v11.9.0",
+  "upstreamCommit": "9671d9aeedb0039a114c2a2ff000170e51c61e3a",
+  "node": "v24.22.2",
+  "originalEvidenceSha256": "a66887f5927d2640eab0ecbd0f4e84b947a71e438d7130594653fe244b010b68",
+  "coldMatchesArchivedEngine": true,
+  "warmMatchesArchivedOracle": true,
+  "sourceChanged": false
+}
