@@ -1,0 +1,115 @@
+{
+  "id": "vuejs__language-tools",
+  "repository": "https://github.com/vuejs/language-tools.git",
+  "commit": "c59f9908b4912ee20141b53a99b1ce485bff0dc7",
+  "fixtureExclusions": [],
+  "projectTopology": [
+    {
+      "path": "extensions/vscode/package.json",
+      "root": "extensions/vscode",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "package.json",
+      "root": ".",
+      "workspaceOwners": [],
+      "projectClassification": "native-lock-root"
+    },
+    {
+      "path": "packages/component-meta/package.json",
+      "root": "packages/component-meta",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/component-type-helpers/package.json",
+      "root": "packages/component-type-helpers",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/language-core/package.json",
+      "root": "packages/language-core",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/language-plugin-pug/package.json",
+      "root": "packages/language-plugin-pug",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/language-server/package.json",
+      "root": "packages/language-server",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/language-service/package.json",
+      "root": "packages/language-service",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/tsc/package.json",
+      "root": "packages/tsc",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "packages/typescript-plugin/package.json",
+      "root": "packages/typescript-plugin",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    },
+    {
+      "path": "test-workspace/package.json",
+      "root": "test-workspace",
+      "workspaceOwners": [
+        "."
+      ],
+      "projectClassification": "declared-workspace-member"
+    }
+  ],
+  "nodeVersion": "v24.22.2",
+  "lockgroups": [
+    {
+      "root": ".",
+      "locks": [
+        "pnpm-lock.yaml"
+      ],
+      "manager": "pnpm",
+      "version": "11.9.0",
+      "argv": [
+        "/home/coder/locks-native-sweep/campaign/vuejs__language-tools/bin/pnpm"
+      ]
+    }
+  ],
+  "recipe": {
+    "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+    "options": {
+      "packageName": "@vue/compiler-dom",
+      "newVersion": "3.5.44"
+    }
+  }
+}

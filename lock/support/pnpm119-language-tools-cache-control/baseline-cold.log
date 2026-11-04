@@ -1,0 +1,4 @@
+Scope: all 11 workspace projects
+? Verifying lockfile against supply-chain policies (460 entries)...
+✓ Lockfile passes supply-chain policies (460 entries in 3.1s)
+Done in 3.5s using pnpm v11.9.0

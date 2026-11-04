@@ -1,0 +1,29 @@
+{
+  "manager": "11.9.0",
+  "results": [
+    {
+      "name": "baseline",
+      "exit": 0,
+      "sha256": "dcc48493ffe3cb876bbcc4d208000e507c591f57a0375f4c88bee0636ac0f914",
+      "byteExact": true
+    },
+    {
+      "name": "warm-edited",
+      "exit": 0,
+      "sha256": "094af9925f5c94b80093f07a4da00f3e421e26b7548f550b6b54e477734be010",
+      "byteExact": true
+    },
+    {
+      "name": "cold-edited",
+      "exit": 0,
+      "sha256": "5f175837297c1a464b4e0c4e3425500411b7d1361880926447519ed29b9b6479",
+      "byteExact": true
+    },
+    {
+      "name": "cold-lock-only",
+      "exit": 0,
+      "sha256": "5f175837297c1a464b4e0c4e3425500411b7d1361880926447519ed29b9b6479",
+      "byteExact": true
+    }
+  ]
+}
