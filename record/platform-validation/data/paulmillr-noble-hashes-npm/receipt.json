@@ -1,0 +1,48 @@
+{
+  "id": "paulmillr-noble-hashes-npm",
+  "repository": "https://github.com/paulmillr/noble-hashes.git",
+  "commit": "19fa2cf326d490f0e19cb78d281173d5817c3973",
+  "manager": {
+    "name": "npm",
+    "version": "11.19.1",
+    "package": "npm"
+  },
+  "inputs": [
+    "benchmark/package.json",
+    "esm/package.json",
+    "package-lock.json",
+    "package.json",
+    "src/package.json",
+    "test/build/package-lock.json",
+    "test/build/package.json",
+    "test/package.json"
+  ],
+  "runtimeVersion": "8.100.3",
+  "nativeChecks": 8,
+  "zeroPatchRepeat": true,
+  "platform": {
+    "node": "v24.22.2",
+    "os": "linux",
+    "cpu": "arm64"
+  },
+  "baselineHashes": {
+    "benchmark/package.json": "693eeb58368ce998f0a438fdf4b8291587cf209e0f06ebbeca54f4628778c65d",
+    "esm/package.json": "bd389eb8cfe61883bac2f31e1369498979fe1039c19d960088e863ef5d822b4d",
+    "package-lock.json": "38c0eda2f7b4dfc80b58ab826fde6224b57ca78ccf9fe9b97c9dbb210674bebf",
+    "package.json": "c5c7d47b357fc4fc26e5d4ee21a3b9b2308296c53bc7b3a3d8ae27275fadc4c6",
+    "src/package.json": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a",
+    "test/build/package-lock.json": "e46fc0dabc3b4a92419a5b0f47507fb6ed40289e190f69a219cec1b9764892ba",
+    "test/build/package.json": "d36c065cb9bcfb99cfe51a243c7d8f6b8cc002943d831a7201735936ac606496",
+    "test/package.json": "835058124165861147ee01a9c97a9fad15b0b5e4da857774bf90479671ddcdaf"
+  },
+  "patchedHashes": {
+    "benchmark/package.json": "693eeb58368ce998f0a438fdf4b8291587cf209e0f06ebbeca54f4628778c65d",
+    "esm/package.json": "bd389eb8cfe61883bac2f31e1369498979fe1039c19d960088e863ef5d822b4d",
+    "package-lock.json": "3d574c2b476a114856874a155df0bdb690265e3178b2e1e911c89fae7a718b5b",
+    "package.json": "35c417f0e1bb51a4dc49239015fb45ab8bce84c1f4f87db1dfcfdc79c9c1d550",
+    "src/package.json": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a",
+    "test/build/package-lock.json": "1cfc2e82fd27896f05feb6ac56f773c9b6f374a9cb67ae27740e140d7ca9cb92",
+    "test/build/package.json": "d36c065cb9bcfb99cfe51a243c7d8f6b8cc002943d831a7201735936ac606496",
+    "test/package.json": "835058124165861147ee01a9c97a9fad15b0b5e4da857774bf90479671ddcdaf"
+  }
+}

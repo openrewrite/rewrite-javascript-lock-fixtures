@@ -1,0 +1,33 @@
+{
+  "id": "oven-sh-setup-bun-bun",
+  "repository": "https://github.com/oven-sh/setup-bun.git",
+  "commit": "0c5077e51419868618aeaa5fe8019c62421857d6",
+  "manager": {
+    "name": "bun",
+    "version": "1.4.4",
+    "package": "bun"
+  },
+  "inputs": [
+    "bun.lock",
+    "bunfig.toml",
+    "package.json"
+  ],
+  "runtimeVersion": "8.100.3",
+  "nativeChecks": 4,
+  "zeroPatchRepeat": true,
+  "platform": {
+    "node": "v24.22.2",
+    "os": "linux",
+    "cpu": "arm64"
+  },
+  "baselineHashes": {
+    "bun.lock": "797aa130c1d19ba5a0080717e9d380ee017abefd2eb27578ce56519c500eb918",
+    "bunfig.toml": "206f8e670d3fd41b1f7cd4cfcc7c68fc22cca73cb5fbc9f8edb7f584de798211",
+    "package.json": "2ad54d7d77f95291c19bec6edca3d90665d4424875f161b2e3ad138360a66871"
+  },
+  "patchedHashes": {
+    "bun.lock": "074ed1757994cfccb1dec3492ef9358a1af4aea06c4dbd812f48a286383e9b53",
+    "bunfig.toml": "206f8e670d3fd41b1f7cd4cfcc7c68fc22cca73cb5fbc9f8edb7f584de798211",
+    "package.json": "19999b43b7845014e92988fc7c67e9a1131f2f13f46db237e741a749ef83d4d3"
+  }
+}

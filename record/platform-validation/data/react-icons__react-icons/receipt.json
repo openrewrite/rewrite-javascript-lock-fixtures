@@ -1,0 +1,60 @@
+{
+  "id": "react-icons__react-icons",
+  "repository": "https://github.com/react-icons/react-icons.git",
+  "commit": "9f32da3e3bd131c60951c0052c952df935c45f82",
+  "manager": {
+    "name": "yarn",
+    "version": "4.17.0",
+    "package": "@yarnpkg/cli-dist"
+  },
+  "inputs": [
+    ".yarnrc.yml",
+    "package.json",
+    "packages/_react-icons_all-files/package.json",
+    "packages/_react-icons_all/package.json",
+    "packages/demo-all-files/package.json",
+    "packages/demo/package.json",
+    "packages/preview-astro/package.json",
+    "packages/react-icons/package.json",
+    "packages/react-icons/src/package.json",
+    "packages/ts-test/package.json",
+    "packages/webpack4-test/package.json",
+    "yarn.lock"
+  ],
+  "runtimeVersion": "8.100.3",
+  "nativeChecks": 4,
+  "zeroPatchRepeat": true,
+  "platform": {
+    "node": "v24.22.2",
+    "os": "linux",
+    "cpu": "arm64"
+  },
+  "baselineHashes": {
+    ".yarnrc.yml": "473e6def86fc03638120e0c01d0c8bbab095677256460fa4ea763e5d4697f270",
+    "package.json": "d467f1682122a25643ec2da61786f4fcb31e1c3d68113df6a32e508c28129394",
+    "packages/_react-icons_all-files/package.json": "a25b09efb2b6e2bcf9eba0b04caa6c3e9dbf2bc3405c7a9eef915627e997136e",
+    "packages/_react-icons_all/package.json": "e49df970a50145ba760d34d38acce7e936beb8b010f946be27552bef4fd3b488",
+    "packages/demo-all-files/package.json": "0cc4696ba50cb6b3087d307855ed0f3e54a705e317bc149472eadaea08b55d7f",
+    "packages/demo/package.json": "49c7f797c45978a3e1fe75a8d71ea0eac358f55ae4f647c26d8a3adbbe0943c3",
+    "packages/preview-astro/package.json": "8d57f62881201df8927b0e130ea4d559bd7e0517df40f0d96ac876030bf5ac02",
+    "packages/react-icons/package.json": "c58f1047fa9a76d899f9a6dd96aa0a03476a6b28de334015173161b17d80f9d8",
+    "packages/react-icons/src/package.json": "3e3912c2b68ee632daeebea4629bc681dae6e811013480b553aed636f8afbcab",
+    "packages/ts-test/package.json": "355b612427ebe997aa9aa99d8cf1cd6204255d1b552937771e5cd47c23590f85",
+    "packages/webpack4-test/package.json": "7fd1eaee539ab76000191fbbe498174ba08dbc0ea912458b708fc7a238e80485",
+    "yarn.lock": "ae0eb8d62400962dcf7385ea39e3cb4b3f423e6428bf3ecf3b2df95f6e14e739"
+  },
+  "patchedHashes": {
+    ".yarnrc.yml": "473e6def86fc03638120e0c01d0c8bbab095677256460fa4ea763e5d4697f270",
+    "package.json": "d467f1682122a25643ec2da61786f4fcb31e1c3d68113df6a32e508c28129394",
+    "packages/_react-icons_all-files/package.json": "a25b09efb2b6e2bcf9eba0b04caa6c3e9dbf2bc3405c7a9eef915627e997136e",
+    "packages/_react-icons_all/package.json": "e49df970a50145ba760d34d38acce7e936beb8b010f946be27552bef4fd3b488",
+    "packages/demo-all-files/package.json": "23e63532858063b3269d43849eb0f8c0412da9f89e96ede041b41ca7a582e1c8",
+    "packages/demo/package.json": "1cc840efd939eed3e58ac5b886abfc332fc86f9a03d1997fa1a89aa7432833ab",
+    "packages/preview-astro/package.json": "8d57f62881201df8927b0e130ea4d559bd7e0517df40f0d96ac876030bf5ac02",
+    "packages/react-icons/package.json": "c58f1047fa9a76d899f9a6dd96aa0a03476a6b28de334015173161b17d80f9d8",
+    "packages/react-icons/src/package.json": "3e3912c2b68ee632daeebea4629bc681dae6e811013480b553aed636f8afbcab",
+    "packages/ts-test/package.json": "355b612427ebe997aa9aa99d8cf1cd6204255d1b552937771e5cd47c23590f85",
+    "packages/webpack4-test/package.json": "7fd1eaee539ab76000191fbbe498174ba08dbc0ea912458b708fc7a238e80485",
+    "yarn.lock": "df61201fd49d97d32ab66d032c0e5e1d6f5652de8179057e3a7ba38b42e9b5b7"
+  }
+}

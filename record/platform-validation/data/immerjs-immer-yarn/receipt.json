@@ -1,0 +1,36 @@
+{
+  "id": "immerjs-immer-yarn",
+  "repository": "https://github.com/immerjs/immer.git",
+  "commit": "e2d222bd4fb26abded04075c936290715e9ee335",
+  "manager": {
+    "name": "yarn",
+    "version": "1.22.22",
+    "package": "yarn"
+  },
+  "inputs": [
+    "package.json",
+    "website/package.json",
+    "website/yarn.lock",
+    "yarn.lock"
+  ],
+  "runtimeVersion": "8.100.3",
+  "nativeChecks": 8,
+  "zeroPatchRepeat": true,
+  "platform": {
+    "node": "v24.22.2",
+    "os": "linux",
+    "cpu": "arm64"
+  },
+  "baselineHashes": {
+    "package.json": "cf37ca6927a0d660bbe35372caee33784269b0d59330373627b34e706450f153",
+    "website/package.json": "4da758eaf9269b9d8ef6ef6736081fbc8009202fd29a3e5e2e5887f8968921f4",
+    "website/yarn.lock": "a01a370fc24470591a46a5f819f83c9dbe0b215fb9fe6b3019c4617402a3c962",
+    "yarn.lock": "9d58620044b0f65fb158c99d1d43033de21e7e643de3fe750c2d173ac2d18964"
+  },
+  "patchedHashes": {
+    "package.json": "127abd206e07e4a8a33c2a3d20fed6dca6ebe17f987687e4267eae4f2e94ec50",
+    "website/package.json": "4da758eaf9269b9d8ef6ef6736081fbc8009202fd29a3e5e2e5887f8968921f4",
+    "website/yarn.lock": "a01a370fc24470591a46a5f819f83c9dbe0b215fb9fe6b3019c4617402a3c962",
+    "yarn.lock": "aadea116a90e613dc7fd7f1f3baa30c9058030473748a5424cf08c8be16bab3f"
+  }
+}

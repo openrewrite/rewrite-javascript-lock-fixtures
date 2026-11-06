@@ -1,0 +1,33 @@
+{
+  "id": "unjs-pathe-pnpm",
+  "repository": "https://github.com/unjs/pathe.git",
+  "commit": "bc7477a01f0bd60ada017add8142c9f9d69ccdc5",
+  "manager": {
+    "name": "pnpm",
+    "version": "11.10.0",
+    "package": "pnpm"
+  },
+  "inputs": [
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml"
+  ],
+  "runtimeVersion": "8.100.3",
+  "nativeChecks": 4,
+  "zeroPatchRepeat": true,
+  "platform": {
+    "node": "v24.22.2",
+    "os": "linux",
+    "cpu": "arm64"
+  },
+  "baselineHashes": {
+    "package.json": "98a737e727d439712d855ae69fd63634048aa51d1ac7ee0674acada0693a39cf",
+    "pnpm-lock.yaml": "95ee0137bd33137f17b537dd2d970deb3dfacf98585a08acac3a56119eab6e8f",
+    "pnpm-workspace.yaml": "a8dbaf09fa36dd9d340ed79ee1b110240dd5dea0f269582f26a1136a2e745bbd"
+  },
+  "patchedHashes": {
+    "package.json": "ec6de79733a89ddd410b66078bf1f0841c6e9bc361f1b79f52a347fc4d6a908e",
+    "pnpm-lock.yaml": "2a7c3b532e8ce814b2ac3174612feca559420aa0c4c747680f42c822dcfee14c",
+    "pnpm-workspace.yaml": "a8dbaf09fa36dd9d340ed79ee1b110240dd5dea0f269582f26a1136a2e745bbd"
+  }
+}
