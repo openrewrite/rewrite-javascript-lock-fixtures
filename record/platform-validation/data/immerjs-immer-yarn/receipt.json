@@ -32,5 +32,19 @@
     "website/package.json": "4da758eaf9269b9d8ef6ef6736081fbc8009202fd29a3e5e2e5887f8968921f4",
     "website/yarn.lock": "a01a370fc24470591a46a5f819f83c9dbe0b215fb9fe6b3019c4617402a3c962",
     "yarn.lock": "aadea116a90e613dc7fd7f1f3baa30c9058030473748a5424cf08c8be16bab3f"
-  }
+  },
+  "parserRuntimes": [
+    {
+      "packageManager": "YarnClassic",
+      "packageManagerVersion": "1.22.22",
+      "nodeVersion": "v24.22.2",
+      "file": "package.json"
+    },
+    {
+      "packageManager": "YarnClassic",
+      "packageManagerVersion": "1.22.22",
+      "nodeVersion": "v24.22.2",
+      "file": "website/package.json"
+    }
+  ]
 }

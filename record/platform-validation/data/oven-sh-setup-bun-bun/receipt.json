@@ -29,5 +29,13 @@
     "bun.lock": "074ed1757994cfccb1dec3492ef9358a1af4aea06c4dbd812f48a286383e9b53",
     "bunfig.toml": "206f8e670d3fd41b1f7cd4cfcc7c68fc22cca73cb5fbc9f8edb7f584de798211",
     "package.json": "19999b43b7845014e92988fc7c67e9a1131f2f13f46db237e741a749ef83d4d3"
-  }
+  },
+  "parserRuntimes": [
+    {
+      "packageManager": "Bun",
+      "packageManagerVersion": "1.4.4",
+      "nodeVersion": "v24.22.2",
+      "file": "package.json"
+    }
+  ]
 }

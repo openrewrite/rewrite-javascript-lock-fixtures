@@ -29,5 +29,13 @@
     "package.json": "ec6de79733a89ddd410b66078bf1f0841c6e9bc361f1b79f52a347fc4d6a908e",
     "pnpm-lock.yaml": "2a7c3b532e8ce814b2ac3174612feca559420aa0c4c747680f42c822dcfee14c",
     "pnpm-workspace.yaml": "a8dbaf09fa36dd9d340ed79ee1b110240dd5dea0f269582f26a1136a2e745bbd"
-  }
+  },
+  "parserRuntimes": [
+    {
+      "packageManager": "Pnpm",
+      "packageManagerVersion": "11.10.0",
+      "nodeVersion": "v24.22.2",
+      "file": "package.json"
+    }
+  ]
 }

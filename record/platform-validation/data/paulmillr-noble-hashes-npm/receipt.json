@@ -44,5 +44,19 @@
     "test/build/package-lock.json": "1cfc2e82fd27896f05feb6ac56f773c9b6f374a9cb67ae27740e140d7ca9cb92",
     "test/build/package.json": "d36c065cb9bcfb99cfe51a243c7d8f6b8cc002943d831a7201735936ac606496",
     "test/package.json": "835058124165861147ee01a9c97a9fad15b0b5e4da857774bf90479671ddcdaf"
-  }
+  },
+  "parserRuntimes": [
+    {
+      "packageManager": "Npm",
+      "packageManagerVersion": "11.19.1",
+      "nodeVersion": "v24.22.2",
+      "file": "package.json"
+    },
+    {
+      "packageManager": "Npm",
+      "packageManagerVersion": "11.19.1",
+      "nodeVersion": "v24.22.2",
+      "file": "test/build/package.json"
+    }
+  ]
 }

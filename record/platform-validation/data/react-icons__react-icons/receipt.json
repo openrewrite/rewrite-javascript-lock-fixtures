@@ -56,5 +56,13 @@
     "packages/ts-test/package.json": "355b612427ebe997aa9aa99d8cf1cd6204255d1b552937771e5cd47c23590f85",
     "packages/webpack4-test/package.json": "7fd1eaee539ab76000191fbbe498174ba08dbc0ea912458b708fc7a238e80485",
     "yarn.lock": "df61201fd49d97d32ab66d032c0e5e1d6f5652de8179057e3a7ba38b42e9b5b7"
-  }
+  },
+  "parserRuntimes": [
+    {
+      "packageManager": "YarnBerry",
+      "packageManagerVersion": "4.17.0",
+      "nodeVersion": "v24.22.2",
+      "file": "package.json"
+    }
+  ]
 }
