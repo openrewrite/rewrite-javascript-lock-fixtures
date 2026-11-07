@@ -1,0 +1,6 @@
+*.json text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+data/** -text

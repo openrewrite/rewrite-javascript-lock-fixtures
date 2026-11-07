@@ -1,0 +1,133 @@
+[
+  {
+    "id": "paulmillr-noble-hashes-npm",
+    "repository": "https://github.com/paulmillr/noble-hashes.git",
+    "commit": "19fa2cf326d490f0e19cb78d281173d5817c3973",
+    "nodeVersion": "v24.22.2",
+    "lockgroups": [
+      {
+        "root": ".",
+        "locks": [
+          "package-lock.json"
+        ],
+        "manager": "npm",
+        "version": "11.19.1"
+      },
+      {
+        "root": "test/build",
+        "locks": [
+          "package-lock.json"
+        ],
+        "manager": "npm",
+        "version": "11.19.1"
+      }
+    ],
+    "recipe": {
+      "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+      "options": {
+        "packageName": "fast-check",
+        "newVersion": "3.23.2"
+      }
+    }
+  },
+  {
+    "id": "unjs-pathe-pnpm",
+    "repository": "https://github.com/unjs/pathe.git",
+    "commit": "bc7477a01f0bd60ada017add8142c9f9d69ccdc5",
+    "nodeVersion": "v24.22.2",
+    "lockgroups": [
+      {
+        "root": ".",
+        "locks": [
+          "pnpm-lock.yaml"
+        ],
+        "manager": "pnpm",
+        "version": "11.10.0"
+      }
+    ],
+    "recipe": {
+      "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+      "options": {
+        "packageName": "obuild",
+        "newVersion": "^0.4.45"
+      }
+    }
+  },
+  {
+    "id": "immerjs-immer-yarn",
+    "repository": "https://github.com/immerjs/immer.git",
+    "commit": "e2d222bd4fb26abded04075c936290715e9ee335",
+    "nodeVersion": "v24.22.2",
+    "lockgroups": [
+      {
+        "root": ".",
+        "locks": [
+          "yarn.lock"
+        ],
+        "manager": "yarn",
+        "version": "1.22.22"
+      },
+      {
+        "root": "website",
+        "locks": [
+          "yarn.lock"
+        ],
+        "manager": "yarn",
+        "version": "1.22.22"
+      }
+    ],
+    "recipe": {
+      "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+      "options": {
+        "packageName": "immutable",
+        "newVersion": "^4.3.7"
+      }
+    }
+  },
+  {
+    "id": "oven-sh-setup-bun-bun",
+    "repository": "https://github.com/oven-sh/setup-bun.git",
+    "commit": "0c5077e51419868618aeaa5fe8019c62421857d6",
+    "nodeVersion": "v24.22.2",
+    "lockgroups": [
+      {
+        "root": ".",
+        "locks": [
+          "bun.lock"
+        ],
+        "manager": "bun",
+        "version": "1.4.4"
+      }
+    ],
+    "recipe": {
+      "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+      "options": {
+        "packageName": "esbuild",
+        "newVersion": "^0.25.0"
+      }
+    }
+  },
+  {
+    "id": "react-icons__react-icons",
+    "repository": "https://github.com/react-icons/react-icons.git",
+    "commit": "9f32da3e3bd131c60951c0052c952df935c45f82",
+    "nodeVersion": "v24.22.2",
+    "lockgroups": [
+      {
+        "root": ".",
+        "locks": [
+          "yarn.lock"
+        ],
+        "manager": "yarn",
+        "version": "4.17.0"
+      }
+    ],
+    "recipe": {
+      "id": "org.openrewrite.javascript.UpgradeDependencyVersion",
+      "options": {
+        "packageName": "@testing-library/dom",
+        "newVersion": "10.4.2"
+      }
+    }
+  }
+]
