@@ -1,0 +1,18 @@
+! Corepack is about to download https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz
+yarn install v1.22.22
+[1/4] Resolving packages...
+(node:8976) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+error Invariant Violation: could not find a copy of a to link in <tmp>/project/node_modules/b/node_modules
+    at invariant (<home>/.cache/node/corepack/v1/yarn/1.22.22/lib/cli.js:2318:15)
+    at PackageLinker.<anonymous> (<home>/.cache/node/corepack/v1/yarn/1.22.22/lib/cli.js:48524:7)
+    at Generator.next (<anonymous>)
+    at step (<home>/.cache/node/corepack/v1/yarn/1.22.22/lib/cli.js:310:30)
+    at <home>/.cache/node/corepack/v1/yarn/1.22.22/lib/cli.js:321:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+over=before
+exit=1
+no lock written

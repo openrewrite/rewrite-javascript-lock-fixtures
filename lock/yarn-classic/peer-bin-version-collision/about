@@ -1,0 +1,1 @@
+Yarn 1.22.22: dependency/peer ranges select two bin-bearing versions; the earlier range begins ^6 so it sorts before the root ^7 pattern. Reproduces Vite7 + Vitest4 peer bin linking failure. Synthetic registry: a7/a8 supply a bin; b depends on a union and @probe/mocker, both b and mocker peer on the union. Bin linking fails: a8 is installed beneath mocker, inaccessible from b.
