@@ -1,0 +1,14 @@
+Scope: all 2 workspace projects
+Done in 168ms using pnpm v10.28.0
+
+   ╭──────────────────────────────────────────╮
+   │                                          │
+   │   Update available! 10.28.0 → 12.23.0.   │
+   │   Changelog: https://pnpm.io/v/12.23.0   │
+   │     To update, run: pnpm add -g pnpm     │
+   │                                          │
+   ╰──────────────────────────────────────────╯
+
+pnpm 10.28.0, node v22.21.1, 2026-11-26T09:03:31Z
+exit=0
+lock unchanged
