@@ -1,0 +1,13 @@
+Done in 147ms using pnpm v10.5.2
+
+   ╭───────────────────────────────────────────────────────────────────╮
+   │                                                                   │
+   │                Update available! 10.5.2 → 12.23.0.                │
+   │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v12.23.0   │
+   │                 Run "pnpm add -g pnpm" to update.                 │
+   │                                                                   │
+   ╰───────────────────────────────────────────────────────────────────╯
+
+pnpm 10.5.2, node v22.21.1, 2026-11-26T14:25:51Z
+exit=0
+lock unchanged
